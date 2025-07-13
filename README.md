@@ -82,6 +82,7 @@ If you make use of our work, please cite our paper:
   journal={arXiv preprint arXiv:2506.04432},
   year={2025}
 }
+```
 ---
 
 ## 📌 Reminder
