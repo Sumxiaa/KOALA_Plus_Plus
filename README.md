@@ -71,7 +71,17 @@ bash train_language_model.sh
 └── Task2_Language_Model/
     └── train_language_model.sh
 ```
+## Citation
 
+If you make use of our work, please cite our paper:
+
+```
+@article{xia2025koala++,
+  title={KOALA++: Efficient Kalman-Based Optimization of Neural Networks with Gradient-Covariance Products},
+  author={Xia, Zixuan and Davtyan, Aram and Favaro, Paolo},
+  journal={arXiv preprint arXiv:2506.04432},
+  year={2025}
+}
 ---
 
 ## 📌 Reminder
