@@ -1,20 +1,26 @@
 # KOALA++: Efficient Kalman-Based Optimization of Neural Networks with Gradient-Covariance Products
 
+> Official implementation of **KOALA++**, a scalable Kalman-based optimization algorithm for neural network training.  
+> 📢 The code will be released **after the acceptance of our paper**.
 
-This repository will host the official implementation of **KOALA++**, a scalable Kalman-based optimization algorithm for neural network training.
+---
+## 📰 Latest News
+- **[2025-09]** 🎉 Our paper has been **accepted at NeurIPS 2025**!  
+- 🔜 Code release is coming soon — stay tuned!
 
-## Project Status
-The source code is currently under preparation and will be released **after the acceptance of our paper**.  
-Stay tuned for updates!
+## 📌 Overview
+KOALA++ introduces a **Kalman-based optimization framework** that explicitly models structured gradient uncertainty.
 
-## Overview
-KOALA++ introduces a Kalman-based optimization framework that explicitly models structured gradient uncertainty.  
-Unlike traditional second-order methods that rely on costly Hessian computations, KOALA++ maintains efficiency by recursively updating compact gradient–covariance products.  
-This approach extends the original KOALA framework, moving beyond diagonal covariance assumptions to capture richer uncertainty structures—without storing full covariance matrices or performing large matrix inversions.  
+✨ Key highlights:
+- ⚡ **No Hessian needed** – avoids expensive second-order computations.  
+- 🔍 **Compact covariance updates** – recursively updates gradient–covariance products.  
+- 🧩 **Beyond diagonals** – captures richer uncertainty without storing full covariance matrices.  
+- 🏆 **Strong performance** – matches or surpasses state-of-the-art first- and second-order optimizers.  
+- ⚙️ **Efficient** – maintains the scalability of first-order methods.  
 
-Across diverse tasks such as image classification and language modeling, KOALA++ achieves accuracy on par with or better than state-of-the-art first- and second-order optimizers, while preserving the efficiency of first-order methods.
+---
 
-## Citation
+## 📖 Citation
 If you find this work useful, please cite our paper:
 
 ```bibtex
@@ -27,11 +33,10 @@ If you find this work useful, please cite our paper:
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2506.04432}, 
 }
-```
 
 ## Contact
 For questions or collaboration inquiries, please contact:  
-Zixuan Xia – [your email here]
+Zixuan Xia – xxiazixuan824@gmail.com 
 
 ---
 
