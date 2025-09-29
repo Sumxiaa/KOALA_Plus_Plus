@@ -34,11 +34,15 @@ If you find this work useful, please cite our paper:
       url={https://arxiv.org/abs/2506.04432}, 
 }
 
-## Contact
-For questions or collaboration inquiries, please contact:  
-Zixuan Xia – xxiazixuan824@gmail.com 
+```
 
 ---
 
-We appreciate your interest in KOALA++ and look forward to sharing the code and results with the community.
+## ✉️ Contact
+For questions or collaboration inquiries, please reach out:  
+**Zixuan Xia** — xxiazixuan824@gmail.com · zixuan.xia@students.unibe.ch 
+
+---
+
+⭐️ *We appreciate your interest in KOALA++ and look forward to sharing the code and results with the community.*
 
