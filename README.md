@@ -70,26 +70,23 @@ This surrogate captures anisotropic uncertainty while keeping memory and computa
 ### Why $\alpha_k$ and $w_k$ Appear
 Expanding the recursion for $v_k$ gives:
 
-\[
-v_k = H_k P_{k-1} = H_k (I - K_{k-1} H_{k-1})(P_{k-2} + Q),
-\]
+
+$v_k = H_k P_{k-1} = H_k (I - K_{k-1} H_{k-1})(P_{k-2} + Q)$
 
 which introduces a dependency on **$H_k P_{k-2}$**.  
 Since $P_{k-2}$ is not explicitly stored, KOALA++ approximates it by solving a **least-squares problem** subject to the relation:
 
-\[
-v_{k-1} = H_{k-1} P_{k-2}.
-\]
+
+$v_{k-1} = H_{k-1} P_{k-2}$
 
 ---
 
 ### Least-Squares Objective
 We seek a surrogate for $P_{k-2}$:
 
-\[
-\min_{P_{k-2}} \; \| P_{k-2} \|_F^2 
-\quad \text{s.t.} \quad H_{k-1} P_{k-2} = v_{k-1}.
-\]
+
+$\min_{P_{k-2}} \; \| P_{k-2} \|_F^2 
+\quad \text{s.t.} \quad H_{k-1} P_{k-2} = v_{k-1}.$
 
 This system admits multiple solutions. KOALA++ considers **two variants**:
 
@@ -98,44 +95,35 @@ This system admits multiple solutions. KOALA++ considers **two variants**:
 #### (i) Vanilla (Asymmetric) Solution
 Unconstrained least-squares yields:
 
-\[
-P_{k-2} = \frac{H_{k-1}^\top v_{k-1}}{\|H_{k-1}\|^2}.
-\]
+
+$P_{k-2} = \frac{H_{k-1}^\top v_{k-1}}{\|H_{k-1}\|^2}.$
 
 Substituting back gives:
 
-\[
-H_k P_{k-2} = \alpha_k v_{k-1}, 
-\quad \alpha_k = \frac{H_k H_{k-1}^\top}{\|H_{k-1}\|^2}.
-\]
+
+$H_k P_{k-2} = \alpha_k v_{k-1}, 
+\quad \alpha_k = \frac{H_k H_{k-1}^\top}{\|H_{k-1}\|^2}.$
 
 ---
 
 #### (ii) Symmetric Solution
 If we enforce $P_{k-2} = P_{k-2}^\top$, the least-squares solution is:
 
-\[
-P_{k-2} =
+
+$P_{k-2} =
 \frac{H_{k-1}^\top v_{k-1} + v_{k-1}^\top H_{k-1}}{\|H_{k-1}\|^2}
-- \frac{H_{k-1} v_{k-1}^\top H_{k-1}^\top}{\|H_{k-1}\|^4}.
-\]
+- \frac{H_{k-1} v_{k-1}^\top H_{k-1}^\top}{\|H_{k-1}\|^4}.$
 
-Substituting back introduces a **correction term** $w_k$:
-
-\[
-H_k P_{k-2} = \alpha_k v_{k-1} + w_k H_{k-1}.
-\]
 
 ---
 
 ### Unified Update Rule
 Combining both cases, KOALA++ adopts the recursion:
 
-\[
-v_k = (\alpha_k - \lambda_k) v_{k-1} 
+
+$v_k = (\alpha_k - \lambda_k) v_{k-1} 
       + (H_k - \lambda_k H_{k-1}) Q 
-      + w_k H_{k-1},
-\]
+      + w_k H_{k-1},$
 
 where:
 - $\alpha_k$: alignment coefficient (always present),  
@@ -144,11 +132,9 @@ where:
 
 Finally, parameters are updated as:
 
-\[
-\theta_k = \theta_{k-1} - 
-\eta_k \, \frac{L_k(\theta_{k-1})}{H_k v_k^\top + H_k Q H_k^\top + R} \cdot (v_k^\top + QH_k^\top).
-\]
 
+$\theta_k = \theta_{k-1} - 
+\eta_k \, \frac{L_k(\theta_{k-1})}{H_k v_k^\top + H_k Q H_k^\top + R} \cdot (v_k^\top + QH_k^\top).$
 ---
 
 ### Algorithm Summary
@@ -162,6 +148,7 @@ for k = 2 to T do
     θₖ ← θₖ₋₁ - ηₖ Lₖ(θₖ₋₁) * (vₖᵀ + QHₖᵀ) / (Hₖvₖᵀ + HₖQHₖᵀ + R)
 end for
 return θ_T
+```
 ---
 
 ## 📖 Citation
