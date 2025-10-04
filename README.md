@@ -204,7 +204,7 @@ for i, (inputs, targets) in enumerate(train_loader):
     # --- KOALA++ update step ---
     loss_var = torch.mean(loss.pow(2))   # or variance depending on implementation
     optimizer.update(loss_mean, loss_var)
-
+```
 
 
 
