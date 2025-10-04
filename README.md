@@ -229,6 +229,10 @@ bash train_language_model.sh
 > The script will use the configuration set inside to launch the training procedure, and you can modify the script for different optimizers or hyperparameter settings.
 
 ---
+## 📜 License
+
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) - see the [LICENSE](LICENSE) file for details.
+---
 
 ## 📖 Citation
 If you find this work useful, please cite our paper:
