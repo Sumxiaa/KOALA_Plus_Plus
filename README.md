@@ -40,8 +40,7 @@ and does not have any functional relation to the project itself.
 ## 📁 Repository Contents
 
 - [Methodology and Key Insights](#💡-methodology-and-key-insights)
-    - [Usage](#🎯-usage)
-    - [Integrating AdaFisher/AdaFisherW as an Optimizer](#🔗-integrating-adafisheradafisherw-as-an-optimizer)
+- [Image Classification](#️🖼️-image-classification)
 - [Language Modeling](#📖-language-modeling)
     - [Dataset Download](#dataset-download)
     - [Usage](#🎯-usage-1)
