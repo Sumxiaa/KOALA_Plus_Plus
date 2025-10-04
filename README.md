@@ -142,7 +142,7 @@ $\theta_k = \theta_{k-1} -
 
 ### Algorithm Summary
 <p align="center">
-  <img src="imgs/algorithm1.png" alt="Algorithm 1 KOALA++" width="70%"/>
+  <img src="img/alg.png" alt="Algorithm of KOALA++" width="70%"/>
 </p>
 
 ---
