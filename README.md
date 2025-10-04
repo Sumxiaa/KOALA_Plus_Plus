@@ -36,16 +36,132 @@ and does not have any functional relation to the project itself.
 - **[2025-09]** 🎉 Our paper has been **accepted at NeurIPS 2025**!  
 - 🔜 Code release is coming soon — stay tuned!
 
-## 📌 Overview
-KOALA++ introduces a **Kalman-based optimization framework** that explicitly models structured gradient uncertainty.
+---
+## 📁 Repository Contents
 
-✨ Key highlights:
-- ⚡ **No Hessian needed** – avoids expensive second-order computations.  
-- 🔍 **Compact covariance updates** – recursively updates gradient–covariance products.  
-- 🧩 **Beyond diagonals** – captures richer uncertainty without storing full covariance matrices.  
-- 🏆 **Strong performance** – matches or surpasses state-of-the-art first- and second-order optimizers.  
-- ⚙️ **Efficient** – maintains the scalability of first-order methods.  
+- [Methodology and Key Insights](#💡-methodology-and-key-insights)
+    - [Usage](#🎯-usage)
+    - [Integrating AdaFisher/AdaFisherW as an Optimizer](#🔗-integrating-adafisheradafisherw-as-an-optimizer)
+- [Language Modeling](#📖-language-modeling)
+    - [Dataset Download](#dataset-download)
+    - [Usage](#🎯-usage-1)
+- [Distributed Training](#⚡️-distributed-training)
+- [Getting Started](#🌟-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Using pip](#using-pip)
+    - [Using Conda](#using-conda)
+- [License](#📜-license)
+- [Citation](#📖-citation)
 
+---
+## 💡 Methodology and Key Insights
+
+**KOALA++** extends the Kalman filtering view of optimization by explicitly propagating structured gradient uncertainty. Its core innovation lies in tracking a **directional covariance surrogate**:  
+
+\[
+v_k := H_k P_{k-1},
+\]
+
+instead of the full covariance $P_{k-1} \in \mathbb{R}^{n \times n}$.  
+This surrogate captures anisotropic uncertainty while keeping memory and computational cost comparable to first-order optimizers.
+
+---
+
+### Why $\alpha_k$ and $w_k$ Appear
+Expanding the recursion for $v_k$ gives:
+
+\[
+v_k = H_k P_{k-1} = H_k (I - K_{k-1} H_{k-1})(P_{k-2} + Q),
+\]
+
+which introduces a dependency on **$H_k P_{k-2}$**.  
+Since $P_{k-2}$ is not explicitly stored, KOALA++ approximates it by solving a **least-squares problem** subject to the relation:
+
+\[
+v_{k-1} = H_{k-1} P_{k-2}.
+\]
+
+---
+
+### Least-Squares Objective
+We seek a surrogate for $P_{k-2}$:
+
+\[
+\min_{P_{k-2}} \; \| P_{k-2} \|_F^2 
+\quad \text{s.t.} \quad H_{k-1} P_{k-2} = v_{k-1}.
+\]
+
+This system admits multiple solutions. KOALA++ considers **two variants**:
+
+---
+
+#### (i) Vanilla (Asymmetric) Solution
+Unconstrained least-squares yields:
+
+\[
+P_{k-2} = \frac{H_{k-1}^\top v_{k-1}}{\|H_{k-1}\|^2}.
+\]
+
+Substituting back gives:
+
+\[
+H_k P_{k-2} = \alpha_k v_{k-1}, 
+\quad \alpha_k = \frac{H_k H_{k-1}^\top}{\|H_{k-1}\|^2}.
+\]
+
+---
+
+#### (ii) Symmetric Solution
+If we enforce $P_{k-2} = P_{k-2}^\top$, the least-squares solution is:
+
+\[
+P_{k-2} =
+\frac{H_{k-1}^\top v_{k-1} + v_{k-1}^\top H_{k-1}}{\|H_{k-1}\|^2}
+- \frac{H_{k-1} v_{k-1}^\top H_{k-1}^\top}{\|H_{k-1}\|^4}.
+\]
+
+Substituting back introduces a **correction term** $w_k$:
+
+\[
+H_k P_{k-2} = \alpha_k v_{k-1} + w_k H_{k-1}.
+\]
+
+---
+
+### Unified Update Rule
+Combining both cases, KOALA++ adopts the recursion:
+
+\[
+v_k = (\alpha_k - \lambda_k) v_{k-1} 
+      + (H_k - \lambda_k H_{k-1}) Q 
+      + w_k H_{k-1},
+\]
+
+where:
+- $\alpha_k$: alignment coefficient (always present),  
+- $w_k$: correction term (only in symmetric variant, $w_k=0$ for vanilla),  
+- $\lambda_k$: Kalman attenuation factor.  
+
+Finally, parameters are updated as:
+
+\[
+\theta_k = \theta_{k-1} - 
+\eta_k \, \frac{L_k(\theta_{k-1})}{H_k v_k^\top + H_k Q H_k^\top + R} \cdot (v_k^\top + QH_k^\top).
+\]
+
+---
+
+### Algorithm Summary
+```pseudo
+Algorithm 1: KOALA++
+Input: Initial θ₀, v₁, noise scales Q,R, learning rate ηₖ
+for k = 2 to T do
+    Hₖ ← ∇Lₖ(θₖ₋₁)
+    Compute αₖ, λₖ, wₖ  (from LS formulations)
+    vₖ ← (αₖ - λₖ) vₖ₋₁ + (Hₖ - λₖ Hₖ₋₁)Q + wₖ Hₖ₋₁
+    θₖ ← θₖ₋₁ - ηₖ Lₖ(θₖ₋₁) * (vₖᵀ + QHₖᵀ) / (Hₖvₖᵀ + HₖQHₖᵀ + R)
+end for
+return θ_T
 ---
 
 ## 📖 Citation
