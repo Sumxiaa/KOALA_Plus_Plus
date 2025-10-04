@@ -59,7 +59,7 @@ $$
 v_k \;:=\; H_k\, P_{k-1} \;\in\; \mathbb{R}^{1\times n},
 $$
 
-instead of the full covariance \(P_{k-1}\in\mathbb{R}^{n\times n}\).
+instead of the full covariance $P_{k-1}\in\mathbb{R}^{n\times n}$.
 Here **$H_k \in \mathbb{R}^{1\times n}$** and **$v_k \in \mathbb{R}^{1\times n}$** are row vectors,  
 and **$Q, R \in \mathbb{R}$** are scalars.  
 This surrogate captures anisotropic uncertainty while keeping memory and computational cost comparable to first-order optimizers.
