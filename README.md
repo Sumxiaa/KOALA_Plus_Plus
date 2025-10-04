@@ -83,7 +83,7 @@ To get started, first clone the AdaFisher benchmark repository and set up the en
 git clone https://github.com/AtlasAnalyticsLab/AdaFisher.git
 cd AdaFisher
 # Follow their README to install the required dependencies
-
+```
 ---
 ## 🖼 Task 1: Image Classification
 
