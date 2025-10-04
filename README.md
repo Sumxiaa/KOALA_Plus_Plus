@@ -55,86 +55,129 @@ and does not have any functional relation to the project itself.
 
 **KOALA++** extends the Kalman filtering view of optimization by explicitly propagating structured gradient uncertainty. Its core innovation lies in tracking a **directional covariance surrogate**:  
 
+$$
+v_k \;:=\; H_k\, P_{k-1} \;\in\; \mathbb{R}^{1\times n},
+$$
 
-$v_k := H_k P_{k-1},$
-
-instead of the full covariance $P_{k-1} \in \mathbb{R}^{n \times n}$.  
+instead of the full covariance \(P_{k-1}\in\mathbb{R}^{n\times n}\).
+Here **\(H_k\in\mathbb{R}^{1\times n}\)** and **\(v_k\in\mathbb{R}^{1\times n}\)** are row vectors，
+and **\(Q, R \in \mathbb{R}\)** are scalers。
 This surrogate captures anisotropic uncertainty while keeping memory and computational cost comparable to first-order optimizers.
 
 ---
 
-### Why $\alpha_k$ and $w_k$ Appear
-Expanding the recursion for $v_k$ gives:
+### Why \(\alpha_k\) and \(w_k\) Appear
+Expanding the recursion for \(v_k\) using the covariance update \(P_{k-1}=(I-K_{k-1}H_{k-1})(P_{k-2}+Q)\) gives
+a term that cannot be computed directly without storing \(P_{k-2}\):
 
+$$
+v_k \;=\; H_k P_{k-1}
+\;=\; H_k\,(I-K_{k-1}H_{k-1})\,(P_{k-2}+Q)
+\;\;\Longrightarrow\;\; \text{appears } H_k P_{k-2}.
+$$
 
-$v_k = H_k P_{k-1} = H_k (I - K_{k-1} H_{k-1})(P_{k-2} + Q)$
-
-which introduces a dependency on **$H_k P_{k-2}$**.  
-Since $P_{k-2}$ is not explicitly stored, KOALA++ approximates it by solving a **least-squares problem** subject to the relation:
-
-
-$v_{k-1} = H_{k-1} P_{k-2}$
+To eliminate \(H_k P_{k-2}\), KOALA++ estimates \(P_{k-2}\) via a **least-squares** problem with the constraint
+\(v_{k-1} = H_{k-1} P_{k-2}\).
 
 ---
 
 ### Least-Squares Objective
-We seek a surrogate for $P_{k-2}$:
-
+We seek a surrogate for \(P_{k-2}\) with minimum Frobenius norm:
 
 $$
 \begin{aligned}
-\min_{P_{k-2}} \quad & \| P_{k-2} \|_F^2 \\
-\text{s.t.} \quad & H_{k-1} P_{k-2} = v_{k-1}
+\min_{P_{k-2}} \quad & \|P_{k-2}\|_F^2 \\
+\text{s.t.}\quad & H_{k-1} P_{k-2} = v_{k-1}\, .
 \end{aligned}
 $$
 
-
-This system admits multiple solutions. KOALA++ considers **two variants**:
+This underdetermined system admits multiple solutions. KOALA++ considers **two variants**:
 
 ---
 
 #### (i) Vanilla (Asymmetric) Solution
-Unconstrained least-squares yields:
+Unconstrained least-squares gives
+$$
+P_{k-2}
+\;=\;
+\frac{H_{k-1}^{\top}\, v_{k-1}}{\|H_{k-1}\|^2}\;\in\;\mathbb{R}^{n\times n}.
+$$
 
-
-$P_{k-2} = \frac{H_{k-1}^\top v_{k-1}}{\|H_{k-1}\|^2}.$
-
-Substituting back gives:
-
-
-$H_k P_{k-2} = \alpha_k v_{k-1}, 
-\quad \alpha_k = \frac{H_k H_{k-1}^\top}{\|H_{k-1}\|^2}.$
+Thus
+$$
+H_k P_{k-2}
+\;=\;
+\alpha_k\, v_{k-1},
+\qquad
+\alpha_k \;:=\; \frac{H_k\, H_{k-1}^{\top}}{\|H_{k-1}\|^2}\;\in\;\mathbb{R}.
+$$
 
 ---
 
 #### (ii) Symmetric Solution
-If we enforce $P_{k-2} = P_{k-2}^\top$, the least-squares solution is:
+Enforcing \(P_{k-2}=P_{k-2}^{\top}\) yields
+$$
+P_{k-2}
+\;=\;
+\frac{H_{k-1}^{\top} v_{k-1} + v_{k-1}^{\top} H_{k-1}}{\|H_{k-1}\|^2}
+\;-\;
+\frac{\,H_{k-1} v_{k-1}^{\top} H_{k-1}^{\top} H_{k-1}\,}{\|H_{k-1}\|^4}.
+$$
 
+Substituting into \(H_k P_{k-2}\) introduces an extra correction term \(w_k\):
+$$
+H_k P_{k-2}
+\;=\;
+\alpha_k\, v_{k-1} \;+\; w_k\, H_{k-1},
+$$
 
-$P_{k-2} =
-\frac{H_{k-1}^\top v_{k-1} + v_{k-1}^\top H_{k-1}}{\|H_{k-1}\|^2}- \frac{H_{k-1} v_{k-1}^\top H_{k-1}^\top}{\|H_{k-1}\|^4}.$
-
+where
+$$
+w_k
+\;:=\;
+\frac{(H_k v_{k-1}^{\top})(H_{k-1} H_{k-1}^{\top})
+\;-\;
+(H_{k-1} v_{k-1}^{\top})(H_k H_{k-1}^{\top})}{\|H_{k-1}\|^4}\;\in\;\mathbb{R}.
+$$
 
 ---
 
-### Unified Update Rule
-Combining both cases, KOALA++ adopts the recursion:
+### Unified Recursion and Parameter Update
 
+Define the **innovation covariance** and **Kalman gain**：
+$$
+S_k \;=\; H_k v_k^{\top} \;+\; H_k Q H_k^{\top} \;+\; R,
+\qquad
+K_k \;=\; \frac{\,v_k^{\top} + Q H_k^{\top}\,}{S_k}\;\in\;\mathbb{R}^{n\times 1}.
+$$
 
-$v_k = (\alpha_k - \lambda_k) v_{k-1} 
-      + (H_k - \lambda_k H_{k-1}) Q 
-      + w_k H_{k-1},$
+Define
+$$
+\lambda_k \;:=\; \frac{\,H_k\,(v_{k-1}^{\top} + Q H_{k-1}^{\top})\,}{\,S_{k-1}\,}\;\in\;\mathbb{R}.
+$$
 
-where:
-- $\alpha_k$: alignment coefficient (always present),  
-- $w_k$: correction term (only in symmetric variant, $w_k=0$ for vanilla),  
-- $\lambda_k$: Kalman attenuation factor.  
+Then the unified **\(v_k\)** recursion is
+$$
+v_k
+\;=\;
+(\alpha_k - \lambda_k)\, v_{k-1}
+\;+\;
+(H_k - \lambda_k H_{k-1})\, Q
+\;+\;
+w_k\, H_{k-1},
+$$
+with \(w_k=0\) in the asymmetric (vanilla) case.
 
-Finally, parameters are updated as:
+Finally, choosing \(L^{\text{target}}_k = (1-\eta_k)\,L_k(\theta_{k-1})\) gives the **parameter update**
+$$
+\theta_k
+\;=\;
+\theta_{k-1}
+\;-\;
+\eta_k\, L_k(\theta_{k-1})\;
+\frac{\,v_k^{\top} + Q H_k^{\top}\,}{\,H_k v_k^{\top} + H_k Q H_k^{\top} + R\,}.
+$$
 
-
-$\theta_k = \theta_{k-1} - 
-\eta_k \, \frac{L_k(\theta_{k-1})}{H_k v_k^\top + H_k Q H_k^\top + R} \cdot (v_k^\top + QH_k^\top).$
 ---
 
 ### Algorithm Summary
