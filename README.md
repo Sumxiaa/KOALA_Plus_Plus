@@ -40,6 +40,7 @@ and does not have any functional relation to the project itself.
 ## 📁 Repository Contents
 
 - [Methodology and Key Insights](#💡-methodology-and-key-insights)
+- [Getting Started](#🌟-getting-started)
 - [Image Classification](#️🖼️-image-classification)
 - [Language Modeling](#📖-language-modeling)
     - [Dataset Download](#dataset-download)
@@ -140,17 +141,9 @@ $\theta_k = \theta_{k-1} -
 ---
 
 ### Algorithm Summary
-```pseudo
-Algorithm 1: KOALA++
-Input: Initial θ₀, v₁, noise scales Q,R, learning rate ηₖ
-for k = 2 to T do
-    Hₖ ← ∇Lₖ(θₖ₋₁)
-    Compute αₖ, λₖ, wₖ  (from LS formulations)
-    vₖ ← (αₖ - λₖ) vₖ₋₁ + (Hₖ - λₖ Hₖ₋₁)Q + wₖ Hₖ₋₁
-    θₖ ← θₖ₋₁ - ηₖ Lₖ(θₖ₋₁) * (vₖᵀ + QHₖᵀ) / (Hₖvₖᵀ + HₖQHₖᵀ + R)
-end for
-return θ_T
-```
+<center>
+    <img src="img/alg.png" alt="Overview of Project" width="100%" height="280"/>
+</center>
 ---
 
 ## 📖 Citation
