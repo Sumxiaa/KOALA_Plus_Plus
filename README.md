@@ -166,6 +166,47 @@ bash train_cifar10.sh
 ```bash
 bash train_cifar100.sh
 ```
+### 🔗 Integrating KOALA++ as an Optimizer
+
+KOALA++ differs from standard optimizers in that it performs a **two-step update**:  
+- `predict()` before the forward/backward pass,  
+- `update(loss_mean, loss_var)` after the backward pass.  
+
+Here is an example integration into a PyTorch training loop:
+
+```python
+
+# Initialize KOALA++ optimizer
+optimizer = KOALAPlusPlus(
+            params=model.parameters(),
+            sigma=sigma, q=q, r=None, alpha_r=0.9,
+            weight_decay=0.0005, lr=lr
+
+for i, (inputs, targets) in enumerate(train_loader):
+    # Measure data loading time
+    data_time.update(time.time() - end)
+
+    inputs  = inputs.cuda(non_blocking=True)
+    targets = targets.cuda(non_blocking=True)
+
+    # --- KOALA++ prediction step ---
+    optimizer.predict()
+
+    # Forward + compute loss
+    outputs   = model(inputs)
+    loss      = criterion(outputs, targets)
+    loss_mean = loss.mean()
+
+    # Backward
+    optimizer.zero_grad()
+    loss_mean.backward()
+
+    # --- KOALA++ update step ---
+    loss_var = torch.mean(loss.pow(2))   # or variance depending on implementation
+    optimizer.update(loss_mean, loss_var)
+
+
+
 
 ### Notes
 
