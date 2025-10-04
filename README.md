@@ -146,6 +146,14 @@ $\theta_k = \theta_{k-1} -
 </p>
 
 ---
+## 🌟 Getting Started
+
+To get started, first clone the AdaFisher benchmark repository and set up the environment as described in their instructions:
+
+```bash
+git clone https://github.com/AtlasAnalyticsLab/AdaFisher.git
+cd AdaFisher
+# Follow their README to install the required dependencies
 
 ## 📖 Citation
 If you find this work useful, please cite our paper:
