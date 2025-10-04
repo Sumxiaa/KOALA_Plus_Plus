@@ -9,7 +9,7 @@ Abstract, _We propose KOALA++, a scalable Kalman-based optimization algorithm th
 <a href="https://arxiv.org/abs/2506.04432" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-KOALA++-red?logo=arxiv" height="30" />
 <div>
-    <a href="https://sumxiaa.github.io/" target="_blank">Zixuan Xia</a><sup>1,2</sup>,</span>
+    <a href="https://sumxiaa.github.io/" target="_blank">Zixuan Xia</a><sup>1</sup>,</span>
     <a href="https://araachie.github.io/" target="_blank">Aram Davtyan</a><sup>2</sup>, </span>
     <a href="https://www.cvg.unibe.ch/people/favaro" target="_blank">Paolo Favaro</a><sup>2</sup>,</span>
 </div>
