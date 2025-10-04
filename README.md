@@ -41,15 +41,8 @@ and does not have any functional relation to the project itself.
 
 - [Methodology and Key Insights](#💡-methodology-and-key-insights)
 - [Getting Started](#🌟-getting-started)
-- [Image Classification](#️🖼️-image-classification)
-- [Language Modeling](#📖-language-modeling)
-    - [Dataset Download](#dataset-download)
-    - [Usage](#🎯-usage-1)
-- [Distributed Training](#⚡️-distributed-training)
-- [Getting Started](#🌟-getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Using pip](#using-pip)
-    - [Using Conda](#using-conda)
+- [🖼 Task 1: Image Classification](#task-1-image-classification)
+- [🧠 Task 2: Language Modeling](#task-2-language-modeling)
 - [License](#📜-license)
 - [Citation](#📖-citation)
 
@@ -154,6 +147,47 @@ To get started, first clone the AdaFisher benchmark repository and set up the en
 git clone https://github.com/AtlasAnalyticsLab/AdaFisher.git
 cd AdaFisher
 # Follow their README to install the required dependencies
+
+---
+## 🖼 Task 1: Image Classification
+
+Navigate to the `Task1_Image_Classification` directory. This task supports training on both CIFAR-10 and CIFAR-100 datasets.
+
+### Run Training
+
+- To train on **CIFAR-10**:
+
+```bash
+bash train_cifar10.sh
+```
+
+- To train on **CIFAR-100**:
+
+```bash
+bash train_cifar100.sh
+```
+
+### Notes
+
+- You can modify the optimizer, learning rate, and other hyperparameters directly within the respective `.sh` script files.
+- All optimizers from AdaFisher (e.g., AdaFisher, SGD, Adam, etc.) are supported.
+
+---
+## 🧠 Task 2: Language Modeling
+
+Navigate to the `Task2_Language_Model` directory.
+
+### Run Training
+
+Simply run the corresponding training script to begin training your language model:
+
+```bash
+bash train_language_model.sh
+```
+
+> The script will use the configuration set inside to launch the training procedure, and you can modify the script for different optimizers or hyperparameter settings.
+
+---
 
 ## 📖 Citation
 If you find this work useful, please cite our paper:
