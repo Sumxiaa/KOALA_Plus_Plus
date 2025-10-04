@@ -60,12 +60,12 @@ v_k \;:=\; H_k\, P_{k-1} \;\in\; \mathbb{R}^{1\times n},
 $$
 
 instead of the full covariance \(P_{k-1}\in\mathbb{R}^{n\times n}\).
-Here **\(H_k\in\mathbb{R}^{1\times n}\)** and **\(v_k\in\mathbb{R}^{1\times n}\)** are row vectors，
-and **\(Q, R \in \mathbb{R}\)** are scalers。
+Here **$H_k \in \mathbb{R}^{1\times n}$** and **$v_k \in \mathbb{R}^{1\times n}$** are row vectors,  
+and **$Q, R \in \mathbb{R}$** are scalars.  
 This surrogate captures anisotropic uncertainty while keeping memory and computational cost comparable to first-order optimizers.
 
-Expanding the recursion for \(v_k = H_k P_{k-1}\) yields a term \(H_k P_{k-2}\), which is not directly computable since \(P_{k-2}\) is not stored.  
-KOALA++ resolves this by approximating \(P_{k-2}\) via a **least-squares problem** with constraint \(v_{k-1} = H_{k-1} P_{k-2}\).
+Expanding the recursion for $v_k = H_k P_{k-1}$ yields a term $H_k P_{k-2}$, which is not directly computable since $P_{k-2}$ is not stored.  
+KOALA++ resolves this by approximating $P_{k-2}$ via a **least-squares problem** with constraint $v_{k-1} = H_{k-1} P_{k-2}$.
 
 ---
 
