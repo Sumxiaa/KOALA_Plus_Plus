@@ -39,12 +39,16 @@ and does not have any functional relation to the project itself.
 ---
 ## 📁 Repository Contents
 
-- [Methodology and Key Insights](#💡-methodology-and-key-insights)
-- [Getting Started](#🌟-getting-started)
+- [💡 Methodology and Key Insights](#methodology-and-key-insights)
+- [🌟 Getting Started](#getting-started)
 - [🖼 Task 1: Image Classification](#task-1-image-classification)
+  - [🔗 Integrating KOALA++ as an Optimizer](#integrating-koal-as-an-optimizer)
+  - [Notes](#notes)
 - [🧠 Task 2: Language Modeling](#task-2-language-modeling)
-- [License](#📜-license)
-- [Citation](#📖-citation)
+- [📜 License](#license)
+- [📖 Citation](#citation)
+- [✉️ Contact](#️-contact)
+
 
 ---
 ## 💡 Methodology and Key Insights
