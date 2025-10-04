@@ -19,7 +19,7 @@ Abstract, _We propose KOALA++, a scalable Kalman-based optimization algorithm th
 </div>
 </center>
 <center>
-    <img src="imgs/KOALA++.png" alt="Overview of Project" width="100%" height="280"/>
+    <img src="img/KOALA++.png" alt="Overview of Project" width="100%" height="280"/>
 </center>
 
 ⚠️ **Note**  
