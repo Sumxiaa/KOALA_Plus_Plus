@@ -1,0 +1,1932 @@
+Initialized GPT1 model with 59635968 total parameters, of which 28351488 are learnable.
+====== Epoch 0 ======>
+[TRAIN] Epoch: 0, Iter : 0 / 288, Loss: 44.09002
+[TRAIN] Epoch: 0, Iter : 10 / 288, Loss: 40.35359
+[TRAIN] Epoch: 0, Iter : 20 / 288, Loss: 36.65754
+[TRAIN] Epoch: 0, Iter : 30 / 288, Loss: 32.04651
+[TRAIN] Epoch: 0, Iter : 40 / 288, Loss: 27.99571
+[TRAIN] Epoch: 0, Iter : 50 / 288, Loss: 24.30483
+[TRAIN] Epoch: 0, Iter : 60 / 288, Loss: 20.77079
+[TRAIN] Epoch: 0, Iter : 70 / 288, Loss: 17.66364
+[TRAIN] Epoch: 0, Iter : 80 / 288, Loss: 15.07838
+[TRAIN] Epoch: 0, Iter : 90 / 288, Loss: 12.70886
+[TRAIN] Epoch: 0, Iter : 100 / 288, Loss: 10.77801
+[TRAIN] Epoch: 0, Iter : 110 / 288, Loss: 9.29401
+[TRAIN] Epoch: 0, Iter : 120 / 288, Loss: 8.19438
+[TRAIN] Epoch: 0, Iter : 130 / 288, Loss: 7.73633
+[TRAIN] Epoch: 0, Iter : 140 / 288, Loss: 7.54546
+[TRAIN] Epoch: 0, Iter : 150 / 288, Loss: 7.62193
+[TRAIN] Epoch: 0, Iter : 160 / 288, Loss: 7.38853
+[TRAIN] Epoch: 0, Iter : 170 / 288, Loss: 7.27549
+[TRAIN] Epoch: 0, Iter : 180 / 288, Loss: 7.22510
+[TRAIN] Epoch: 0, Iter : 190 / 288, Loss: 7.11249
+[TRAIN] Epoch: 0, Iter : 200 / 288, Loss: 7.16750
+[TRAIN] Epoch: 0, Iter : 210 / 288, Loss: 7.13920
+[TRAIN] Epoch: 0, Iter : 220 / 288, Loss: 6.98677
+[TRAIN] Epoch: 0, Iter : 230 / 288, Loss: 7.06487
+[TRAIN] Epoch: 0, Iter : 240 / 288, Loss: 7.09904
+[TRAIN] Epoch: 0, Iter : 250 / 288, Loss: 7.06810
+[TRAIN] Epoch: 0, Iter : 260 / 288, Loss: 7.03454
+[TRAIN] Epoch: 0, Iter : 270 / 288, Loss: 7.01255
+[TRAIN] Epoch: 0, Iter : 280 / 288, Loss: 6.99874
+== [TRAIN] Epoch: 0, Perplexity: 978824.140 ==>
+[VAL] Epoch: 0, Iter: 0, Loss: 6.92338
+[VAL] Epoch: 0, Iter: 10, Loss: 6.99743
+[VAL] Epoch: 0, Iter: 20, Loss: 6.84385
+=== [VAL] Epoch: 0, Iter: 29, Perplexity: 998.401 ===>
+====== Epoch 1 ======>
+[TRAIN] Epoch: 1, Iter : 0 / 288, Loss: 6.94645
+[TRAIN] Epoch: 1, Iter : 10 / 288, Loss: 6.99810
+[TRAIN] Epoch: 1, Iter : 20 / 288, Loss: 6.97113
+[TRAIN] Epoch: 1, Iter : 30 / 288, Loss: 6.80941
+[TRAIN] Epoch: 1, Iter : 40 / 288, Loss: 6.84049
+[TRAIN] Epoch: 1, Iter : 50 / 288, Loss: 7.01549
+[TRAIN] Epoch: 1, Iter : 60 / 288, Loss: 6.92223
+[TRAIN] Epoch: 1, Iter : 70 / 288, Loss: 6.78766
+[TRAIN] Epoch: 1, Iter : 80 / 288, Loss: 6.79338
+[TRAIN] Epoch: 1, Iter : 90 / 288, Loss: 6.86664
+[TRAIN] Epoch: 1, Iter : 100 / 288, Loss: 6.82887
+[TRAIN] Epoch: 1, Iter : 110 / 288, Loss: 6.82970
+[TRAIN] Epoch: 1, Iter : 120 / 288, Loss: 6.86505
+[TRAIN] Epoch: 1, Iter : 130 / 288, Loss: 6.96918
+[TRAIN] Epoch: 1, Iter : 140 / 288, Loss: 6.84362
+[TRAIN] Epoch: 1, Iter : 150 / 288, Loss: 6.81403
+[TRAIN] Epoch: 1, Iter : 160 / 288, Loss: 6.66909
+[TRAIN] Epoch: 1, Iter : 170 / 288, Loss: 6.73494
+[TRAIN] Epoch: 1, Iter : 180 / 288, Loss: 6.74904
+[TRAIN] Epoch: 1, Iter : 190 / 288, Loss: 6.72948
+[TRAIN] Epoch: 1, Iter : 200 / 288, Loss: 6.80684
+[TRAIN] Epoch: 1, Iter : 210 / 288, Loss: 6.70820
+[TRAIN] Epoch: 1, Iter : 220 / 288, Loss: 6.73195
+[TRAIN] Epoch: 1, Iter : 230 / 288, Loss: 6.85907
+[TRAIN] Epoch: 1, Iter : 240 / 288, Loss: 6.92061
+[TRAIN] Epoch: 1, Iter : 250 / 288, Loss: 6.68676
+[TRAIN] Epoch: 1, Iter : 260 / 288, Loss: 6.94801
+[TRAIN] Epoch: 1, Iter : 270 / 288, Loss: 6.67981
+[TRAIN] Epoch: 1, Iter : 280 / 288, Loss: 6.79525
+== [TRAIN] Epoch: 1, Perplexity: 903.203 ==>
+[VAL] Epoch: 1, Iter: 0, Loss: 6.57886
+[VAL] Epoch: 1, Iter: 10, Loss: 6.71006
+[VAL] Epoch: 1, Iter: 20, Loss: 6.52426
+=== [VAL] Epoch: 1, Iter: 29, Perplexity: 729.098 ===>
+====== Epoch 2 ======>
+[TRAIN] Epoch: 2, Iter : 0 / 288, Loss: 6.64631
+[TRAIN] Epoch: 2, Iter : 10 / 288, Loss: 6.79837
+[TRAIN] Epoch: 2, Iter : 20 / 288, Loss: 6.67628
+[TRAIN] Epoch: 2, Iter : 30 / 288, Loss: 6.59017
+[TRAIN] Epoch: 2, Iter : 40 / 288, Loss: 6.69323
+[TRAIN] Epoch: 2, Iter : 50 / 288, Loss: 6.70644
+[TRAIN] Epoch: 2, Iter : 60 / 288, Loss: 6.57177
+[TRAIN] Epoch: 2, Iter : 70 / 288, Loss: 6.64763
+[TRAIN] Epoch: 2, Iter : 80 / 288, Loss: 6.79526
+[TRAIN] Epoch: 2, Iter : 90 / 288, Loss: 6.73921
+[TRAIN] Epoch: 2, Iter : 100 / 288, Loss: 6.61306
+[TRAIN] Epoch: 2, Iter : 110 / 288, Loss: 6.63665
+[TRAIN] Epoch: 2, Iter : 120 / 288, Loss: 6.57271
+[TRAIN] Epoch: 2, Iter : 130 / 288, Loss: 6.70924
+[TRAIN] Epoch: 2, Iter : 140 / 288, Loss: 6.61640
+[TRAIN] Epoch: 2, Iter : 150 / 288, Loss: 6.52835
+[TRAIN] Epoch: 2, Iter : 160 / 288, Loss: 6.68420
+[TRAIN] Epoch: 2, Iter : 170 / 288, Loss: 6.46697
+[TRAIN] Epoch: 2, Iter : 180 / 288, Loss: 6.61832
+[TRAIN] Epoch: 2, Iter : 190 / 288, Loss: 6.55424
+[TRAIN] Epoch: 2, Iter : 200 / 288, Loss: 6.65079
+[TRAIN] Epoch: 2, Iter : 210 / 288, Loss: 6.56583
+[TRAIN] Epoch: 2, Iter : 220 / 288, Loss: 6.60497
+[TRAIN] Epoch: 2, Iter : 230 / 288, Loss: 6.66552
+[TRAIN] Epoch: 2, Iter : 240 / 288, Loss: 6.57503
+[TRAIN] Epoch: 2, Iter : 250 / 288, Loss: 6.72445
+[TRAIN] Epoch: 2, Iter : 260 / 288, Loss: 6.52542
+[TRAIN] Epoch: 2, Iter : 270 / 288, Loss: 6.47151
+[TRAIN] Epoch: 2, Iter : 280 / 288, Loss: 6.56386
+== [TRAIN] Epoch: 2, Perplexity: 764.273 ==>
+[VAL] Epoch: 2, Iter: 0, Loss: 6.54017
+[VAL] Epoch: 2, Iter: 10, Loss: 6.68379
+[VAL] Epoch: 2, Iter: 20, Loss: 6.51058
+=== [VAL] Epoch: 2, Iter: 29, Perplexity: 706.869 ===>
+====== Epoch 3 ======>
+[TRAIN] Epoch: 3, Iter : 0 / 288, Loss: 6.58172
+[TRAIN] Epoch: 3, Iter : 10 / 288, Loss: 6.57706
+[TRAIN] Epoch: 3, Iter : 20 / 288, Loss: 6.68647
+[TRAIN] Epoch: 3, Iter : 30 / 288, Loss: 6.51578
+[TRAIN] Epoch: 3, Iter : 40 / 288, Loss: 6.52053
+[TRAIN] Epoch: 3, Iter : 50 / 288, Loss: 6.78503
+[TRAIN] Epoch: 3, Iter : 60 / 288, Loss: 6.48684
+[TRAIN] Epoch: 3, Iter : 70 / 288, Loss: 6.52785
+[TRAIN] Epoch: 3, Iter : 80 / 288, Loss: 6.67903
+[TRAIN] Epoch: 3, Iter : 90 / 288, Loss: 6.42904
+[TRAIN] Epoch: 3, Iter : 100 / 288, Loss: 6.54199
+[TRAIN] Epoch: 3, Iter : 110 / 288, Loss: 6.54651
+[TRAIN] Epoch: 3, Iter : 120 / 288, Loss: 6.41628
+[TRAIN] Epoch: 3, Iter : 130 / 288, Loss: 6.56621
+[TRAIN] Epoch: 3, Iter : 140 / 288, Loss: 6.57250
+[TRAIN] Epoch: 3, Iter : 150 / 288, Loss: 6.50774
+[TRAIN] Epoch: 3, Iter : 160 / 288, Loss: 6.47775
+[TRAIN] Epoch: 3, Iter : 170 / 288, Loss: 6.51576
+[TRAIN] Epoch: 3, Iter : 180 / 288, Loss: 6.73523
+[TRAIN] Epoch: 3, Iter : 190 / 288, Loss: 6.56527
+[TRAIN] Epoch: 3, Iter : 200 / 288, Loss: 6.41221
+[TRAIN] Epoch: 3, Iter : 210 / 288, Loss: 6.44383
+[TRAIN] Epoch: 3, Iter : 220 / 288, Loss: 6.42888
+[TRAIN] Epoch: 3, Iter : 230 / 288, Loss: 6.51011
+[TRAIN] Epoch: 3, Iter : 240 / 288, Loss: 6.49217
+[TRAIN] Epoch: 3, Iter : 250 / 288, Loss: 6.71010
+[TRAIN] Epoch: 3, Iter : 260 / 288, Loss: 6.72496
+[TRAIN] Epoch: 3, Iter : 270 / 288, Loss: 6.40919
+[TRAIN] Epoch: 3, Iter : 280 / 288, Loss: 6.38399
+== [TRAIN] Epoch: 3, Perplexity: 681.313 ==>
+[VAL] Epoch: 3, Iter: 0, Loss: 6.38485
+[VAL] Epoch: 3, Iter: 10, Loss: 6.52153
+[VAL] Epoch: 3, Iter: 20, Loss: 6.36972
+=== [VAL] Epoch: 3, Iter: 29, Perplexity: 610.470 ===>
+====== Epoch 4 ======>
+[TRAIN] Epoch: 4, Iter : 0 / 288, Loss: 6.38384
+[TRAIN] Epoch: 4, Iter : 10 / 288, Loss: 6.44908
+[TRAIN] Epoch: 4, Iter : 20 / 288, Loss: 6.37605
+[TRAIN] Epoch: 4, Iter : 30 / 288, Loss: 6.42174
+[TRAIN] Epoch: 4, Iter : 40 / 288, Loss: 6.49220
+[TRAIN] Epoch: 4, Iter : 50 / 288, Loss: 6.80617
+[TRAIN] Epoch: 4, Iter : 60 / 288, Loss: 6.55529
+[TRAIN] Epoch: 4, Iter : 70 / 288, Loss: 6.44846
+[TRAIN] Epoch: 4, Iter : 80 / 288, Loss: 6.39680
+[TRAIN] Epoch: 4, Iter : 90 / 288, Loss: 6.65661
+[TRAIN] Epoch: 4, Iter : 100 / 288, Loss: 6.48971
+[TRAIN] Epoch: 4, Iter : 110 / 288, Loss: 6.37812
+[TRAIN] Epoch: 4, Iter : 120 / 288, Loss: 6.52552
+[TRAIN] Epoch: 4, Iter : 130 / 288, Loss: 6.47464
+[TRAIN] Epoch: 4, Iter : 140 / 288, Loss: 6.39393
+[TRAIN] Epoch: 4, Iter : 150 / 288, Loss: 6.42828
+[TRAIN] Epoch: 4, Iter : 160 / 288, Loss: 6.46554
+[TRAIN] Epoch: 4, Iter : 170 / 288, Loss: 6.35597
+[TRAIN] Epoch: 4, Iter : 180 / 288, Loss: 6.41013
+[TRAIN] Epoch: 4, Iter : 190 / 288, Loss: 6.40611
+[TRAIN] Epoch: 4, Iter : 200 / 288, Loss: 6.27951
+[TRAIN] Epoch: 4, Iter : 210 / 288, Loss: 6.48801
+[TRAIN] Epoch: 4, Iter : 220 / 288, Loss: 6.36126
+[TRAIN] Epoch: 4, Iter : 230 / 288, Loss: 6.45912
+[TRAIN] Epoch: 4, Iter : 240 / 288, Loss: 6.31218
+[TRAIN] Epoch: 4, Iter : 250 / 288, Loss: 6.44010
+[TRAIN] Epoch: 4, Iter : 260 / 288, Loss: 6.49124
+[TRAIN] Epoch: 4, Iter : 270 / 288, Loss: 6.48164
+[TRAIN] Epoch: 4, Iter : 280 / 288, Loss: 6.34888
+== [TRAIN] Epoch: 4, Perplexity: 625.847 ==>
+[VAL] Epoch: 4, Iter: 0, Loss: 6.32341
+[VAL] Epoch: 4, Iter: 10, Loss: 6.45364
+[VAL] Epoch: 4, Iter: 20, Loss: 6.28473
+=== [VAL] Epoch: 4, Iter: 29, Perplexity: 568.506 ===>
+====== Epoch 5 ======>
+[TRAIN] Epoch: 5, Iter : 0 / 288, Loss: 6.33615
+[TRAIN] Epoch: 5, Iter : 10 / 288, Loss: 6.32695
+[TRAIN] Epoch: 5, Iter : 20 / 288, Loss: 6.50285
+[TRAIN] Epoch: 5, Iter : 30 / 288, Loss: 6.34537
+[TRAIN] Epoch: 5, Iter : 40 / 288, Loss: 6.41652
+[TRAIN] Epoch: 5, Iter : 50 / 288, Loss: 6.35437
+[TRAIN] Epoch: 5, Iter : 60 / 288, Loss: 6.41798
+[TRAIN] Epoch: 5, Iter : 70 / 288, Loss: 6.48868
+[TRAIN] Epoch: 5, Iter : 80 / 288, Loss: 6.27522
+[TRAIN] Epoch: 5, Iter : 90 / 288, Loss: 6.38709
+[TRAIN] Epoch: 5, Iter : 100 / 288, Loss: 6.37485
+[TRAIN] Epoch: 5, Iter : 110 / 288, Loss: 6.37924
+[TRAIN] Epoch: 5, Iter : 120 / 288, Loss: 6.33651
+[TRAIN] Epoch: 5, Iter : 130 / 288, Loss: 6.25925
+[TRAIN] Epoch: 5, Iter : 140 / 288, Loss: 6.32629
+[TRAIN] Epoch: 5, Iter : 150 / 288, Loss: 6.43600
+[TRAIN] Epoch: 5, Iter : 160 / 288, Loss: 6.39171
+[TRAIN] Epoch: 5, Iter : 170 / 288, Loss: 6.27304
+[TRAIN] Epoch: 5, Iter : 180 / 288, Loss: 6.44060
+[TRAIN] Epoch: 5, Iter : 190 / 288, Loss: 6.35494
+[TRAIN] Epoch: 5, Iter : 200 / 288, Loss: 6.35427
+[TRAIN] Epoch: 5, Iter : 210 / 288, Loss: 6.32047
+[TRAIN] Epoch: 5, Iter : 220 / 288, Loss: 6.53634
+[TRAIN] Epoch: 5, Iter : 230 / 288, Loss: 6.39606
+[TRAIN] Epoch: 5, Iter : 240 / 288, Loss: 6.51386
+[TRAIN] Epoch: 5, Iter : 250 / 288, Loss: 6.31910
+[TRAIN] Epoch: 5, Iter : 260 / 288, Loss: 6.29334
+[TRAIN] Epoch: 5, Iter : 270 / 288, Loss: 6.41775
+[TRAIN] Epoch: 5, Iter : 280 / 288, Loss: 6.37425
+== [TRAIN] Epoch: 5, Perplexity: 587.094 ==>
+[VAL] Epoch: 5, Iter: 0, Loss: 6.25863
+[VAL] Epoch: 5, Iter: 10, Loss: 6.39088
+[VAL] Epoch: 5, Iter: 20, Loss: 6.22474
+=== [VAL] Epoch: 5, Iter: 29, Perplexity: 535.548 ===>
+====== Epoch 6 ======>
+[TRAIN] Epoch: 6, Iter : 0 / 288, Loss: 6.31820
+[TRAIN] Epoch: 6, Iter : 10 / 288, Loss: 6.35510
+[TRAIN] Epoch: 6, Iter : 20 / 288, Loss: 6.30250
+[TRAIN] Epoch: 6, Iter : 30 / 288, Loss: 6.30473
+[TRAIN] Epoch: 6, Iter : 40 / 288, Loss: 6.44004
+[TRAIN] Epoch: 6, Iter : 50 / 288, Loss: 6.32947
+[TRAIN] Epoch: 6, Iter : 60 / 288, Loss: 6.26122
+[TRAIN] Epoch: 6, Iter : 70 / 288, Loss: 6.31280
+[TRAIN] Epoch: 6, Iter : 80 / 288, Loss: 6.38931
+[TRAIN] Epoch: 6, Iter : 90 / 288, Loss: 6.30427
+[TRAIN] Epoch: 6, Iter : 100 / 288, Loss: 6.27801
+[TRAIN] Epoch: 6, Iter : 110 / 288, Loss: 6.32257
+[TRAIN] Epoch: 6, Iter : 120 / 288, Loss: 6.33281
+[TRAIN] Epoch: 6, Iter : 130 / 288, Loss: 6.29194
+[TRAIN] Epoch: 6, Iter : 140 / 288, Loss: 6.36732
+[TRAIN] Epoch: 6, Iter : 150 / 288, Loss: 6.26384
+[TRAIN] Epoch: 6, Iter : 160 / 288, Loss: 6.38078
+[TRAIN] Epoch: 6, Iter : 170 / 288, Loss: 6.36003
+[TRAIN] Epoch: 6, Iter : 180 / 288, Loss: 6.29237
+[TRAIN] Epoch: 6, Iter : 190 / 288, Loss: 6.26371
+[TRAIN] Epoch: 6, Iter : 200 / 288, Loss: 6.37666
+[TRAIN] Epoch: 6, Iter : 210 / 288, Loss: 6.30659
+[TRAIN] Epoch: 6, Iter : 220 / 288, Loss: 6.23328
+[TRAIN] Epoch: 6, Iter : 230 / 288, Loss: 6.32152
+[TRAIN] Epoch: 6, Iter : 240 / 288, Loss: 6.42524
+[TRAIN] Epoch: 6, Iter : 250 / 288, Loss: 6.26491
+[TRAIN] Epoch: 6, Iter : 260 / 288, Loss: 6.25637
+[TRAIN] Epoch: 6, Iter : 270 / 288, Loss: 6.28836
+[TRAIN] Epoch: 6, Iter : 280 / 288, Loss: 6.50118
+== [TRAIN] Epoch: 6, Perplexity: 558.259 ==>
+[VAL] Epoch: 6, Iter: 0, Loss: 6.23632
+[VAL] Epoch: 6, Iter: 10, Loss: 6.35532
+[VAL] Epoch: 6, Iter: 20, Loss: 6.19635
+=== [VAL] Epoch: 6, Iter: 29, Perplexity: 520.197 ===>
+====== Epoch 7 ======>
+[TRAIN] Epoch: 7, Iter : 0 / 288, Loss: 6.35021
+[TRAIN] Epoch: 7, Iter : 10 / 288, Loss: 6.32616
+[TRAIN] Epoch: 7, Iter : 20 / 288, Loss: 6.31682
+[TRAIN] Epoch: 7, Iter : 30 / 288, Loss: 6.24888
+[TRAIN] Epoch: 7, Iter : 40 / 288, Loss: 6.22458
+[TRAIN] Epoch: 7, Iter : 50 / 288, Loss: 6.25916
+[TRAIN] Epoch: 7, Iter : 60 / 288, Loss: 6.31004
+[TRAIN] Epoch: 7, Iter : 70 / 288, Loss: 6.18086
+[TRAIN] Epoch: 7, Iter : 80 / 288, Loss: 6.30932
+[TRAIN] Epoch: 7, Iter : 90 / 288, Loss: 6.21281
+[TRAIN] Epoch: 7, Iter : 100 / 288, Loss: 6.27810
+[TRAIN] Epoch: 7, Iter : 110 / 288, Loss: 6.31119
+[TRAIN] Epoch: 7, Iter : 120 / 288, Loss: 6.29433
+[TRAIN] Epoch: 7, Iter : 130 / 288, Loss: 6.32580
+[TRAIN] Epoch: 7, Iter : 140 / 288, Loss: 6.21796
+[TRAIN] Epoch: 7, Iter : 150 / 288, Loss: 6.21556
+[TRAIN] Epoch: 7, Iter : 160 / 288, Loss: 6.37695
+[TRAIN] Epoch: 7, Iter : 170 / 288, Loss: 6.26699
+[TRAIN] Epoch: 7, Iter : 180 / 288, Loss: 6.25691
+[TRAIN] Epoch: 7, Iter : 190 / 288, Loss: 6.18888
+[TRAIN] Epoch: 7, Iter : 200 / 288, Loss: 6.38027
+[TRAIN] Epoch: 7, Iter : 210 / 288, Loss: 6.26176
+[TRAIN] Epoch: 7, Iter : 220 / 288, Loss: 6.27085
+[TRAIN] Epoch: 7, Iter : 230 / 288, Loss: 6.29239
+[TRAIN] Epoch: 7, Iter : 240 / 288, Loss: 6.21684
+[TRAIN] Epoch: 7, Iter : 250 / 288, Loss: 6.17915
+[TRAIN] Epoch: 7, Iter : 260 / 288, Loss: 6.18155
+[TRAIN] Epoch: 7, Iter : 270 / 288, Loss: 6.39132
+[TRAIN] Epoch: 7, Iter : 280 / 288, Loss: 6.32087
+== [TRAIN] Epoch: 7, Perplexity: 531.813 ==>
+[VAL] Epoch: 7, Iter: 0, Loss: 6.21243
+[VAL] Epoch: 7, Iter: 10, Loss: 6.33542
+[VAL] Epoch: 7, Iter: 20, Loss: 6.15068
+=== [VAL] Epoch: 7, Iter: 29, Perplexity: 507.510 ===>
+====== Epoch 8 ======>
+[TRAIN] Epoch: 8, Iter : 0 / 288, Loss: 6.22828
+[TRAIN] Epoch: 8, Iter : 10 / 288, Loss: 6.27652
+[TRAIN] Epoch: 8, Iter : 20 / 288, Loss: 6.24135
+[TRAIN] Epoch: 8, Iter : 30 / 288, Loss: 6.36330
+[TRAIN] Epoch: 8, Iter : 40 / 288, Loss: 6.20187
+[TRAIN] Epoch: 8, Iter : 50 / 288, Loss: 6.22860
+[TRAIN] Epoch: 8, Iter : 60 / 288, Loss: 6.22849
+[TRAIN] Epoch: 8, Iter : 70 / 288, Loss: 6.19474
+[TRAIN] Epoch: 8, Iter : 80 / 288, Loss: 6.23322
+[TRAIN] Epoch: 8, Iter : 90 / 288, Loss: 6.25541
+[TRAIN] Epoch: 8, Iter : 100 / 288, Loss: 6.16422
+[TRAIN] Epoch: 8, Iter : 110 / 288, Loss: 6.16181
+[TRAIN] Epoch: 8, Iter : 120 / 288, Loss: 6.30850
+[TRAIN] Epoch: 8, Iter : 130 / 288, Loss: 6.16197
+[TRAIN] Epoch: 8, Iter : 140 / 288, Loss: 6.21403
+[TRAIN] Epoch: 8, Iter : 150 / 288, Loss: 6.14501
+[TRAIN] Epoch: 8, Iter : 160 / 288, Loss: 6.19088
+[TRAIN] Epoch: 8, Iter : 170 / 288, Loss: 6.13683
+[TRAIN] Epoch: 8, Iter : 180 / 288, Loss: 6.22882
+[TRAIN] Epoch: 8, Iter : 190 / 288, Loss: 6.16679
+[TRAIN] Epoch: 8, Iter : 200 / 288, Loss: 6.23607
+[TRAIN] Epoch: 8, Iter : 210 / 288, Loss: 6.17388
+[TRAIN] Epoch: 8, Iter : 220 / 288, Loss: 6.17446
+[TRAIN] Epoch: 8, Iter : 230 / 288, Loss: 6.28645
+[TRAIN] Epoch: 8, Iter : 240 / 288, Loss: 6.20766
+[TRAIN] Epoch: 8, Iter : 250 / 288, Loss: 6.25907
+[TRAIN] Epoch: 8, Iter : 260 / 288, Loss: 6.19855
+[TRAIN] Epoch: 8, Iter : 270 / 288, Loss: 6.16307
+[TRAIN] Epoch: 8, Iter : 280 / 288, Loss: 6.16265
+== [TRAIN] Epoch: 8, Perplexity: 508.645 ==>
+[VAL] Epoch: 8, Iter: 0, Loss: 6.14518
+[VAL] Epoch: 8, Iter: 10, Loss: 6.27963
+[VAL] Epoch: 8, Iter: 20, Loss: 6.09584
+=== [VAL] Epoch: 8, Iter: 29, Perplexity: 474.027 ===>
+====== Epoch 9 ======>
+[TRAIN] Epoch: 9, Iter : 0 / 288, Loss: 6.16344
+[TRAIN] Epoch: 9, Iter : 10 / 288, Loss: 6.31625
+[TRAIN] Epoch: 9, Iter : 20 / 288, Loss: 6.20700
+[TRAIN] Epoch: 9, Iter : 30 / 288, Loss: 6.21701
+[TRAIN] Epoch: 9, Iter : 40 / 288, Loss: 6.30493
+[TRAIN] Epoch: 9, Iter : 50 / 288, Loss: 6.10092
+[TRAIN] Epoch: 9, Iter : 60 / 288, Loss: 6.27315
+[TRAIN] Epoch: 9, Iter : 70 / 288, Loss: 6.19971
+[TRAIN] Epoch: 9, Iter : 80 / 288, Loss: 6.20166
+[TRAIN] Epoch: 9, Iter : 90 / 288, Loss: 6.23917
+[TRAIN] Epoch: 9, Iter : 100 / 288, Loss: 6.20004
+[TRAIN] Epoch: 9, Iter : 110 / 288, Loss: 6.23685
+[TRAIN] Epoch: 9, Iter : 120 / 288, Loss: 6.19565
+[TRAIN] Epoch: 9, Iter : 130 / 288, Loss: 6.16863
+[TRAIN] Epoch: 9, Iter : 140 / 288, Loss: 6.09603
+[TRAIN] Epoch: 9, Iter : 150 / 288, Loss: 6.17074
+[TRAIN] Epoch: 9, Iter : 160 / 288, Loss: 6.12047
+[TRAIN] Epoch: 9, Iter : 170 / 288, Loss: 6.17571
+[TRAIN] Epoch: 9, Iter : 180 / 288, Loss: 6.32192
+[TRAIN] Epoch: 9, Iter : 190 / 288, Loss: 6.24474
+[TRAIN] Epoch: 9, Iter : 200 / 288, Loss: 6.19923
+[TRAIN] Epoch: 9, Iter : 210 / 288, Loss: 6.16801
+[TRAIN] Epoch: 9, Iter : 220 / 288, Loss: 6.15542
+[TRAIN] Epoch: 9, Iter : 230 / 288, Loss: 6.14257
+[TRAIN] Epoch: 9, Iter : 240 / 288, Loss: 6.09376
+[TRAIN] Epoch: 9, Iter : 250 / 288, Loss: 6.09241
+[TRAIN] Epoch: 9, Iter : 260 / 288, Loss: 6.17261
+[TRAIN] Epoch: 9, Iter : 270 / 288, Loss: 6.37252
+[TRAIN] Epoch: 9, Iter : 280 / 288, Loss: 6.15854
+== [TRAIN] Epoch: 9, Perplexity: 487.516 ==>
+[VAL] Epoch: 9, Iter: 0, Loss: 6.09892
+[VAL] Epoch: 9, Iter: 10, Loss: 6.25184
+[VAL] Epoch: 9, Iter: 20, Loss: 6.06799
+=== [VAL] Epoch: 9, Iter: 29, Perplexity: 458.456 ===>
+====== Epoch 10 ======>
+[TRAIN] Epoch: 10, Iter : 0 / 288, Loss: 6.13055
+[TRAIN] Epoch: 10, Iter : 10 / 288, Loss: 6.19326
+[TRAIN] Epoch: 10, Iter : 20 / 288, Loss: 6.14923
+[TRAIN] Epoch: 10, Iter : 30 / 288, Loss: 6.11424
+[TRAIN] Epoch: 10, Iter : 40 / 288, Loss: 6.13652
+[TRAIN] Epoch: 10, Iter : 50 / 288, Loss: 6.20254
+[TRAIN] Epoch: 10, Iter : 60 / 288, Loss: 6.18519
+[TRAIN] Epoch: 10, Iter : 70 / 288, Loss: 6.26194
+[TRAIN] Epoch: 10, Iter : 80 / 288, Loss: 6.14499
+[TRAIN] Epoch: 10, Iter : 90 / 288, Loss: 6.16841
+[TRAIN] Epoch: 10, Iter : 100 / 288, Loss: 6.19030
+[TRAIN] Epoch: 10, Iter : 110 / 288, Loss: 6.16075
+[TRAIN] Epoch: 10, Iter : 120 / 288, Loss: 6.18298
+[TRAIN] Epoch: 10, Iter : 130 / 288, Loss: 6.16303
+[TRAIN] Epoch: 10, Iter : 140 / 288, Loss: 6.32395
+[TRAIN] Epoch: 10, Iter : 150 / 288, Loss: 6.10529
+[TRAIN] Epoch: 10, Iter : 160 / 288, Loss: 6.14118
+[TRAIN] Epoch: 10, Iter : 170 / 288, Loss: 6.18158
+[TRAIN] Epoch: 10, Iter : 180 / 288, Loss: 6.05094
+[TRAIN] Epoch: 10, Iter : 190 / 288, Loss: 6.20054
+[TRAIN] Epoch: 10, Iter : 200 / 288, Loss: 6.25208
+[TRAIN] Epoch: 10, Iter : 210 / 288, Loss: 6.14613
+[TRAIN] Epoch: 10, Iter : 220 / 288, Loss: 6.20771
+[TRAIN] Epoch: 10, Iter : 230 / 288, Loss: 6.14956
+[TRAIN] Epoch: 10, Iter : 240 / 288, Loss: 6.14088
+[TRAIN] Epoch: 10, Iter : 250 / 288, Loss: 6.12058
+[TRAIN] Epoch: 10, Iter : 260 / 288, Loss: 6.25303
+[TRAIN] Epoch: 10, Iter : 270 / 288, Loss: 6.16278
+[TRAIN] Epoch: 10, Iter : 280 / 288, Loss: 6.08003
+== [TRAIN] Epoch: 10, Perplexity: 469.958 ==>
+[VAL] Epoch: 10, Iter: 0, Loss: 6.12039
+[VAL] Epoch: 10, Iter: 10, Loss: 6.23140
+[VAL] Epoch: 10, Iter: 20, Loss: 6.08351
+=== [VAL] Epoch: 10, Iter: 29, Perplexity: 458.727 ===>
+====== Epoch 11 ======>
+[TRAIN] Epoch: 11, Iter : 0 / 288, Loss: 6.14466
+[TRAIN] Epoch: 11, Iter : 10 / 288, Loss: 6.18509
+[TRAIN] Epoch: 11, Iter : 20 / 288, Loss: 6.20297
+[TRAIN] Epoch: 11, Iter : 30 / 288, Loss: 6.16596
+[TRAIN] Epoch: 11, Iter : 40 / 288, Loss: 6.11860
+[TRAIN] Epoch: 11, Iter : 50 / 288, Loss: 6.07568
+[TRAIN] Epoch: 11, Iter : 60 / 288, Loss: 6.20970
+[TRAIN] Epoch: 11, Iter : 70 / 288, Loss: 6.10115
+[TRAIN] Epoch: 11, Iter : 80 / 288, Loss: 6.08246
+[TRAIN] Epoch: 11, Iter : 90 / 288, Loss: 6.12156
+[TRAIN] Epoch: 11, Iter : 100 / 288, Loss: 6.19201
+[TRAIN] Epoch: 11, Iter : 110 / 288, Loss: 6.08790
+[TRAIN] Epoch: 11, Iter : 120 / 288, Loss: 6.16380
+[TRAIN] Epoch: 11, Iter : 130 / 288, Loss: 6.00546
+[TRAIN] Epoch: 11, Iter : 140 / 288, Loss: 6.09724
+[TRAIN] Epoch: 11, Iter : 150 / 288, Loss: 6.10611
+[TRAIN] Epoch: 11, Iter : 160 / 288, Loss: 6.18000
+[TRAIN] Epoch: 11, Iter : 170 / 288, Loss: 6.02372
+[TRAIN] Epoch: 11, Iter : 180 / 288, Loss: 6.13315
+[TRAIN] Epoch: 11, Iter : 190 / 288, Loss: 6.09425
+[TRAIN] Epoch: 11, Iter : 200 / 288, Loss: 6.24634
+[TRAIN] Epoch: 11, Iter : 210 / 288, Loss: 6.18993
+[TRAIN] Epoch: 11, Iter : 220 / 288, Loss: 6.20980
+[TRAIN] Epoch: 11, Iter : 230 / 288, Loss: 6.03100
+[TRAIN] Epoch: 11, Iter : 240 / 288, Loss: 6.04338
+[TRAIN] Epoch: 11, Iter : 250 / 288, Loss: 6.15903
+[TRAIN] Epoch: 11, Iter : 260 / 288, Loss: 6.17846
+[TRAIN] Epoch: 11, Iter : 270 / 288, Loss: 6.03550
+[TRAIN] Epoch: 11, Iter : 280 / 288, Loss: 6.12327
+== [TRAIN] Epoch: 11, Perplexity: 453.697 ==>
+[VAL] Epoch: 11, Iter: 0, Loss: 6.05091
+[VAL] Epoch: 11, Iter: 10, Loss: 6.17762
+[VAL] Epoch: 11, Iter: 20, Loss: 6.02969
+=== [VAL] Epoch: 11, Iter: 29, Perplexity: 436.068 ===>
+====== Epoch 12 ======>
+[TRAIN] Epoch: 12, Iter : 0 / 288, Loss: 6.09329
+[TRAIN] Epoch: 12, Iter : 10 / 288, Loss: 5.98410
+[TRAIN] Epoch: 12, Iter : 20 / 288, Loss: 6.04851
+[TRAIN] Epoch: 12, Iter : 30 / 288, Loss: 6.09926
+[TRAIN] Epoch: 12, Iter : 40 / 288, Loss: 6.08545
+[TRAIN] Epoch: 12, Iter : 50 / 288, Loss: 6.09295
+[TRAIN] Epoch: 12, Iter : 60 / 288, Loss: 6.19057
+[TRAIN] Epoch: 12, Iter : 70 / 288, Loss: 6.04466
+[TRAIN] Epoch: 12, Iter : 80 / 288, Loss: 6.16294
+[TRAIN] Epoch: 12, Iter : 90 / 288, Loss: 6.21565
+[TRAIN] Epoch: 12, Iter : 100 / 288, Loss: 6.08491
+[TRAIN] Epoch: 12, Iter : 110 / 288, Loss: 6.09038
+[TRAIN] Epoch: 12, Iter : 120 / 288, Loss: 6.01872
+[TRAIN] Epoch: 12, Iter : 130 / 288, Loss: 6.01011
+[TRAIN] Epoch: 12, Iter : 140 / 288, Loss: 6.21612
+[TRAIN] Epoch: 12, Iter : 150 / 288, Loss: 6.09036
+[TRAIN] Epoch: 12, Iter : 160 / 288, Loss: 6.15187
+[TRAIN] Epoch: 12, Iter : 170 / 288, Loss: 6.17430
+[TRAIN] Epoch: 12, Iter : 180 / 288, Loss: 6.00189
+[TRAIN] Epoch: 12, Iter : 190 / 288, Loss: 6.07774
+[TRAIN] Epoch: 12, Iter : 200 / 288, Loss: 6.12275
+[TRAIN] Epoch: 12, Iter : 210 / 288, Loss: 6.03696
+[TRAIN] Epoch: 12, Iter : 220 / 288, Loss: 5.98240
+[TRAIN] Epoch: 12, Iter : 230 / 288, Loss: 5.98258
+[TRAIN] Epoch: 12, Iter : 240 / 288, Loss: 6.10747
+[TRAIN] Epoch: 12, Iter : 250 / 288, Loss: 6.02193
+[TRAIN] Epoch: 12, Iter : 260 / 288, Loss: 6.18933
+[TRAIN] Epoch: 12, Iter : 270 / 288, Loss: 6.11172
+[TRAIN] Epoch: 12, Iter : 280 / 288, Loss: 6.00920
+== [TRAIN] Epoch: 12, Perplexity: 440.039 ==>
+[VAL] Epoch: 12, Iter: 0, Loss: 6.05738
+[VAL] Epoch: 12, Iter: 10, Loss: 6.22910
+[VAL] Epoch: 12, Iter: 20, Loss: 6.00954
+=== [VAL] Epoch: 12, Iter: 29, Perplexity: 437.164 ===>
+====== Epoch 13 ======>
+[TRAIN] Epoch: 13, Iter : 0 / 288, Loss: 6.05221
+[TRAIN] Epoch: 13, Iter : 10 / 288, Loss: 6.08613
+[TRAIN] Epoch: 13, Iter : 20 / 288, Loss: 5.99402
+[TRAIN] Epoch: 13, Iter : 30 / 288, Loss: 6.17503
+[TRAIN] Epoch: 13, Iter : 40 / 288, Loss: 6.14168
+[TRAIN] Epoch: 13, Iter : 50 / 288, Loss: 6.17927
+[TRAIN] Epoch: 13, Iter : 60 / 288, Loss: 5.95551
+[TRAIN] Epoch: 13, Iter : 70 / 288, Loss: 6.08980
+[TRAIN] Epoch: 13, Iter : 80 / 288, Loss: 6.16860
+[TRAIN] Epoch: 13, Iter : 90 / 288, Loss: 6.09249
+[TRAIN] Epoch: 13, Iter : 100 / 288, Loss: 5.94177
+[TRAIN] Epoch: 13, Iter : 110 / 288, Loss: 6.05049
+[TRAIN] Epoch: 13, Iter : 120 / 288, Loss: 6.03320
+[TRAIN] Epoch: 13, Iter : 130 / 288, Loss: 6.12790
+[TRAIN] Epoch: 13, Iter : 140 / 288, Loss: 6.06348
+[TRAIN] Epoch: 13, Iter : 150 / 288, Loss: 6.03989
+[TRAIN] Epoch: 13, Iter : 160 / 288, Loss: 6.09064
+[TRAIN] Epoch: 13, Iter : 170 / 288, Loss: 6.03141
+[TRAIN] Epoch: 13, Iter : 180 / 288, Loss: 5.97945
+[TRAIN] Epoch: 13, Iter : 190 / 288, Loss: 5.99432
+[TRAIN] Epoch: 13, Iter : 200 / 288, Loss: 6.09476
+[TRAIN] Epoch: 13, Iter : 210 / 288, Loss: 6.14104
+[TRAIN] Epoch: 13, Iter : 220 / 288, Loss: 5.90803
+[TRAIN] Epoch: 13, Iter : 230 / 288, Loss: 6.04674
+[TRAIN] Epoch: 13, Iter : 240 / 288, Loss: 6.01386
+[TRAIN] Epoch: 13, Iter : 250 / 288, Loss: 6.02724
+[TRAIN] Epoch: 13, Iter : 260 / 288, Loss: 6.05253
+[TRAIN] Epoch: 13, Iter : 270 / 288, Loss: 6.08290
+[TRAIN] Epoch: 13, Iter : 280 / 288, Loss: 6.05052
+== [TRAIN] Epoch: 13, Perplexity: 428.079 ==>
+[VAL] Epoch: 13, Iter: 0, Loss: 6.04600
+[VAL] Epoch: 13, Iter: 10, Loss: 6.17082
+[VAL] Epoch: 13, Iter: 20, Loss: 5.98111
+=== [VAL] Epoch: 13, Iter: 29, Perplexity: 421.843 ===>
+====== Epoch 14 ======>
+[TRAIN] Epoch: 14, Iter : 0 / 288, Loss: 6.02111
+[TRAIN] Epoch: 14, Iter : 10 / 288, Loss: 5.96060
+[TRAIN] Epoch: 14, Iter : 20 / 288, Loss: 6.07726
+[TRAIN] Epoch: 14, Iter : 30 / 288, Loss: 6.04747
+[TRAIN] Epoch: 14, Iter : 40 / 288, Loss: 6.11232
+[TRAIN] Epoch: 14, Iter : 50 / 288, Loss: 6.03182
+[TRAIN] Epoch: 14, Iter : 60 / 288, Loss: 5.98285
+[TRAIN] Epoch: 14, Iter : 70 / 288, Loss: 5.97641
+[TRAIN] Epoch: 14, Iter : 80 / 288, Loss: 6.12138
+[TRAIN] Epoch: 14, Iter : 90 / 288, Loss: 6.07067
+[TRAIN] Epoch: 14, Iter : 100 / 288, Loss: 5.95123
+[TRAIN] Epoch: 14, Iter : 110 / 288, Loss: 6.03794
+[TRAIN] Epoch: 14, Iter : 120 / 288, Loss: 6.10603
+[TRAIN] Epoch: 14, Iter : 130 / 288, Loss: 6.14650
+[TRAIN] Epoch: 14, Iter : 140 / 288, Loss: 6.06037
+[TRAIN] Epoch: 14, Iter : 150 / 288, Loss: 6.08771
+[TRAIN] Epoch: 14, Iter : 160 / 288, Loss: 6.01995
+[TRAIN] Epoch: 14, Iter : 170 / 288, Loss: 5.97983
+[TRAIN] Epoch: 14, Iter : 180 / 288, Loss: 5.95373
+[TRAIN] Epoch: 14, Iter : 190 / 288, Loss: 6.06827
+[TRAIN] Epoch: 14, Iter : 200 / 288, Loss: 6.08079
+[TRAIN] Epoch: 14, Iter : 210 / 288, Loss: 6.08029
+[TRAIN] Epoch: 14, Iter : 220 / 288, Loss: 6.01657
+[TRAIN] Epoch: 14, Iter : 230 / 288, Loss: 6.07901
+[TRAIN] Epoch: 14, Iter : 240 / 288, Loss: 6.04929
+[TRAIN] Epoch: 14, Iter : 250 / 288, Loss: 5.93635
+[TRAIN] Epoch: 14, Iter : 260 / 288, Loss: 5.98937
+[TRAIN] Epoch: 14, Iter : 270 / 288, Loss: 6.00351
+[TRAIN] Epoch: 14, Iter : 280 / 288, Loss: 6.04246
+== [TRAIN] Epoch: 14, Perplexity: 416.674 ==>
+[VAL] Epoch: 14, Iter: 0, Loss: 5.99958
+[VAL] Epoch: 14, Iter: 10, Loss: 6.15297
+[VAL] Epoch: 14, Iter: 20, Loss: 5.94482
+=== [VAL] Epoch: 14, Iter: 29, Perplexity: 407.342 ===>
+====== Epoch 15 ======>
+[TRAIN] Epoch: 15, Iter : 0 / 288, Loss: 6.09218
+[TRAIN] Epoch: 15, Iter : 10 / 288, Loss: 6.09510
+[TRAIN] Epoch: 15, Iter : 20 / 288, Loss: 5.99636
+[TRAIN] Epoch: 15, Iter : 30 / 288, Loss: 6.05260
+[TRAIN] Epoch: 15, Iter : 40 / 288, Loss: 6.08038
+[TRAIN] Epoch: 15, Iter : 50 / 288, Loss: 5.87717
+[TRAIN] Epoch: 15, Iter : 60 / 288, Loss: 5.91750
+[TRAIN] Epoch: 15, Iter : 70 / 288, Loss: 5.87123
+[TRAIN] Epoch: 15, Iter : 80 / 288, Loss: 6.10951
+[TRAIN] Epoch: 15, Iter : 90 / 288, Loss: 6.02853
+[TRAIN] Epoch: 15, Iter : 100 / 288, Loss: 6.01892
+[TRAIN] Epoch: 15, Iter : 110 / 288, Loss: 6.00075
+[TRAIN] Epoch: 15, Iter : 120 / 288, Loss: 5.96944
+[TRAIN] Epoch: 15, Iter : 130 / 288, Loss: 6.00070
+[TRAIN] Epoch: 15, Iter : 140 / 288, Loss: 6.03026
+[TRAIN] Epoch: 15, Iter : 150 / 288, Loss: 5.98147
+[TRAIN] Epoch: 15, Iter : 160 / 288, Loss: 6.01795
+[TRAIN] Epoch: 15, Iter : 170 / 288, Loss: 6.04098
+[TRAIN] Epoch: 15, Iter : 180 / 288, Loss: 5.98187
+[TRAIN] Epoch: 15, Iter : 190 / 288, Loss: 5.96595
+[TRAIN] Epoch: 15, Iter : 200 / 288, Loss: 6.04048
+[TRAIN] Epoch: 15, Iter : 210 / 288, Loss: 5.99775
+[TRAIN] Epoch: 15, Iter : 220 / 288, Loss: 6.03459
+[TRAIN] Epoch: 15, Iter : 230 / 288, Loss: 5.97823
+[TRAIN] Epoch: 15, Iter : 240 / 288, Loss: 5.99271
+[TRAIN] Epoch: 15, Iter : 250 / 288, Loss: 5.89115
+[TRAIN] Epoch: 15, Iter : 260 / 288, Loss: 6.06489
+[TRAIN] Epoch: 15, Iter : 270 / 288, Loss: 6.07962
+[TRAIN] Epoch: 15, Iter : 280 / 288, Loss: 5.93218
+== [TRAIN] Epoch: 15, Perplexity: 404.561 ==>
+[VAL] Epoch: 15, Iter: 0, Loss: 5.95986
+[VAL] Epoch: 15, Iter: 10, Loss: 6.10739
+[VAL] Epoch: 15, Iter: 20, Loss: 5.92683
+=== [VAL] Epoch: 15, Iter: 29, Perplexity: 389.561 ===>
+====== Epoch 16 ======>
+[TRAIN] Epoch: 16, Iter : 0 / 288, Loss: 6.03100
+[TRAIN] Epoch: 16, Iter : 10 / 288, Loss: 5.83791
+[TRAIN] Epoch: 16, Iter : 20 / 288, Loss: 6.05738
+[TRAIN] Epoch: 16, Iter : 30 / 288, Loss: 5.93333
+[TRAIN] Epoch: 16, Iter : 40 / 288, Loss: 6.07543
+[TRAIN] Epoch: 16, Iter : 50 / 288, Loss: 5.89716
+[TRAIN] Epoch: 16, Iter : 60 / 288, Loss: 5.94984
+[TRAIN] Epoch: 16, Iter : 70 / 288, Loss: 5.94086
+[TRAIN] Epoch: 16, Iter : 80 / 288, Loss: 5.98432
+[TRAIN] Epoch: 16, Iter : 90 / 288, Loss: 5.94377
+[TRAIN] Epoch: 16, Iter : 100 / 288, Loss: 5.88831
+[TRAIN] Epoch: 16, Iter : 110 / 288, Loss: 5.98367
+[TRAIN] Epoch: 16, Iter : 120 / 288, Loss: 5.94278
+[TRAIN] Epoch: 16, Iter : 130 / 288, Loss: 5.99036
+[TRAIN] Epoch: 16, Iter : 140 / 288, Loss: 5.95316
+[TRAIN] Epoch: 16, Iter : 150 / 288, Loss: 6.05472
+[TRAIN] Epoch: 16, Iter : 160 / 288, Loss: 6.03799
+[TRAIN] Epoch: 16, Iter : 170 / 288, Loss: 6.01226
+[TRAIN] Epoch: 16, Iter : 180 / 288, Loss: 5.86391
+[TRAIN] Epoch: 16, Iter : 190 / 288, Loss: 6.01095
+[TRAIN] Epoch: 16, Iter : 200 / 288, Loss: 6.07306
+[TRAIN] Epoch: 16, Iter : 210 / 288, Loss: 5.99302
+[TRAIN] Epoch: 16, Iter : 220 / 288, Loss: 5.95471
+[TRAIN] Epoch: 16, Iter : 230 / 288, Loss: 6.05522
+[TRAIN] Epoch: 16, Iter : 240 / 288, Loss: 5.84432
+[TRAIN] Epoch: 16, Iter : 250 / 288, Loss: 6.00375
+[TRAIN] Epoch: 16, Iter : 260 / 288, Loss: 6.02242
+[TRAIN] Epoch: 16, Iter : 270 / 288, Loss: 6.00507
+[TRAIN] Epoch: 16, Iter : 280 / 288, Loss: 5.91533
+== [TRAIN] Epoch: 16, Perplexity: 393.739 ==>
+[VAL] Epoch: 16, Iter: 0, Loss: 5.94105
+[VAL] Epoch: 16, Iter: 10, Loss: 6.11436
+[VAL] Epoch: 16, Iter: 20, Loss: 5.90306
+=== [VAL] Epoch: 16, Iter: 29, Perplexity: 383.546 ===>
+====== Epoch 17 ======>
+[TRAIN] Epoch: 17, Iter : 0 / 288, Loss: 5.95046
+[TRAIN] Epoch: 17, Iter : 10 / 288, Loss: 6.00842
+[TRAIN] Epoch: 17, Iter : 20 / 288, Loss: 5.95270
+[TRAIN] Epoch: 17, Iter : 30 / 288, Loss: 5.93621
+[TRAIN] Epoch: 17, Iter : 40 / 288, Loss: 5.88512
+[TRAIN] Epoch: 17, Iter : 50 / 288, Loss: 6.05782
+[TRAIN] Epoch: 17, Iter : 60 / 288, Loss: 6.04877
+[TRAIN] Epoch: 17, Iter : 70 / 288, Loss: 5.90531
+[TRAIN] Epoch: 17, Iter : 80 / 288, Loss: 6.00536
+[TRAIN] Epoch: 17, Iter : 90 / 288, Loss: 5.93407
+[TRAIN] Epoch: 17, Iter : 100 / 288, Loss: 5.83755
+[TRAIN] Epoch: 17, Iter : 110 / 288, Loss: 6.00271
+[TRAIN] Epoch: 17, Iter : 120 / 288, Loss: 5.98609
+[TRAIN] Epoch: 17, Iter : 130 / 288, Loss: 5.86987
+[TRAIN] Epoch: 17, Iter : 140 / 288, Loss: 5.91255
+[TRAIN] Epoch: 17, Iter : 150 / 288, Loss: 5.90078
+[TRAIN] Epoch: 17, Iter : 160 / 288, Loss: 5.86191
+[TRAIN] Epoch: 17, Iter : 170 / 288, Loss: 5.94672
+[TRAIN] Epoch: 17, Iter : 180 / 288, Loss: 5.95043
+[TRAIN] Epoch: 17, Iter : 190 / 288, Loss: 5.93509
+[TRAIN] Epoch: 17, Iter : 200 / 288, Loss: 5.96258
+[TRAIN] Epoch: 17, Iter : 210 / 288, Loss: 5.97552
+[TRAIN] Epoch: 17, Iter : 220 / 288, Loss: 5.93983
+[TRAIN] Epoch: 17, Iter : 230 / 288, Loss: 5.92333
+[TRAIN] Epoch: 17, Iter : 240 / 288, Loss: 5.97217
+[TRAIN] Epoch: 17, Iter : 250 / 288, Loss: 5.90213
+[TRAIN] Epoch: 17, Iter : 260 / 288, Loss: 6.00075
+[TRAIN] Epoch: 17, Iter : 270 / 288, Loss: 6.10209
+[TRAIN] Epoch: 17, Iter : 280 / 288, Loss: 5.95332
+== [TRAIN] Epoch: 17, Perplexity: 383.599 ==>
+[VAL] Epoch: 17, Iter: 0, Loss: 5.93980
+[VAL] Epoch: 17, Iter: 10, Loss: 6.10102
+[VAL] Epoch: 17, Iter: 20, Loss: 5.90104
+=== [VAL] Epoch: 17, Iter: 29, Perplexity: 386.645 ===>
+====== Epoch 18 ======>
+[TRAIN] Epoch: 18, Iter : 0 / 288, Loss: 5.97546
+[TRAIN] Epoch: 18, Iter : 10 / 288, Loss: 5.90228
+[TRAIN] Epoch: 18, Iter : 20 / 288, Loss: 5.99117
+[TRAIN] Epoch: 18, Iter : 30 / 288, Loss: 6.00267
+[TRAIN] Epoch: 18, Iter : 40 / 288, Loss: 6.03899
+[TRAIN] Epoch: 18, Iter : 50 / 288, Loss: 5.86448
+[TRAIN] Epoch: 18, Iter : 60 / 288, Loss: 5.89459
+[TRAIN] Epoch: 18, Iter : 70 / 288, Loss: 5.82013
+[TRAIN] Epoch: 18, Iter : 80 / 288, Loss: 6.02879
+[TRAIN] Epoch: 18, Iter : 90 / 288, Loss: 5.86409
+[TRAIN] Epoch: 18, Iter : 100 / 288, Loss: 6.11448
+[TRAIN] Epoch: 18, Iter : 110 / 288, Loss: 6.09486
+[TRAIN] Epoch: 18, Iter : 120 / 288, Loss: 5.83663
+[TRAIN] Epoch: 18, Iter : 130 / 288, Loss: 5.97232
+[TRAIN] Epoch: 18, Iter : 140 / 288, Loss: 5.95584
+[TRAIN] Epoch: 18, Iter : 150 / 288, Loss: 5.94820
+[TRAIN] Epoch: 18, Iter : 160 / 288, Loss: 5.88493
+[TRAIN] Epoch: 18, Iter : 170 / 288, Loss: 5.99214
+[TRAIN] Epoch: 18, Iter : 180 / 288, Loss: 5.96537
+[TRAIN] Epoch: 18, Iter : 190 / 288, Loss: 5.87883
+[TRAIN] Epoch: 18, Iter : 200 / 288, Loss: 6.03956
+[TRAIN] Epoch: 18, Iter : 210 / 288, Loss: 6.00245
+[TRAIN] Epoch: 18, Iter : 220 / 288, Loss: 5.88170
+[TRAIN] Epoch: 18, Iter : 230 / 288, Loss: 5.88575
+[TRAIN] Epoch: 18, Iter : 240 / 288, Loss: 5.87069
+[TRAIN] Epoch: 18, Iter : 250 / 288, Loss: 5.86451
+[TRAIN] Epoch: 18, Iter : 260 / 288, Loss: 5.95379
+[TRAIN] Epoch: 18, Iter : 270 / 288, Loss: 5.84223
+[TRAIN] Epoch: 18, Iter : 280 / 288, Loss: 5.89263
+== [TRAIN] Epoch: 18, Perplexity: 374.682 ==>
+[VAL] Epoch: 18, Iter: 0, Loss: 5.95793
+[VAL] Epoch: 18, Iter: 10, Loss: 6.08536
+[VAL] Epoch: 18, Iter: 20, Loss: 5.87748
+=== [VAL] Epoch: 18, Iter: 29, Perplexity: 379.053 ===>
+====== Epoch 19 ======>
+[TRAIN] Epoch: 19, Iter : 0 / 288, Loss: 5.92161
+[TRAIN] Epoch: 19, Iter : 10 / 288, Loss: 5.78134
+[TRAIN] Epoch: 19, Iter : 20 / 288, Loss: 5.94619
+[TRAIN] Epoch: 19, Iter : 30 / 288, Loss: 5.79708
+[TRAIN] Epoch: 19, Iter : 40 / 288, Loss: 5.81304
+[TRAIN] Epoch: 19, Iter : 50 / 288, Loss: 5.99034
+[TRAIN] Epoch: 19, Iter : 60 / 288, Loss: 5.90899
+[TRAIN] Epoch: 19, Iter : 70 / 288, Loss: 5.98664
+[TRAIN] Epoch: 19, Iter : 80 / 288, Loss: 6.02790
+[TRAIN] Epoch: 19, Iter : 90 / 288, Loss: 5.85665
+[TRAIN] Epoch: 19, Iter : 100 / 288, Loss: 5.86763
+[TRAIN] Epoch: 19, Iter : 110 / 288, Loss: 5.85989
+[TRAIN] Epoch: 19, Iter : 120 / 288, Loss: 5.81960
+[TRAIN] Epoch: 19, Iter : 130 / 288, Loss: 5.89975
+[TRAIN] Epoch: 19, Iter : 140 / 288, Loss: 5.89605
+[TRAIN] Epoch: 19, Iter : 150 / 288, Loss: 5.82399
+[TRAIN] Epoch: 19, Iter : 160 / 288, Loss: 5.94671
+[TRAIN] Epoch: 19, Iter : 170 / 288, Loss: 5.72470
+[TRAIN] Epoch: 19, Iter : 180 / 288, Loss: 5.89225
+[TRAIN] Epoch: 19, Iter : 190 / 288, Loss: 5.94267
+[TRAIN] Epoch: 19, Iter : 200 / 288, Loss: 5.88266
+[TRAIN] Epoch: 19, Iter : 210 / 288, Loss: 5.85824
+[TRAIN] Epoch: 19, Iter : 220 / 288, Loss: 5.94548
+[TRAIN] Epoch: 19, Iter : 230 / 288, Loss: 5.95727
+[TRAIN] Epoch: 19, Iter : 240 / 288, Loss: 5.84359
+[TRAIN] Epoch: 19, Iter : 250 / 288, Loss: 5.94815
+[TRAIN] Epoch: 19, Iter : 260 / 288, Loss: 5.89838
+[TRAIN] Epoch: 19, Iter : 270 / 288, Loss: 5.89781
+[TRAIN] Epoch: 19, Iter : 280 / 288, Loss: 5.99383
+== [TRAIN] Epoch: 19, Perplexity: 365.730 ==>
+[VAL] Epoch: 19, Iter: 0, Loss: 5.93456
+[VAL] Epoch: 19, Iter: 10, Loss: 6.05612
+[VAL] Epoch: 19, Iter: 20, Loss: 5.86163
+=== [VAL] Epoch: 19, Iter: 29, Perplexity: 370.601 ===>
+====== Epoch 20 ======>
+[TRAIN] Epoch: 20, Iter : 0 / 288, Loss: 5.77271
+[TRAIN] Epoch: 20, Iter : 10 / 288, Loss: 5.84406
+[TRAIN] Epoch: 20, Iter : 20 / 288, Loss: 5.92254
+[TRAIN] Epoch: 20, Iter : 30 / 288, Loss: 5.87359
+[TRAIN] Epoch: 20, Iter : 40 / 288, Loss: 5.80908
+[TRAIN] Epoch: 20, Iter : 50 / 288, Loss: 5.91027
+[TRAIN] Epoch: 20, Iter : 60 / 288, Loss: 5.87606
+[TRAIN] Epoch: 20, Iter : 70 / 288, Loss: 5.86096
+[TRAIN] Epoch: 20, Iter : 80 / 288, Loss: 5.91771
+[TRAIN] Epoch: 20, Iter : 90 / 288, Loss: 5.95358
+[TRAIN] Epoch: 20, Iter : 100 / 288, Loss: 5.84295
+[TRAIN] Epoch: 20, Iter : 110 / 288, Loss: 5.87388
+[TRAIN] Epoch: 20, Iter : 120 / 288, Loss: 5.93098
+[TRAIN] Epoch: 20, Iter : 130 / 288, Loss: 5.93622
+[TRAIN] Epoch: 20, Iter : 140 / 288, Loss: 5.89033
+[TRAIN] Epoch: 20, Iter : 150 / 288, Loss: 5.88253
+[TRAIN] Epoch: 20, Iter : 160 / 288, Loss: 6.06914
+[TRAIN] Epoch: 20, Iter : 170 / 288, Loss: 5.86386
+[TRAIN] Epoch: 20, Iter : 180 / 288, Loss: 5.81861
+[TRAIN] Epoch: 20, Iter : 190 / 288, Loss: 5.89586
+[TRAIN] Epoch: 20, Iter : 200 / 288, Loss: 5.92145
+[TRAIN] Epoch: 20, Iter : 210 / 288, Loss: 5.83781
+[TRAIN] Epoch: 20, Iter : 220 / 288, Loss: 5.77987
+[TRAIN] Epoch: 20, Iter : 230 / 288, Loss: 5.84022
+[TRAIN] Epoch: 20, Iter : 240 / 288, Loss: 5.85871
+[TRAIN] Epoch: 20, Iter : 250 / 288, Loss: 5.77304
+[TRAIN] Epoch: 20, Iter : 260 / 288, Loss: 5.86533
+[TRAIN] Epoch: 20, Iter : 270 / 288, Loss: 5.87013
+[TRAIN] Epoch: 20, Iter : 280 / 288, Loss: 5.88172
+== [TRAIN] Epoch: 20, Perplexity: 357.047 ==>
+[VAL] Epoch: 20, Iter: 0, Loss: 5.89728
+[VAL] Epoch: 20, Iter: 10, Loss: 6.04052
+[VAL] Epoch: 20, Iter: 20, Loss: 5.85823
+=== [VAL] Epoch: 20, Iter: 29, Perplexity: 361.180 ===>
+====== Epoch 21 ======>
+[TRAIN] Epoch: 21, Iter : 0 / 288, Loss: 5.75235
+[TRAIN] Epoch: 21, Iter : 10 / 288, Loss: 5.83977
+[TRAIN] Epoch: 21, Iter : 20 / 288, Loss: 5.80356
+[TRAIN] Epoch: 21, Iter : 30 / 288, Loss: 5.88004
+[TRAIN] Epoch: 21, Iter : 40 / 288, Loss: 5.98886
+[TRAIN] Epoch: 21, Iter : 50 / 288, Loss: 5.86960
+[TRAIN] Epoch: 21, Iter : 60 / 288, Loss: 5.89546
+[TRAIN] Epoch: 21, Iter : 70 / 288, Loss: 5.81990
+[TRAIN] Epoch: 21, Iter : 80 / 288, Loss: 5.85859
+[TRAIN] Epoch: 21, Iter : 90 / 288, Loss: 5.99682
+[TRAIN] Epoch: 21, Iter : 100 / 288, Loss: 5.84340
+[TRAIN] Epoch: 21, Iter : 110 / 288, Loss: 5.88399
+[TRAIN] Epoch: 21, Iter : 120 / 288, Loss: 5.87458
+[TRAIN] Epoch: 21, Iter : 130 / 288, Loss: 5.93785
+[TRAIN] Epoch: 21, Iter : 140 / 288, Loss: 5.87615
+[TRAIN] Epoch: 21, Iter : 150 / 288, Loss: 5.86805
+[TRAIN] Epoch: 21, Iter : 160 / 288, Loss: 5.80340
+[TRAIN] Epoch: 21, Iter : 170 / 288, Loss: 5.79772
+[TRAIN] Epoch: 21, Iter : 180 / 288, Loss: 5.82904
+[TRAIN] Epoch: 21, Iter : 190 / 288, Loss: 5.86200
+[TRAIN] Epoch: 21, Iter : 200 / 288, Loss: 5.86613
+[TRAIN] Epoch: 21, Iter : 210 / 288, Loss: 5.83434
+[TRAIN] Epoch: 21, Iter : 220 / 288, Loss: 5.82494
+[TRAIN] Epoch: 21, Iter : 230 / 288, Loss: 5.86689
+[TRAIN] Epoch: 21, Iter : 240 / 288, Loss: 5.86111
+[TRAIN] Epoch: 21, Iter : 250 / 288, Loss: 5.84261
+[TRAIN] Epoch: 21, Iter : 260 / 288, Loss: 5.79670
+[TRAIN] Epoch: 21, Iter : 270 / 288, Loss: 5.77040
+[TRAIN] Epoch: 21, Iter : 280 / 288, Loss: 5.81191
+== [TRAIN] Epoch: 21, Perplexity: 349.421 ==>
+[VAL] Epoch: 21, Iter: 0, Loss: 5.88318
+[VAL] Epoch: 21, Iter: 10, Loss: 6.01064
+[VAL] Epoch: 21, Iter: 20, Loss: 5.83639
+=== [VAL] Epoch: 21, Iter: 29, Perplexity: 354.743 ===>
+====== Epoch 22 ======>
+[TRAIN] Epoch: 22, Iter : 0 / 288, Loss: 5.89072
+[TRAIN] Epoch: 22, Iter : 10 / 288, Loss: 5.83538
+[TRAIN] Epoch: 22, Iter : 20 / 288, Loss: 5.91418
+[TRAIN] Epoch: 22, Iter : 30 / 288, Loss: 5.74463
+[TRAIN] Epoch: 22, Iter : 40 / 288, Loss: 5.78969
+[TRAIN] Epoch: 22, Iter : 50 / 288, Loss: 5.84708
+[TRAIN] Epoch: 22, Iter : 60 / 288, Loss: 5.76490
+[TRAIN] Epoch: 22, Iter : 70 / 288, Loss: 5.79303
+[TRAIN] Epoch: 22, Iter : 80 / 288, Loss: 5.82998
+[TRAIN] Epoch: 22, Iter : 90 / 288, Loss: 5.79486
+[TRAIN] Epoch: 22, Iter : 100 / 288, Loss: 5.94420
+[TRAIN] Epoch: 22, Iter : 110 / 288, Loss: 5.87605
+[TRAIN] Epoch: 22, Iter : 120 / 288, Loss: 5.84058
+[TRAIN] Epoch: 22, Iter : 130 / 288, Loss: 5.94387
+[TRAIN] Epoch: 22, Iter : 140 / 288, Loss: 5.88435
+[TRAIN] Epoch: 22, Iter : 150 / 288, Loss: 5.71794
+[TRAIN] Epoch: 22, Iter : 160 / 288, Loss: 5.91031
+[TRAIN] Epoch: 22, Iter : 170 / 288, Loss: 5.93238
+[TRAIN] Epoch: 22, Iter : 180 / 288, Loss: 5.84738
+[TRAIN] Epoch: 22, Iter : 190 / 288, Loss: 5.88718
+[TRAIN] Epoch: 22, Iter : 200 / 288, Loss: 5.80681
+[TRAIN] Epoch: 22, Iter : 210 / 288, Loss: 5.80117
+[TRAIN] Epoch: 22, Iter : 220 / 288, Loss: 5.78749
+[TRAIN] Epoch: 22, Iter : 230 / 288, Loss: 5.79653
+[TRAIN] Epoch: 22, Iter : 240 / 288, Loss: 5.85393
+[TRAIN] Epoch: 22, Iter : 250 / 288, Loss: 5.85114
+[TRAIN] Epoch: 22, Iter : 260 / 288, Loss: 5.80815
+[TRAIN] Epoch: 22, Iter : 270 / 288, Loss: 5.86196
+[TRAIN] Epoch: 22, Iter : 280 / 288, Loss: 5.86547
+== [TRAIN] Epoch: 22, Perplexity: 341.944 ==>
+[VAL] Epoch: 22, Iter: 0, Loss: 5.85670
+[VAL] Epoch: 22, Iter: 10, Loss: 5.97874
+[VAL] Epoch: 22, Iter: 20, Loss: 5.80982
+=== [VAL] Epoch: 22, Iter: 29, Perplexity: 343.474 ===>
+====== Epoch 23 ======>
+[TRAIN] Epoch: 23, Iter : 0 / 288, Loss: 5.73157
+[TRAIN] Epoch: 23, Iter : 10 / 288, Loss: 5.77512
+[TRAIN] Epoch: 23, Iter : 20 / 288, Loss: 5.85961
+[TRAIN] Epoch: 23, Iter : 30 / 288, Loss: 5.92224
+[TRAIN] Epoch: 23, Iter : 40 / 288, Loss: 5.84636
+[TRAIN] Epoch: 23, Iter : 50 / 288, Loss: 5.92113
+[TRAIN] Epoch: 23, Iter : 60 / 288, Loss: 5.83890
+[TRAIN] Epoch: 23, Iter : 70 / 288, Loss: 5.72287
+[TRAIN] Epoch: 23, Iter : 80 / 288, Loss: 5.75358
+[TRAIN] Epoch: 23, Iter : 90 / 288, Loss: 5.81457
+[TRAIN] Epoch: 23, Iter : 100 / 288, Loss: 5.76151
+[TRAIN] Epoch: 23, Iter : 110 / 288, Loss: 5.86663
+[TRAIN] Epoch: 23, Iter : 120 / 288, Loss: 5.78916
+[TRAIN] Epoch: 23, Iter : 130 / 288, Loss: 5.86638
+[TRAIN] Epoch: 23, Iter : 140 / 288, Loss: 5.83358
+[TRAIN] Epoch: 23, Iter : 150 / 288, Loss: 5.90687
+[TRAIN] Epoch: 23, Iter : 160 / 288, Loss: 5.94121
+[TRAIN] Epoch: 23, Iter : 170 / 288, Loss: 5.80272
+[TRAIN] Epoch: 23, Iter : 180 / 288, Loss: 5.95710
+[TRAIN] Epoch: 23, Iter : 190 / 288, Loss: 5.80177
+[TRAIN] Epoch: 23, Iter : 200 / 288, Loss: 5.95621
+[TRAIN] Epoch: 23, Iter : 210 / 288, Loss: 5.78431
+[TRAIN] Epoch: 23, Iter : 220 / 288, Loss: 5.83546
+[TRAIN] Epoch: 23, Iter : 230 / 288, Loss: 5.72074
+[TRAIN] Epoch: 23, Iter : 240 / 288, Loss: 5.78684
+[TRAIN] Epoch: 23, Iter : 250 / 288, Loss: 5.77076
+[TRAIN] Epoch: 23, Iter : 260 / 288, Loss: 5.77777
+[TRAIN] Epoch: 23, Iter : 270 / 288, Loss: 5.76769
+[TRAIN] Epoch: 23, Iter : 280 / 288, Loss: 5.75402
+== [TRAIN] Epoch: 23, Perplexity: 335.292 ==>
+[VAL] Epoch: 23, Iter: 0, Loss: 5.82633
+[VAL] Epoch: 23, Iter: 10, Loss: 5.96020
+[VAL] Epoch: 23, Iter: 20, Loss: 5.78657
+=== [VAL] Epoch: 23, Iter: 29, Perplexity: 334.968 ===>
+====== Epoch 24 ======>
+[TRAIN] Epoch: 24, Iter : 0 / 288, Loss: 5.82593
+[TRAIN] Epoch: 24, Iter : 10 / 288, Loss: 5.81467
+[TRAIN] Epoch: 24, Iter : 20 / 288, Loss: 5.71973
+[TRAIN] Epoch: 24, Iter : 30 / 288, Loss: 5.69597
+[TRAIN] Epoch: 24, Iter : 40 / 288, Loss: 5.80359
+[TRAIN] Epoch: 24, Iter : 50 / 288, Loss: 5.76480
+[TRAIN] Epoch: 24, Iter : 60 / 288, Loss: 5.70846
+[TRAIN] Epoch: 24, Iter : 70 / 288, Loss: 5.89072
+[TRAIN] Epoch: 24, Iter : 80 / 288, Loss: 5.77487
+[TRAIN] Epoch: 24, Iter : 90 / 288, Loss: 5.85736
+[TRAIN] Epoch: 24, Iter : 100 / 288, Loss: 5.91185
+[TRAIN] Epoch: 24, Iter : 110 / 288, Loss: 5.86996
+[TRAIN] Epoch: 24, Iter : 120 / 288, Loss: 5.71561
+[TRAIN] Epoch: 24, Iter : 130 / 288, Loss: 5.89007
+[TRAIN] Epoch: 24, Iter : 140 / 288, Loss: 5.68061
+[TRAIN] Epoch: 24, Iter : 150 / 288, Loss: 5.72208
+[TRAIN] Epoch: 24, Iter : 160 / 288, Loss: 5.73998
+[TRAIN] Epoch: 24, Iter : 170 / 288, Loss: 5.84753
+[TRAIN] Epoch: 24, Iter : 180 / 288, Loss: 5.85513
+[TRAIN] Epoch: 24, Iter : 190 / 288, Loss: 5.79915
+[TRAIN] Epoch: 24, Iter : 200 / 288, Loss: 5.76200
+[TRAIN] Epoch: 24, Iter : 210 / 288, Loss: 5.87693
+[TRAIN] Epoch: 24, Iter : 220 / 288, Loss: 5.94130
+[TRAIN] Epoch: 24, Iter : 230 / 288, Loss: 5.84140
+[TRAIN] Epoch: 24, Iter : 240 / 288, Loss: 5.89545
+[TRAIN] Epoch: 24, Iter : 250 / 288, Loss: 5.76954
+[TRAIN] Epoch: 24, Iter : 260 / 288, Loss: 5.81442
+[TRAIN] Epoch: 24, Iter : 270 / 288, Loss: 5.77624
+[TRAIN] Epoch: 24, Iter : 280 / 288, Loss: 5.90596
+== [TRAIN] Epoch: 24, Perplexity: 328.711 ==>
+[VAL] Epoch: 24, Iter: 0, Loss: 5.82409
+[VAL] Epoch: 24, Iter: 10, Loss: 5.97819
+[VAL] Epoch: 24, Iter: 20, Loss: 5.77871
+=== [VAL] Epoch: 24, Iter: 29, Perplexity: 337.486 ===>
+====== Epoch 25 ======>
+[TRAIN] Epoch: 25, Iter : 0 / 288, Loss: 5.81806
+[TRAIN] Epoch: 25, Iter : 10 / 288, Loss: 5.81269
+[TRAIN] Epoch: 25, Iter : 20 / 288, Loss: 5.68884
+[TRAIN] Epoch: 25, Iter : 30 / 288, Loss: 5.73013
+[TRAIN] Epoch: 25, Iter : 40 / 288, Loss: 5.70560
+[TRAIN] Epoch: 25, Iter : 50 / 288, Loss: 5.54149
+[TRAIN] Epoch: 25, Iter : 60 / 288, Loss: 5.68751
+[TRAIN] Epoch: 25, Iter : 70 / 288, Loss: 5.73722
+[TRAIN] Epoch: 25, Iter : 80 / 288, Loss: 5.85196
+[TRAIN] Epoch: 25, Iter : 90 / 288, Loss: 5.79974
+[TRAIN] Epoch: 25, Iter : 100 / 288, Loss: 5.82683
+[TRAIN] Epoch: 25, Iter : 110 / 288, Loss: 5.70565
+[TRAIN] Epoch: 25, Iter : 120 / 288, Loss: 5.78632
+[TRAIN] Epoch: 25, Iter : 130 / 288, Loss: 5.81830
+[TRAIN] Epoch: 25, Iter : 140 / 288, Loss: 5.78142
+[TRAIN] Epoch: 25, Iter : 150 / 288, Loss: 5.79727
+[TRAIN] Epoch: 25, Iter : 160 / 288, Loss: 5.88413
+[TRAIN] Epoch: 25, Iter : 170 / 288, Loss: 5.89346
+[TRAIN] Epoch: 25, Iter : 180 / 288, Loss: 5.68315
+[TRAIN] Epoch: 25, Iter : 190 / 288, Loss: 5.78984
+[TRAIN] Epoch: 25, Iter : 200 / 288, Loss: 5.78032
+[TRAIN] Epoch: 25, Iter : 210 / 288, Loss: 5.81136
+[TRAIN] Epoch: 25, Iter : 220 / 288, Loss: 5.74612
+[TRAIN] Epoch: 25, Iter : 230 / 288, Loss: 5.86865
+[TRAIN] Epoch: 25, Iter : 240 / 288, Loss: 5.80947
+[TRAIN] Epoch: 25, Iter : 250 / 288, Loss: 5.80330
+[TRAIN] Epoch: 25, Iter : 260 / 288, Loss: 5.79101
+[TRAIN] Epoch: 25, Iter : 270 / 288, Loss: 5.85793
+[TRAIN] Epoch: 25, Iter : 280 / 288, Loss: 5.78003
+== [TRAIN] Epoch: 25, Perplexity: 322.005 ==>
+[VAL] Epoch: 25, Iter: 0, Loss: 5.80456
+[VAL] Epoch: 25, Iter: 10, Loss: 5.96961
+[VAL] Epoch: 25, Iter: 20, Loss: 5.77083
+=== [VAL] Epoch: 25, Iter: 29, Perplexity: 329.896 ===>
+====== Epoch 26 ======>
+[TRAIN] Epoch: 26, Iter : 0 / 288, Loss: 5.86336
+[TRAIN] Epoch: 26, Iter : 10 / 288, Loss: 5.82269
+[TRAIN] Epoch: 26, Iter : 20 / 288, Loss: 5.82614
+[TRAIN] Epoch: 26, Iter : 30 / 288, Loss: 5.84437
+[TRAIN] Epoch: 26, Iter : 40 / 288, Loss: 5.75222
+[TRAIN] Epoch: 26, Iter : 50 / 288, Loss: 5.77330
+[TRAIN] Epoch: 26, Iter : 60 / 288, Loss: 5.77997
+[TRAIN] Epoch: 26, Iter : 70 / 288, Loss: 5.76782
+[TRAIN] Epoch: 26, Iter : 80 / 288, Loss: 5.61583
+[TRAIN] Epoch: 26, Iter : 90 / 288, Loss: 5.77375
+[TRAIN] Epoch: 26, Iter : 100 / 288, Loss: 5.81305
+[TRAIN] Epoch: 26, Iter : 110 / 288, Loss: 5.86486
+[TRAIN] Epoch: 26, Iter : 120 / 288, Loss: 5.79300
+[TRAIN] Epoch: 26, Iter : 130 / 288, Loss: 5.76714
+[TRAIN] Epoch: 26, Iter : 140 / 288, Loss: 5.86879
+[TRAIN] Epoch: 26, Iter : 150 / 288, Loss: 5.76048
+[TRAIN] Epoch: 26, Iter : 160 / 288, Loss: 5.75469
+[TRAIN] Epoch: 26, Iter : 170 / 288, Loss: 5.76345
+[TRAIN] Epoch: 26, Iter : 180 / 288, Loss: 5.61071
+[TRAIN] Epoch: 26, Iter : 190 / 288, Loss: 5.84242
+[TRAIN] Epoch: 26, Iter : 200 / 288, Loss: 5.71170
+[TRAIN] Epoch: 26, Iter : 210 / 288, Loss: 5.71545
+[TRAIN] Epoch: 26, Iter : 220 / 288, Loss: 5.67950
+[TRAIN] Epoch: 26, Iter : 230 / 288, Loss: 5.75605
+[TRAIN] Epoch: 26, Iter : 240 / 288, Loss: 5.74738
+[TRAIN] Epoch: 26, Iter : 250 / 288, Loss: 5.61203
+[TRAIN] Epoch: 26, Iter : 260 / 288, Loss: 5.87684
+[TRAIN] Epoch: 26, Iter : 270 / 288, Loss: 5.79001
+[TRAIN] Epoch: 26, Iter : 280 / 288, Loss: 5.71784
+== [TRAIN] Epoch: 26, Perplexity: 316.281 ==>
+[VAL] Epoch: 26, Iter: 0, Loss: 5.80298
+[VAL] Epoch: 26, Iter: 10, Loss: 5.95213
+[VAL] Epoch: 26, Iter: 20, Loss: 5.72927
+=== [VAL] Epoch: 26, Iter: 29, Perplexity: 324.209 ===>
+====== Epoch 27 ======>
+[TRAIN] Epoch: 27, Iter : 0 / 288, Loss: 5.77853
+[TRAIN] Epoch: 27, Iter : 10 / 288, Loss: 5.79276
+[TRAIN] Epoch: 27, Iter : 20 / 288, Loss: 5.73832
+[TRAIN] Epoch: 27, Iter : 30 / 288, Loss: 5.78472
+[TRAIN] Epoch: 27, Iter : 40 / 288, Loss: 5.79442
+[TRAIN] Epoch: 27, Iter : 50 / 288, Loss: 5.68421
+[TRAIN] Epoch: 27, Iter : 60 / 288, Loss: 5.79175
+[TRAIN] Epoch: 27, Iter : 70 / 288, Loss: 5.77164
+[TRAIN] Epoch: 27, Iter : 80 / 288, Loss: 5.83135
+[TRAIN] Epoch: 27, Iter : 90 / 288, Loss: 5.72694
+[TRAIN] Epoch: 27, Iter : 100 / 288, Loss: 5.77148
+[TRAIN] Epoch: 27, Iter : 110 / 288, Loss: 5.71148
+[TRAIN] Epoch: 27, Iter : 120 / 288, Loss: 5.82039
+[TRAIN] Epoch: 27, Iter : 130 / 288, Loss: 5.74680
+[TRAIN] Epoch: 27, Iter : 140 / 288, Loss: 5.67259
+[TRAIN] Epoch: 27, Iter : 150 / 288, Loss: 5.69808
+[TRAIN] Epoch: 27, Iter : 160 / 288, Loss: 5.80863
+[TRAIN] Epoch: 27, Iter : 170 / 288, Loss: 5.75441
+[TRAIN] Epoch: 27, Iter : 180 / 288, Loss: 5.75276
+[TRAIN] Epoch: 27, Iter : 190 / 288, Loss: 5.73222
+[TRAIN] Epoch: 27, Iter : 200 / 288, Loss: 5.84064
+[TRAIN] Epoch: 27, Iter : 210 / 288, Loss: 5.82774
+[TRAIN] Epoch: 27, Iter : 220 / 288, Loss: 5.77835
+[TRAIN] Epoch: 27, Iter : 230 / 288, Loss: 5.75786
+[TRAIN] Epoch: 27, Iter : 240 / 288, Loss: 5.75519
+[TRAIN] Epoch: 27, Iter : 250 / 288, Loss: 5.75080
+[TRAIN] Epoch: 27, Iter : 260 / 288, Loss: 5.62369
+[TRAIN] Epoch: 27, Iter : 270 / 288, Loss: 5.75815
+[TRAIN] Epoch: 27, Iter : 280 / 288, Loss: 5.69322
+== [TRAIN] Epoch: 27, Perplexity: 310.281 ==>
+[VAL] Epoch: 27, Iter: 0, Loss: 5.80189
+[VAL] Epoch: 27, Iter: 10, Loss: 5.95345
+[VAL] Epoch: 27, Iter: 20, Loss: 5.73700
+=== [VAL] Epoch: 27, Iter: 29, Perplexity: 324.477 ===>
+====== Epoch 28 ======>
+[TRAIN] Epoch: 28, Iter : 0 / 288, Loss: 5.76690
+[TRAIN] Epoch: 28, Iter : 10 / 288, Loss: 5.82368
+[TRAIN] Epoch: 28, Iter : 20 / 288, Loss: 5.78953
+[TRAIN] Epoch: 28, Iter : 30 / 288, Loss: 5.83515
+[TRAIN] Epoch: 28, Iter : 40 / 288, Loss: 5.69644
+[TRAIN] Epoch: 28, Iter : 50 / 288, Loss: 5.72929
+[TRAIN] Epoch: 28, Iter : 60 / 288, Loss: 5.77643
+[TRAIN] Epoch: 28, Iter : 70 / 288, Loss: 5.69905
+[TRAIN] Epoch: 28, Iter : 80 / 288, Loss: 5.68414
+[TRAIN] Epoch: 28, Iter : 90 / 288, Loss: 5.69856
+[TRAIN] Epoch: 28, Iter : 100 / 288, Loss: 5.63844
+[TRAIN] Epoch: 28, Iter : 110 / 288, Loss: 5.67036
+[TRAIN] Epoch: 28, Iter : 120 / 288, Loss: 5.71265
+[TRAIN] Epoch: 28, Iter : 130 / 288, Loss: 5.70218
+[TRAIN] Epoch: 28, Iter : 140 / 288, Loss: 5.80602
+[TRAIN] Epoch: 28, Iter : 150 / 288, Loss: 5.69285
+[TRAIN] Epoch: 28, Iter : 160 / 288, Loss: 5.69067
+[TRAIN] Epoch: 28, Iter : 170 / 288, Loss: 5.63736
+[TRAIN] Epoch: 28, Iter : 180 / 288, Loss: 5.73108
+[TRAIN] Epoch: 28, Iter : 190 / 288, Loss: 5.77842
+[TRAIN] Epoch: 28, Iter : 200 / 288, Loss: 5.65781
+[TRAIN] Epoch: 28, Iter : 210 / 288, Loss: 5.65090
+[TRAIN] Epoch: 28, Iter : 220 / 288, Loss: 5.78105
+[TRAIN] Epoch: 28, Iter : 230 / 288, Loss: 5.74535
+[TRAIN] Epoch: 28, Iter : 240 / 288, Loss: 5.71102
+[TRAIN] Epoch: 28, Iter : 250 / 288, Loss: 5.64624
+[TRAIN] Epoch: 28, Iter : 260 / 288, Loss: 5.66081
+[TRAIN] Epoch: 28, Iter : 270 / 288, Loss: 5.71759
+[TRAIN] Epoch: 28, Iter : 280 / 288, Loss: 5.68867
+== [TRAIN] Epoch: 28, Perplexity: 305.153 ==>
+[VAL] Epoch: 28, Iter: 0, Loss: 5.75316
+[VAL] Epoch: 28, Iter: 10, Loss: 5.88728
+[VAL] Epoch: 28, Iter: 20, Loss: 5.70462
+=== [VAL] Epoch: 28, Iter: 29, Perplexity: 310.639 ===>
+====== Epoch 29 ======>
+[TRAIN] Epoch: 29, Iter : 0 / 288, Loss: 5.59953
+[TRAIN] Epoch: 29, Iter : 10 / 288, Loss: 5.73119
+[TRAIN] Epoch: 29, Iter : 20 / 288, Loss: 5.63132
+[TRAIN] Epoch: 29, Iter : 30 / 288, Loss: 5.64246
+[TRAIN] Epoch: 29, Iter : 40 / 288, Loss: 5.57755
+[TRAIN] Epoch: 29, Iter : 50 / 288, Loss: 5.62321
+[TRAIN] Epoch: 29, Iter : 60 / 288, Loss: 5.68248
+[TRAIN] Epoch: 29, Iter : 70 / 288, Loss: 5.71301
+[TRAIN] Epoch: 29, Iter : 80 / 288, Loss: 5.58262
+[TRAIN] Epoch: 29, Iter : 90 / 288, Loss: 5.63496
+[TRAIN] Epoch: 29, Iter : 100 / 288, Loss: 5.76964
+[TRAIN] Epoch: 29, Iter : 110 / 288, Loss: 5.66676
+[TRAIN] Epoch: 29, Iter : 120 / 288, Loss: 5.67275
+[TRAIN] Epoch: 29, Iter : 130 / 288, Loss: 5.65966
+[TRAIN] Epoch: 29, Iter : 140 / 288, Loss: 5.73986
+[TRAIN] Epoch: 29, Iter : 150 / 288, Loss: 5.74440
+[TRAIN] Epoch: 29, Iter : 160 / 288, Loss: 5.69441
+[TRAIN] Epoch: 29, Iter : 170 / 288, Loss: 5.68661
+[TRAIN] Epoch: 29, Iter : 180 / 288, Loss: 5.54454
+[TRAIN] Epoch: 29, Iter : 190 / 288, Loss: 5.64802
+[TRAIN] Epoch: 29, Iter : 200 / 288, Loss: 5.78487
+[TRAIN] Epoch: 29, Iter : 210 / 288, Loss: 5.64109
+[TRAIN] Epoch: 29, Iter : 220 / 288, Loss: 5.73599
+[TRAIN] Epoch: 29, Iter : 230 / 288, Loss: 5.85169
+[TRAIN] Epoch: 29, Iter : 240 / 288, Loss: 5.76899
+[TRAIN] Epoch: 29, Iter : 250 / 288, Loss: 5.58721
+[TRAIN] Epoch: 29, Iter : 260 / 288, Loss: 5.71279
+[TRAIN] Epoch: 29, Iter : 270 / 288, Loss: 5.70257
+[TRAIN] Epoch: 29, Iter : 280 / 288, Loss: 5.76909
+== [TRAIN] Epoch: 29, Perplexity: 299.129 ==>
+[VAL] Epoch: 29, Iter: 0, Loss: 5.75000
+[VAL] Epoch: 29, Iter: 10, Loss: 5.89109
+[VAL] Epoch: 29, Iter: 20, Loss: 5.71309
+=== [VAL] Epoch: 29, Iter: 29, Perplexity: 309.782 ===>
+====== Epoch 30 ======>
+[TRAIN] Epoch: 30, Iter : 0 / 288, Loss: 5.66827
+[TRAIN] Epoch: 30, Iter : 10 / 288, Loss: 5.67289
+[TRAIN] Epoch: 30, Iter : 20 / 288, Loss: 5.73982
+[TRAIN] Epoch: 30, Iter : 30 / 288, Loss: 5.82978
+[TRAIN] Epoch: 30, Iter : 40 / 288, Loss: 5.78818
+[TRAIN] Epoch: 30, Iter : 50 / 288, Loss: 5.68773
+[TRAIN] Epoch: 30, Iter : 60 / 288, Loss: 5.73820
+[TRAIN] Epoch: 30, Iter : 70 / 288, Loss: 5.66371
+[TRAIN] Epoch: 30, Iter : 80 / 288, Loss: 5.79256
+[TRAIN] Epoch: 30, Iter : 90 / 288, Loss: 5.75419
+[TRAIN] Epoch: 30, Iter : 100 / 288, Loss: 5.62434
+[TRAIN] Epoch: 30, Iter : 110 / 288, Loss: 5.75174
+[TRAIN] Epoch: 30, Iter : 120 / 288, Loss: 5.74926
+[TRAIN] Epoch: 30, Iter : 130 / 288, Loss: 5.79943
+[TRAIN] Epoch: 30, Iter : 140 / 288, Loss: 5.71471
+[TRAIN] Epoch: 30, Iter : 150 / 288, Loss: 5.74058
+[TRAIN] Epoch: 30, Iter : 160 / 288, Loss: 5.56137
+[TRAIN] Epoch: 30, Iter : 170 / 288, Loss: 5.65427
+[TRAIN] Epoch: 30, Iter : 180 / 288, Loss: 5.72772
+[TRAIN] Epoch: 30, Iter : 190 / 288, Loss: 5.73595
+[TRAIN] Epoch: 30, Iter : 200 / 288, Loss: 5.78600
+[TRAIN] Epoch: 30, Iter : 210 / 288, Loss: 5.76757
+[TRAIN] Epoch: 30, Iter : 220 / 288, Loss: 5.62378
+[TRAIN] Epoch: 30, Iter : 230 / 288, Loss: 5.79323
+[TRAIN] Epoch: 30, Iter : 240 / 288, Loss: 5.73011
+[TRAIN] Epoch: 30, Iter : 250 / 288, Loss: 5.58104
+[TRAIN] Epoch: 30, Iter : 260 / 288, Loss: 5.67150
+[TRAIN] Epoch: 30, Iter : 270 / 288, Loss: 5.70495
+[TRAIN] Epoch: 30, Iter : 280 / 288, Loss: 5.64929
+== [TRAIN] Epoch: 30, Perplexity: 293.937 ==>
+[VAL] Epoch: 30, Iter: 0, Loss: 5.71623
+[VAL] Epoch: 30, Iter: 10, Loss: 5.86487
+[VAL] Epoch: 30, Iter: 20, Loss: 5.68060
+=== [VAL] Epoch: 30, Iter: 29, Perplexity: 301.612 ===>
+====== Epoch 31 ======>
+[TRAIN] Epoch: 31, Iter : 0 / 288, Loss: 5.69781
+[TRAIN] Epoch: 31, Iter : 10 / 288, Loss: 5.63910
+[TRAIN] Epoch: 31, Iter : 20 / 288, Loss: 5.60941
+[TRAIN] Epoch: 31, Iter : 30 / 288, Loss: 5.63084
+[TRAIN] Epoch: 31, Iter : 40 / 288, Loss: 5.64968
+[TRAIN] Epoch: 31, Iter : 50 / 288, Loss: 5.74577
+[TRAIN] Epoch: 31, Iter : 60 / 288, Loss: 5.57320
+[TRAIN] Epoch: 31, Iter : 70 / 288, Loss: 5.65564
+[TRAIN] Epoch: 31, Iter : 80 / 288, Loss: 5.71856
+[TRAIN] Epoch: 31, Iter : 90 / 288, Loss: 5.81665
+[TRAIN] Epoch: 31, Iter : 100 / 288, Loss: 5.62654
+[TRAIN] Epoch: 31, Iter : 110 / 288, Loss: 5.63763
+[TRAIN] Epoch: 31, Iter : 120 / 288, Loss: 5.61497
+[TRAIN] Epoch: 31, Iter : 130 / 288, Loss: 5.68322
+[TRAIN] Epoch: 31, Iter : 140 / 288, Loss: 5.61999
+[TRAIN] Epoch: 31, Iter : 150 / 288, Loss: 5.62354
+[TRAIN] Epoch: 31, Iter : 160 / 288, Loss: 5.60624
+[TRAIN] Epoch: 31, Iter : 170 / 288, Loss: 5.71460
+[TRAIN] Epoch: 31, Iter : 180 / 288, Loss: 5.66148
+[TRAIN] Epoch: 31, Iter : 190 / 288, Loss: 5.64843
+[TRAIN] Epoch: 31, Iter : 200 / 288, Loss: 5.54664
+[TRAIN] Epoch: 31, Iter : 210 / 288, Loss: 5.77049
+[TRAIN] Epoch: 31, Iter : 220 / 288, Loss: 5.73926
+[TRAIN] Epoch: 31, Iter : 230 / 288, Loss: 5.64970
+[TRAIN] Epoch: 31, Iter : 240 / 288, Loss: 5.61046
+[TRAIN] Epoch: 31, Iter : 250 / 288, Loss: 5.64526
+[TRAIN] Epoch: 31, Iter : 260 / 288, Loss: 5.70850
+[TRAIN] Epoch: 31, Iter : 270 / 288, Loss: 5.57183
+[TRAIN] Epoch: 31, Iter : 280 / 288, Loss: 5.71575
+== [TRAIN] Epoch: 31, Perplexity: 288.884 ==>
+[VAL] Epoch: 31, Iter: 0, Loss: 5.72763
+[VAL] Epoch: 31, Iter: 10, Loss: 5.88842
+[VAL] Epoch: 31, Iter: 20, Loss: 5.67903
+=== [VAL] Epoch: 31, Iter: 29, Perplexity: 303.401 ===>
+====== Epoch 32 ======>
+[TRAIN] Epoch: 32, Iter : 0 / 288, Loss: 5.61010
+[TRAIN] Epoch: 32, Iter : 10 / 288, Loss: 5.72000
+[TRAIN] Epoch: 32, Iter : 20 / 288, Loss: 5.79736
+[TRAIN] Epoch: 32, Iter : 30 / 288, Loss: 5.77231
+[TRAIN] Epoch: 32, Iter : 40 / 288, Loss: 5.71882
+[TRAIN] Epoch: 32, Iter : 50 / 288, Loss: 5.63630
+[TRAIN] Epoch: 32, Iter : 60 / 288, Loss: 5.66027
+[TRAIN] Epoch: 32, Iter : 70 / 288, Loss: 5.61061
+[TRAIN] Epoch: 32, Iter : 80 / 288, Loss: 5.66981
+[TRAIN] Epoch: 32, Iter : 90 / 288, Loss: 5.69805
+[TRAIN] Epoch: 32, Iter : 100 / 288, Loss: 5.63334
+[TRAIN] Epoch: 32, Iter : 110 / 288, Loss: 5.64699
+[TRAIN] Epoch: 32, Iter : 120 / 288, Loss: 5.80663
+[TRAIN] Epoch: 32, Iter : 130 / 288, Loss: 5.66418
+[TRAIN] Epoch: 32, Iter : 140 / 288, Loss: 5.65897
+[TRAIN] Epoch: 32, Iter : 150 / 288, Loss: 5.59528
+[TRAIN] Epoch: 32, Iter : 160 / 288, Loss: 5.55591
+[TRAIN] Epoch: 32, Iter : 170 / 288, Loss: 5.45275
+[TRAIN] Epoch: 32, Iter : 180 / 288, Loss: 5.66559
+[TRAIN] Epoch: 32, Iter : 190 / 288, Loss: 5.77720
+[TRAIN] Epoch: 32, Iter : 200 / 288, Loss: 5.57999
+[TRAIN] Epoch: 32, Iter : 210 / 288, Loss: 5.76926
+[TRAIN] Epoch: 32, Iter : 220 / 288, Loss: 5.63837
+[TRAIN] Epoch: 32, Iter : 230 / 288, Loss: 5.67783
+[TRAIN] Epoch: 32, Iter : 240 / 288, Loss: 5.59207
+[TRAIN] Epoch: 32, Iter : 250 / 288, Loss: 5.68817
+[TRAIN] Epoch: 32, Iter : 260 / 288, Loss: 5.69368
+[TRAIN] Epoch: 32, Iter : 270 / 288, Loss: 5.70334
+[TRAIN] Epoch: 32, Iter : 280 / 288, Loss: 5.62453
+== [TRAIN] Epoch: 32, Perplexity: 284.700 ==>
+[VAL] Epoch: 32, Iter: 0, Loss: 5.69860
+[VAL] Epoch: 32, Iter: 10, Loss: 5.83959
+[VAL] Epoch: 32, Iter: 20, Loss: 5.65427
+=== [VAL] Epoch: 32, Iter: 29, Perplexity: 295.374 ===>
+====== Epoch 33 ======>
+[TRAIN] Epoch: 33, Iter : 0 / 288, Loss: 5.60962
+[TRAIN] Epoch: 33, Iter : 10 / 288, Loss: 5.69457
+[TRAIN] Epoch: 33, Iter : 20 / 288, Loss: 5.55496
+[TRAIN] Epoch: 33, Iter : 30 / 288, Loss: 5.65313
+[TRAIN] Epoch: 33, Iter : 40 / 288, Loss: 5.64474
+[TRAIN] Epoch: 33, Iter : 50 / 288, Loss: 5.66741
+[TRAIN] Epoch: 33, Iter : 60 / 288, Loss: 5.70199
+[TRAIN] Epoch: 33, Iter : 70 / 288, Loss: 5.58261
+[TRAIN] Epoch: 33, Iter : 80 / 288, Loss: 5.67146
+[TRAIN] Epoch: 33, Iter : 90 / 288, Loss: 5.61621
+[TRAIN] Epoch: 33, Iter : 100 / 288, Loss: 5.55382
+[TRAIN] Epoch: 33, Iter : 110 / 288, Loss: 5.59674
+[TRAIN] Epoch: 33, Iter : 120 / 288, Loss: 5.69715
+[TRAIN] Epoch: 33, Iter : 130 / 288, Loss: 5.59622
+[TRAIN] Epoch: 33, Iter : 140 / 288, Loss: 5.63886
+[TRAIN] Epoch: 33, Iter : 150 / 288, Loss: 5.60770
+[TRAIN] Epoch: 33, Iter : 160 / 288, Loss: 5.56905
+[TRAIN] Epoch: 33, Iter : 170 / 288, Loss: 5.73218
+[TRAIN] Epoch: 33, Iter : 180 / 288, Loss: 5.60418
+[TRAIN] Epoch: 33, Iter : 190 / 288, Loss: 5.59083
+[TRAIN] Epoch: 33, Iter : 200 / 288, Loss: 5.65433
+[TRAIN] Epoch: 33, Iter : 210 / 288, Loss: 5.65830
+[TRAIN] Epoch: 33, Iter : 220 / 288, Loss: 5.69326
+[TRAIN] Epoch: 33, Iter : 230 / 288, Loss: 5.65658
+[TRAIN] Epoch: 33, Iter : 240 / 288, Loss: 5.65363
+[TRAIN] Epoch: 33, Iter : 250 / 288, Loss: 5.60169
+[TRAIN] Epoch: 33, Iter : 260 / 288, Loss: 5.63434
+[TRAIN] Epoch: 33, Iter : 270 / 288, Loss: 5.83198
+[TRAIN] Epoch: 33, Iter : 280 / 288, Loss: 5.57383
+== [TRAIN] Epoch: 33, Perplexity: 280.241 ==>
+[VAL] Epoch: 33, Iter: 0, Loss: 5.67929
+[VAL] Epoch: 33, Iter: 10, Loss: 5.81661
+[VAL] Epoch: 33, Iter: 20, Loss: 5.65842
+=== [VAL] Epoch: 33, Iter: 29, Perplexity: 291.688 ===>
+====== Epoch 34 ======>
+[TRAIN] Epoch: 34, Iter : 0 / 288, Loss: 5.67360
+[TRAIN] Epoch: 34, Iter : 10 / 288, Loss: 5.59588
+[TRAIN] Epoch: 34, Iter : 20 / 288, Loss: 5.57407
+[TRAIN] Epoch: 34, Iter : 30 / 288, Loss: 5.69917
+[TRAIN] Epoch: 34, Iter : 40 / 288, Loss: 5.74008
+[TRAIN] Epoch: 34, Iter : 50 / 288, Loss: 5.54025
+[TRAIN] Epoch: 34, Iter : 60 / 288, Loss: 5.60687
+[TRAIN] Epoch: 34, Iter : 70 / 288, Loss: 5.72230
+[TRAIN] Epoch: 34, Iter : 80 / 288, Loss: 5.62431
+[TRAIN] Epoch: 34, Iter : 90 / 288, Loss: 5.67621
+[TRAIN] Epoch: 34, Iter : 100 / 288, Loss: 5.62406
+[TRAIN] Epoch: 34, Iter : 110 / 288, Loss: 5.61171
+[TRAIN] Epoch: 34, Iter : 120 / 288, Loss: 5.64812
+[TRAIN] Epoch: 34, Iter : 130 / 288, Loss: 5.61173
+[TRAIN] Epoch: 34, Iter : 140 / 288, Loss: 5.72047
+[TRAIN] Epoch: 34, Iter : 150 / 288, Loss: 5.66328
+[TRAIN] Epoch: 34, Iter : 160 / 288, Loss: 5.57218
+[TRAIN] Epoch: 34, Iter : 170 / 288, Loss: 5.71206
+[TRAIN] Epoch: 34, Iter : 180 / 288, Loss: 5.54364
+[TRAIN] Epoch: 34, Iter : 190 / 288, Loss: 5.63429
+[TRAIN] Epoch: 34, Iter : 200 / 288, Loss: 5.56574
+[TRAIN] Epoch: 34, Iter : 210 / 288, Loss: 5.62476
+[TRAIN] Epoch: 34, Iter : 220 / 288, Loss: 5.58253
+[TRAIN] Epoch: 34, Iter : 230 / 288, Loss: 5.62215
+[TRAIN] Epoch: 34, Iter : 240 / 288, Loss: 5.62477
+[TRAIN] Epoch: 34, Iter : 250 / 288, Loss: 5.54337
+[TRAIN] Epoch: 34, Iter : 260 / 288, Loss: 5.55072
+[TRAIN] Epoch: 34, Iter : 270 / 288, Loss: 5.48532
+[TRAIN] Epoch: 34, Iter : 280 / 288, Loss: 5.62862
+== [TRAIN] Epoch: 34, Perplexity: 275.726 ==>
+[VAL] Epoch: 34, Iter: 0, Loss: 5.66229
+[VAL] Epoch: 34, Iter: 10, Loss: 5.80212
+[VAL] Epoch: 34, Iter: 20, Loss: 5.63534
+=== [VAL] Epoch: 34, Iter: 29, Perplexity: 286.403 ===>
+====== Epoch 35 ======>
+[TRAIN] Epoch: 35, Iter : 0 / 288, Loss: 5.52805
+[TRAIN] Epoch: 35, Iter : 10 / 288, Loss: 5.59978
+[TRAIN] Epoch: 35, Iter : 20 / 288, Loss: 5.67426
+[TRAIN] Epoch: 35, Iter : 30 / 288, Loss: 5.63789
+[TRAIN] Epoch: 35, Iter : 40 / 288, Loss: 5.56259
+[TRAIN] Epoch: 35, Iter : 50 / 288, Loss: 5.49785
+[TRAIN] Epoch: 35, Iter : 60 / 288, Loss: 5.49764
+[TRAIN] Epoch: 35, Iter : 70 / 288, Loss: 5.63391
+[TRAIN] Epoch: 35, Iter : 80 / 288, Loss: 5.54862
+[TRAIN] Epoch: 35, Iter : 90 / 288, Loss: 5.62010
+[TRAIN] Epoch: 35, Iter : 100 / 288, Loss: 5.61773
+[TRAIN] Epoch: 35, Iter : 110 / 288, Loss: 5.57754
+[TRAIN] Epoch: 35, Iter : 120 / 288, Loss: 5.60161
+[TRAIN] Epoch: 35, Iter : 130 / 288, Loss: 5.42710
+[TRAIN] Epoch: 35, Iter : 140 / 288, Loss: 5.55160
+[TRAIN] Epoch: 35, Iter : 150 / 288, Loss: 5.57931
+[TRAIN] Epoch: 35, Iter : 160 / 288, Loss: 5.65364
+[TRAIN] Epoch: 35, Iter : 170 / 288, Loss: 5.50514
+[TRAIN] Epoch: 35, Iter : 180 / 288, Loss: 5.70263
+[TRAIN] Epoch: 35, Iter : 190 / 288, Loss: 5.56821
+[TRAIN] Epoch: 35, Iter : 200 / 288, Loss: 5.58538
+[TRAIN] Epoch: 35, Iter : 210 / 288, Loss: 5.68505
+[TRAIN] Epoch: 35, Iter : 220 / 288, Loss: 5.54276
+[TRAIN] Epoch: 35, Iter : 230 / 288, Loss: 5.62114
+[TRAIN] Epoch: 35, Iter : 240 / 288, Loss: 5.59916
+[TRAIN] Epoch: 35, Iter : 250 / 288, Loss: 5.68531
+[TRAIN] Epoch: 35, Iter : 260 / 288, Loss: 5.58430
+[TRAIN] Epoch: 35, Iter : 270 / 288, Loss: 5.68527
+[TRAIN] Epoch: 35, Iter : 280 / 288, Loss: 5.68823
+== [TRAIN] Epoch: 35, Perplexity: 272.128 ==>
+[VAL] Epoch: 35, Iter: 0, Loss: 5.68861
+[VAL] Epoch: 35, Iter: 10, Loss: 5.81649
+[VAL] Epoch: 35, Iter: 20, Loss: 5.64735
+=== [VAL] Epoch: 35, Iter: 29, Perplexity: 294.529 ===>
+====== Epoch 36 ======>
+[TRAIN] Epoch: 36, Iter : 0 / 288, Loss: 5.59831
+[TRAIN] Epoch: 36, Iter : 10 / 288, Loss: 5.60519
+[TRAIN] Epoch: 36, Iter : 20 / 288, Loss: 5.60362
+[TRAIN] Epoch: 36, Iter : 30 / 288, Loss: 5.61319
+[TRAIN] Epoch: 36, Iter : 40 / 288, Loss: 5.48796
+[TRAIN] Epoch: 36, Iter : 50 / 288, Loss: 5.56414
+[TRAIN] Epoch: 36, Iter : 60 / 288, Loss: 5.59213
+[TRAIN] Epoch: 36, Iter : 70 / 288, Loss: 5.61922
+[TRAIN] Epoch: 36, Iter : 80 / 288, Loss: 5.64984
+[TRAIN] Epoch: 36, Iter : 90 / 288, Loss: 5.65840
+[TRAIN] Epoch: 36, Iter : 100 / 288, Loss: 5.65153
+[TRAIN] Epoch: 36, Iter : 110 / 288, Loss: 5.55428
+[TRAIN] Epoch: 36, Iter : 120 / 288, Loss: 5.68738
+[TRAIN] Epoch: 36, Iter : 130 / 288, Loss: 5.52007
+[TRAIN] Epoch: 36, Iter : 140 / 288, Loss: 5.55452
+[TRAIN] Epoch: 36, Iter : 150 / 288, Loss: 5.78087
+[TRAIN] Epoch: 36, Iter : 160 / 288, Loss: 5.68691
+[TRAIN] Epoch: 36, Iter : 170 / 288, Loss: 5.54693
+[TRAIN] Epoch: 36, Iter : 180 / 288, Loss: 5.64014
+[TRAIN] Epoch: 36, Iter : 190 / 288, Loss: 5.60886
+[TRAIN] Epoch: 36, Iter : 200 / 288, Loss: 5.59227
+[TRAIN] Epoch: 36, Iter : 210 / 288, Loss: 5.59672
+[TRAIN] Epoch: 36, Iter : 220 / 288, Loss: 5.47921
+[TRAIN] Epoch: 36, Iter : 230 / 288, Loss: 5.47897
+[TRAIN] Epoch: 36, Iter : 240 / 288, Loss: 5.63484
+[TRAIN] Epoch: 36, Iter : 250 / 288, Loss: 5.58054
+[TRAIN] Epoch: 36, Iter : 260 / 288, Loss: 5.70039
+[TRAIN] Epoch: 36, Iter : 270 / 288, Loss: 5.60466
+[TRAIN] Epoch: 36, Iter : 280 / 288, Loss: 5.60000
+== [TRAIN] Epoch: 36, Perplexity: 268.638 ==>
+[VAL] Epoch: 36, Iter: 0, Loss: 5.64920
+[VAL] Epoch: 36, Iter: 10, Loss: 5.77799
+[VAL] Epoch: 36, Iter: 20, Loss: 5.61306
+=== [VAL] Epoch: 36, Iter: 29, Perplexity: 281.203 ===>
+====== Epoch 37 ======>
+[TRAIN] Epoch: 37, Iter : 0 / 288, Loss: 5.45265
+[TRAIN] Epoch: 37, Iter : 10 / 288, Loss: 5.60922
+[TRAIN] Epoch: 37, Iter : 20 / 288, Loss: 5.55133
+[TRAIN] Epoch: 37, Iter : 30 / 288, Loss: 5.58766
+[TRAIN] Epoch: 37, Iter : 40 / 288, Loss: 5.60000
+[TRAIN] Epoch: 37, Iter : 50 / 288, Loss: 5.63838
+[TRAIN] Epoch: 37, Iter : 60 / 288, Loss: 5.53985
+[TRAIN] Epoch: 37, Iter : 70 / 288, Loss: 5.52539
+[TRAIN] Epoch: 37, Iter : 80 / 288, Loss: 5.52889
+[TRAIN] Epoch: 37, Iter : 90 / 288, Loss: 5.59130
+[TRAIN] Epoch: 37, Iter : 100 / 288, Loss: 5.58399
+[TRAIN] Epoch: 37, Iter : 110 / 288, Loss: 5.68322
+[TRAIN] Epoch: 37, Iter : 120 / 288, Loss: 5.65720
+[TRAIN] Epoch: 37, Iter : 130 / 288, Loss: 5.58107
+[TRAIN] Epoch: 37, Iter : 140 / 288, Loss: 5.59243
+[TRAIN] Epoch: 37, Iter : 150 / 288, Loss: 5.67034
+[TRAIN] Epoch: 37, Iter : 160 / 288, Loss: 5.64207
+[TRAIN] Epoch: 37, Iter : 170 / 288, Loss: 5.60057
+[TRAIN] Epoch: 37, Iter : 180 / 288, Loss: 5.50602
+[TRAIN] Epoch: 37, Iter : 190 / 288, Loss: 5.65449
+[TRAIN] Epoch: 37, Iter : 200 / 288, Loss: 5.60443
+[TRAIN] Epoch: 37, Iter : 210 / 288, Loss: 5.57429
+[TRAIN] Epoch: 37, Iter : 220 / 288, Loss: 5.53180
+[TRAIN] Epoch: 37, Iter : 230 / 288, Loss: 5.45714
+[TRAIN] Epoch: 37, Iter : 240 / 288, Loss: 5.60289
+[TRAIN] Epoch: 37, Iter : 250 / 288, Loss: 5.59415
+[TRAIN] Epoch: 37, Iter : 260 / 288, Loss: 5.63973
+[TRAIN] Epoch: 37, Iter : 270 / 288, Loss: 5.54837
+[TRAIN] Epoch: 37, Iter : 280 / 288, Loss: 5.51967
+== [TRAIN] Epoch: 37, Perplexity: 264.618 ==>
+[VAL] Epoch: 37, Iter: 0, Loss: 5.66877
+[VAL] Epoch: 37, Iter: 10, Loss: 5.80340
+[VAL] Epoch: 37, Iter: 20, Loss: 5.62975
+=== [VAL] Epoch: 37, Iter: 29, Perplexity: 285.966 ===>
+====== Epoch 38 ======>
+[TRAIN] Epoch: 38, Iter : 0 / 288, Loss: 5.60788
+[TRAIN] Epoch: 38, Iter : 10 / 288, Loss: 5.69721
+[TRAIN] Epoch: 38, Iter : 20 / 288, Loss: 5.57699
+[TRAIN] Epoch: 38, Iter : 30 / 288, Loss: 5.62400
+[TRAIN] Epoch: 38, Iter : 40 / 288, Loss: 5.52531
+[TRAIN] Epoch: 38, Iter : 50 / 288, Loss: 5.52322
+[TRAIN] Epoch: 38, Iter : 60 / 288, Loss: 5.49099
+[TRAIN] Epoch: 38, Iter : 70 / 288, Loss: 5.58827
+[TRAIN] Epoch: 38, Iter : 80 / 288, Loss: 5.54418
+[TRAIN] Epoch: 38, Iter : 90 / 288, Loss: 5.44121
+[TRAIN] Epoch: 38, Iter : 100 / 288, Loss: 5.70470
+[TRAIN] Epoch: 38, Iter : 110 / 288, Loss: 5.57823
+[TRAIN] Epoch: 38, Iter : 120 / 288, Loss: 5.56084
+[TRAIN] Epoch: 38, Iter : 130 / 288, Loss: 5.55581
+[TRAIN] Epoch: 38, Iter : 140 / 288, Loss: 5.54167
+[TRAIN] Epoch: 38, Iter : 150 / 288, Loss: 5.66574
+[TRAIN] Epoch: 38, Iter : 160 / 288, Loss: 5.57243
+[TRAIN] Epoch: 38, Iter : 170 / 288, Loss: 5.64813
+[TRAIN] Epoch: 38, Iter : 180 / 288, Loss: 5.48375
+[TRAIN] Epoch: 38, Iter : 190 / 288, Loss: 5.53695
+[TRAIN] Epoch: 38, Iter : 200 / 288, Loss: 5.57629
+[TRAIN] Epoch: 38, Iter : 210 / 288, Loss: 5.65322
+[TRAIN] Epoch: 38, Iter : 220 / 288, Loss: 5.56516
+[TRAIN] Epoch: 38, Iter : 230 / 288, Loss: 5.57474
+[TRAIN] Epoch: 38, Iter : 240 / 288, Loss: 5.61742
+[TRAIN] Epoch: 38, Iter : 250 / 288, Loss: 5.47063
+[TRAIN] Epoch: 38, Iter : 260 / 288, Loss: 5.60158
+[TRAIN] Epoch: 38, Iter : 270 / 288, Loss: 5.58164
+[TRAIN] Epoch: 38, Iter : 280 / 288, Loss: 5.57989
+== [TRAIN] Epoch: 38, Perplexity: 261.293 ==>
+[VAL] Epoch: 38, Iter: 0, Loss: 5.64022
+[VAL] Epoch: 38, Iter: 10, Loss: 5.80627
+[VAL] Epoch: 38, Iter: 20, Loss: 5.60896
+=== [VAL] Epoch: 38, Iter: 29, Perplexity: 281.094 ===>
+====== Epoch 39 ======>
+[TRAIN] Epoch: 39, Iter : 0 / 288, Loss: 5.47779
+[TRAIN] Epoch: 39, Iter : 10 / 288, Loss: 5.60709
+[TRAIN] Epoch: 39, Iter : 20 / 288, Loss: 5.59464
+[TRAIN] Epoch: 39, Iter : 30 / 288, Loss: 5.64013
+[TRAIN] Epoch: 39, Iter : 40 / 288, Loss: 5.46521
+[TRAIN] Epoch: 39, Iter : 50 / 288, Loss: 5.56686
+[TRAIN] Epoch: 39, Iter : 60 / 288, Loss: 5.47109
+[TRAIN] Epoch: 39, Iter : 70 / 288, Loss: 5.68907
+[TRAIN] Epoch: 39, Iter : 80 / 288, Loss: 5.56362
+[TRAIN] Epoch: 39, Iter : 90 / 288, Loss: 5.59961
+[TRAIN] Epoch: 39, Iter : 100 / 288, Loss: 5.51130
+[TRAIN] Epoch: 39, Iter : 110 / 288, Loss: 5.60420
+[TRAIN] Epoch: 39, Iter : 120 / 288, Loss: 5.63304
+[TRAIN] Epoch: 39, Iter : 130 / 288, Loss: 5.60031
+[TRAIN] Epoch: 39, Iter : 140 / 288, Loss: 5.64221
+[TRAIN] Epoch: 39, Iter : 150 / 288, Loss: 5.48738
+[TRAIN] Epoch: 39, Iter : 160 / 288, Loss: 5.61417
+[TRAIN] Epoch: 39, Iter : 170 / 288, Loss: 5.58097
+[TRAIN] Epoch: 39, Iter : 180 / 288, Loss: 5.56252
+[TRAIN] Epoch: 39, Iter : 190 / 288, Loss: 5.52167
+[TRAIN] Epoch: 39, Iter : 200 / 288, Loss: 5.54765
+[TRAIN] Epoch: 39, Iter : 210 / 288, Loss: 5.53079
+[TRAIN] Epoch: 39, Iter : 220 / 288, Loss: 5.51742
+[TRAIN] Epoch: 39, Iter : 230 / 288, Loss: 5.44773
+[TRAIN] Epoch: 39, Iter : 240 / 288, Loss: 5.64501
+[TRAIN] Epoch: 39, Iter : 250 / 288, Loss: 5.49216
+[TRAIN] Epoch: 39, Iter : 260 / 288, Loss: 5.55412
+[TRAIN] Epoch: 39, Iter : 270 / 288, Loss: 5.56780
+[TRAIN] Epoch: 39, Iter : 280 / 288, Loss: 5.50809
+== [TRAIN] Epoch: 39, Perplexity: 257.837 ==>
+[VAL] Epoch: 39, Iter: 0, Loss: 5.62147
+[VAL] Epoch: 39, Iter: 10, Loss: 5.75645
+[VAL] Epoch: 39, Iter: 20, Loss: 5.58104
+=== [VAL] Epoch: 39, Iter: 29, Perplexity: 273.883 ===>
+====== Epoch 40 ======>
+[TRAIN] Epoch: 40, Iter : 0 / 288, Loss: 5.53963
+[TRAIN] Epoch: 40, Iter : 10 / 288, Loss: 5.51907
+[TRAIN] Epoch: 40, Iter : 20 / 288, Loss: 5.60005
+[TRAIN] Epoch: 40, Iter : 30 / 288, Loss: 5.54382
+[TRAIN] Epoch: 40, Iter : 40 / 288, Loss: 5.55934
+[TRAIN] Epoch: 40, Iter : 50 / 288, Loss: 5.51291
+[TRAIN] Epoch: 40, Iter : 60 / 288, Loss: 5.49304
+[TRAIN] Epoch: 40, Iter : 70 / 288, Loss: 5.61011
+[TRAIN] Epoch: 40, Iter : 80 / 288, Loss: 5.61242
+[TRAIN] Epoch: 40, Iter : 90 / 288, Loss: 5.43745
+[TRAIN] Epoch: 40, Iter : 100 / 288, Loss: 5.59478
+[TRAIN] Epoch: 40, Iter : 110 / 288, Loss: 5.53319
+[TRAIN] Epoch: 40, Iter : 120 / 288, Loss: 5.45628
+[TRAIN] Epoch: 40, Iter : 130 / 288, Loss: 5.53965
+[TRAIN] Epoch: 40, Iter : 140 / 288, Loss: 5.63520
+[TRAIN] Epoch: 40, Iter : 150 / 288, Loss: 5.64276
+[TRAIN] Epoch: 40, Iter : 160 / 288, Loss: 5.42974
+[TRAIN] Epoch: 40, Iter : 170 / 288, Loss: 5.60372
+[TRAIN] Epoch: 40, Iter : 180 / 288, Loss: 5.62149
+[TRAIN] Epoch: 40, Iter : 190 / 288, Loss: 5.46556
+[TRAIN] Epoch: 40, Iter : 200 / 288, Loss: 5.59991
+[TRAIN] Epoch: 40, Iter : 210 / 288, Loss: 5.45428
+[TRAIN] Epoch: 40, Iter : 220 / 288, Loss: 5.56405
+[TRAIN] Epoch: 40, Iter : 230 / 288, Loss: 5.56341
+[TRAIN] Epoch: 40, Iter : 240 / 288, Loss: 5.51451
+[TRAIN] Epoch: 40, Iter : 250 / 288, Loss: 5.51717
+[TRAIN] Epoch: 40, Iter : 260 / 288, Loss: 5.49939
+[TRAIN] Epoch: 40, Iter : 270 / 288, Loss: 5.50017
+[TRAIN] Epoch: 40, Iter : 280 / 288, Loss: 5.56030
+== [TRAIN] Epoch: 40, Perplexity: 254.634 ==>
+[VAL] Epoch: 40, Iter: 0, Loss: 5.60326
+[VAL] Epoch: 40, Iter: 10, Loss: 5.75031
+[VAL] Epoch: 40, Iter: 20, Loss: 5.58351
+=== [VAL] Epoch: 40, Iter: 29, Perplexity: 272.395 ===>
+====== Epoch 41 ======>
+[TRAIN] Epoch: 41, Iter : 0 / 288, Loss: 5.56931
+[TRAIN] Epoch: 41, Iter : 10 / 288, Loss: 5.65185
+[TRAIN] Epoch: 41, Iter : 20 / 288, Loss: 5.56730
+[TRAIN] Epoch: 41, Iter : 30 / 288, Loss: 5.42340
+[TRAIN] Epoch: 41, Iter : 40 / 288, Loss: 5.55206
+[TRAIN] Epoch: 41, Iter : 50 / 288, Loss: 5.43499
+[TRAIN] Epoch: 41, Iter : 60 / 288, Loss: 5.53271
+[TRAIN] Epoch: 41, Iter : 70 / 288, Loss: 5.47094
+[TRAIN] Epoch: 41, Iter : 80 / 288, Loss: 5.54679
+[TRAIN] Epoch: 41, Iter : 90 / 288, Loss: 5.64471
+[TRAIN] Epoch: 41, Iter : 100 / 288, Loss: 5.52184
+[TRAIN] Epoch: 41, Iter : 110 / 288, Loss: 5.44954
+[TRAIN] Epoch: 41, Iter : 120 / 288, Loss: 5.54987
+[TRAIN] Epoch: 41, Iter : 130 / 288, Loss: 5.43427
+[TRAIN] Epoch: 41, Iter : 140 / 288, Loss: 5.52209
+[TRAIN] Epoch: 41, Iter : 150 / 288, Loss: 5.38409
+[TRAIN] Epoch: 41, Iter : 160 / 288, Loss: 5.55486
+[TRAIN] Epoch: 41, Iter : 170 / 288, Loss: 5.56279
+[TRAIN] Epoch: 41, Iter : 180 / 288, Loss: 5.59442
+[TRAIN] Epoch: 41, Iter : 190 / 288, Loss: 5.49425
+[TRAIN] Epoch: 41, Iter : 200 / 288, Loss: 5.48476
+[TRAIN] Epoch: 41, Iter : 210 / 288, Loss: 5.54321
+[TRAIN] Epoch: 41, Iter : 220 / 288, Loss: 5.61396
+[TRAIN] Epoch: 41, Iter : 230 / 288, Loss: 5.50016
+[TRAIN] Epoch: 41, Iter : 240 / 288, Loss: 5.52125
+[TRAIN] Epoch: 41, Iter : 250 / 288, Loss: 5.60585
+[TRAIN] Epoch: 41, Iter : 260 / 288, Loss: 5.43867
+[TRAIN] Epoch: 41, Iter : 270 / 288, Loss: 5.54863
+[TRAIN] Epoch: 41, Iter : 280 / 288, Loss: 5.46073
+== [TRAIN] Epoch: 41, Perplexity: 251.433 ==>
+[VAL] Epoch: 41, Iter: 0, Loss: 5.59921
+[VAL] Epoch: 41, Iter: 10, Loss: 5.73330
+[VAL] Epoch: 41, Iter: 20, Loss: 5.57545
+=== [VAL] Epoch: 41, Iter: 29, Perplexity: 268.141 ===>
+====== Epoch 42 ======>
+[TRAIN] Epoch: 42, Iter : 0 / 288, Loss: 5.58618
+[TRAIN] Epoch: 42, Iter : 10 / 288, Loss: 5.53356
+[TRAIN] Epoch: 42, Iter : 20 / 288, Loss: 5.63495
+[TRAIN] Epoch: 42, Iter : 30 / 288, Loss: 5.52652
+[TRAIN] Epoch: 42, Iter : 40 / 288, Loss: 5.47832
+[TRAIN] Epoch: 42, Iter : 50 / 288, Loss: 5.47807
+[TRAIN] Epoch: 42, Iter : 60 / 288, Loss: 5.62625
+[TRAIN] Epoch: 42, Iter : 70 / 288, Loss: 5.44319
+[TRAIN] Epoch: 42, Iter : 80 / 288, Loss: 5.53059
+[TRAIN] Epoch: 42, Iter : 90 / 288, Loss: 5.49188
+[TRAIN] Epoch: 42, Iter : 100 / 288, Loss: 5.52810
+[TRAIN] Epoch: 42, Iter : 110 / 288, Loss: 5.58698
+[TRAIN] Epoch: 42, Iter : 120 / 288, Loss: 5.50040
+[TRAIN] Epoch: 42, Iter : 130 / 288, Loss: 5.47858
+[TRAIN] Epoch: 42, Iter : 140 / 288, Loss: 5.60101
+[TRAIN] Epoch: 42, Iter : 150 / 288, Loss: 5.65962
+[TRAIN] Epoch: 42, Iter : 160 / 288, Loss: 5.63333
+[TRAIN] Epoch: 42, Iter : 170 / 288, Loss: 5.49390
+[TRAIN] Epoch: 42, Iter : 180 / 288, Loss: 5.44120
+[TRAIN] Epoch: 42, Iter : 190 / 288, Loss: 5.49907
+[TRAIN] Epoch: 42, Iter : 200 / 288, Loss: 5.48598
+[TRAIN] Epoch: 42, Iter : 210 / 288, Loss: 5.45066
+[TRAIN] Epoch: 42, Iter : 220 / 288, Loss: 5.43428
+[TRAIN] Epoch: 42, Iter : 230 / 288, Loss: 5.48326
+[TRAIN] Epoch: 42, Iter : 240 / 288, Loss: 5.50196
+[TRAIN] Epoch: 42, Iter : 250 / 288, Loss: 5.58298
+[TRAIN] Epoch: 42, Iter : 260 / 288, Loss: 5.52877
+[TRAIN] Epoch: 42, Iter : 270 / 288, Loss: 5.44980
+[TRAIN] Epoch: 42, Iter : 280 / 288, Loss: 5.38251
+== [TRAIN] Epoch: 42, Perplexity: 248.762 ==>
+[VAL] Epoch: 42, Iter: 0, Loss: 5.58103
+[VAL] Epoch: 42, Iter: 10, Loss: 5.73593
+[VAL] Epoch: 42, Iter: 20, Loss: 5.56277
+=== [VAL] Epoch: 42, Iter: 29, Perplexity: 267.491 ===>
+====== Epoch 43 ======>
+[TRAIN] Epoch: 43, Iter : 0 / 288, Loss: 5.49617
+[TRAIN] Epoch: 43, Iter : 10 / 288, Loss: 5.46832
+[TRAIN] Epoch: 43, Iter : 20 / 288, Loss: 5.43295
+[TRAIN] Epoch: 43, Iter : 30 / 288, Loss: 5.55913
+[TRAIN] Epoch: 43, Iter : 40 / 288, Loss: 5.47938
+[TRAIN] Epoch: 43, Iter : 50 / 288, Loss: 5.50952
+[TRAIN] Epoch: 43, Iter : 60 / 288, Loss: 5.50942
+[TRAIN] Epoch: 43, Iter : 70 / 288, Loss: 5.63816
+[TRAIN] Epoch: 43, Iter : 80 / 288, Loss: 5.58902
+[TRAIN] Epoch: 43, Iter : 90 / 288, Loss: 5.56526
+[TRAIN] Epoch: 43, Iter : 100 / 288, Loss: 5.53558
+[TRAIN] Epoch: 43, Iter : 110 / 288, Loss: 5.55310
+[TRAIN] Epoch: 43, Iter : 120 / 288, Loss: 5.46949
+[TRAIN] Epoch: 43, Iter : 130 / 288, Loss: 5.44812
+[TRAIN] Epoch: 43, Iter : 140 / 288, Loss: 5.51426
+[TRAIN] Epoch: 43, Iter : 150 / 288, Loss: 5.45023
+[TRAIN] Epoch: 43, Iter : 160 / 288, Loss: 5.51691
+[TRAIN] Epoch: 43, Iter : 170 / 288, Loss: 5.49020
+[TRAIN] Epoch: 43, Iter : 180 / 288, Loss: 5.59269
+[TRAIN] Epoch: 43, Iter : 190 / 288, Loss: 5.54287
+[TRAIN] Epoch: 43, Iter : 200 / 288, Loss: 5.42774
+[TRAIN] Epoch: 43, Iter : 210 / 288, Loss: 5.65772
+[TRAIN] Epoch: 43, Iter : 220 / 288, Loss: 5.54369
+[TRAIN] Epoch: 43, Iter : 230 / 288, Loss: 5.48461
+[TRAIN] Epoch: 43, Iter : 240 / 288, Loss: 5.64870
+[TRAIN] Epoch: 43, Iter : 250 / 288, Loss: 5.50774
+[TRAIN] Epoch: 43, Iter : 260 / 288, Loss: 5.56700
+[TRAIN] Epoch: 43, Iter : 270 / 288, Loss: 5.45351
+[TRAIN] Epoch: 43, Iter : 280 / 288, Loss: 5.41558
+== [TRAIN] Epoch: 43, Perplexity: 245.781 ==>
+[VAL] Epoch: 43, Iter: 0, Loss: 5.57950
+[VAL] Epoch: 43, Iter: 10, Loss: 5.72886
+[VAL] Epoch: 43, Iter: 20, Loss: 5.56710
+=== [VAL] Epoch: 43, Iter: 29, Perplexity: 265.072 ===>
+====== Epoch 44 ======>
+[TRAIN] Epoch: 44, Iter : 0 / 288, Loss: 5.60169
+[TRAIN] Epoch: 44, Iter : 10 / 288, Loss: 5.50669
+[TRAIN] Epoch: 44, Iter : 20 / 288, Loss: 5.51545
+[TRAIN] Epoch: 44, Iter : 30 / 288, Loss: 5.43718
+[TRAIN] Epoch: 44, Iter : 40 / 288, Loss: 5.53250
+[TRAIN] Epoch: 44, Iter : 50 / 288, Loss: 5.54300
+[TRAIN] Epoch: 44, Iter : 60 / 288, Loss: 5.43673
+[TRAIN] Epoch: 44, Iter : 70 / 288, Loss: 5.46067
+[TRAIN] Epoch: 44, Iter : 80 / 288, Loss: 5.53445
+[TRAIN] Epoch: 44, Iter : 90 / 288, Loss: 5.47008
+[TRAIN] Epoch: 44, Iter : 100 / 288, Loss: 5.43685
+[TRAIN] Epoch: 44, Iter : 110 / 288, Loss: 5.42979
+[TRAIN] Epoch: 44, Iter : 120 / 288, Loss: 5.49990
+[TRAIN] Epoch: 44, Iter : 130 / 288, Loss: 5.58246
+[TRAIN] Epoch: 44, Iter : 140 / 288, Loss: 5.48636
+[TRAIN] Epoch: 44, Iter : 150 / 288, Loss: 5.47441
+[TRAIN] Epoch: 44, Iter : 160 / 288, Loss: 5.47119
+[TRAIN] Epoch: 44, Iter : 170 / 288, Loss: 5.58063
+[TRAIN] Epoch: 44, Iter : 180 / 288, Loss: 5.44282
+[TRAIN] Epoch: 44, Iter : 190 / 288, Loss: 5.47596
+[TRAIN] Epoch: 44, Iter : 200 / 288, Loss: 5.44734
+[TRAIN] Epoch: 44, Iter : 210 / 288, Loss: 5.48665
+[TRAIN] Epoch: 44, Iter : 220 / 288, Loss: 5.43354
+[TRAIN] Epoch: 44, Iter : 230 / 288, Loss: 5.52247
+[TRAIN] Epoch: 44, Iter : 240 / 288, Loss: 5.61775
+[TRAIN] Epoch: 44, Iter : 250 / 288, Loss: 5.48801
+[TRAIN] Epoch: 44, Iter : 260 / 288, Loss: 5.51673
+[TRAIN] Epoch: 44, Iter : 270 / 288, Loss: 5.51262
+[TRAIN] Epoch: 44, Iter : 280 / 288, Loss: 5.55596
+== [TRAIN] Epoch: 44, Perplexity: 243.322 ==>
+[VAL] Epoch: 44, Iter: 0, Loss: 5.59793
+[VAL] Epoch: 44, Iter: 10, Loss: 5.75444
+[VAL] Epoch: 44, Iter: 20, Loss: 5.56863
+=== [VAL] Epoch: 44, Iter: 29, Perplexity: 269.001 ===>
+====== Epoch 45 ======>
+[TRAIN] Epoch: 45, Iter : 0 / 288, Loss: 5.48585
+[TRAIN] Epoch: 45, Iter : 10 / 288, Loss: 5.57784
+[TRAIN] Epoch: 45, Iter : 20 / 288, Loss: 5.44246
+[TRAIN] Epoch: 45, Iter : 30 / 288, Loss: 5.60891
+[TRAIN] Epoch: 45, Iter : 40 / 288, Loss: 5.48913
+[TRAIN] Epoch: 45, Iter : 50 / 288, Loss: 5.54824
+[TRAIN] Epoch: 45, Iter : 60 / 288, Loss: 5.54655
+[TRAIN] Epoch: 45, Iter : 70 / 288, Loss: 5.55393
+[TRAIN] Epoch: 45, Iter : 80 / 288, Loss: 5.41286
+[TRAIN] Epoch: 45, Iter : 90 / 288, Loss: 5.53451
+[TRAIN] Epoch: 45, Iter : 100 / 288, Loss: 5.40087
+[TRAIN] Epoch: 45, Iter : 110 / 288, Loss: 5.40547
+[TRAIN] Epoch: 45, Iter : 120 / 288, Loss: 5.51337
+[TRAIN] Epoch: 45, Iter : 130 / 288, Loss: 5.41763
+[TRAIN] Epoch: 45, Iter : 140 / 288, Loss: 5.47657
+[TRAIN] Epoch: 45, Iter : 150 / 288, Loss: 5.50605
+[TRAIN] Epoch: 45, Iter : 160 / 288, Loss: 5.55724
+[TRAIN] Epoch: 45, Iter : 170 / 288, Loss: 5.44078
+[TRAIN] Epoch: 45, Iter : 180 / 288, Loss: 5.55069
+[TRAIN] Epoch: 45, Iter : 190 / 288, Loss: 5.42552
+[TRAIN] Epoch: 45, Iter : 200 / 288, Loss: 5.37933
+[TRAIN] Epoch: 45, Iter : 210 / 288, Loss: 5.60235
+[TRAIN] Epoch: 45, Iter : 220 / 288, Loss: 5.40067
+[TRAIN] Epoch: 45, Iter : 230 / 288, Loss: 5.47990
+[TRAIN] Epoch: 45, Iter : 240 / 288, Loss: 5.39992
+[TRAIN] Epoch: 45, Iter : 250 / 288, Loss: 5.45864
+[TRAIN] Epoch: 45, Iter : 260 / 288, Loss: 5.34098
+[TRAIN] Epoch: 45, Iter : 270 / 288, Loss: 5.47934
+[TRAIN] Epoch: 45, Iter : 280 / 288, Loss: 5.44991
+== [TRAIN] Epoch: 45, Perplexity: 240.542 ==>
+[VAL] Epoch: 45, Iter: 0, Loss: 5.58513
+[VAL] Epoch: 45, Iter: 10, Loss: 5.73334
+[VAL] Epoch: 45, Iter: 20, Loss: 5.57720
+=== [VAL] Epoch: 45, Iter: 29, Perplexity: 268.239 ===>
+====== Epoch 46 ======>
+[TRAIN] Epoch: 46, Iter : 0 / 288, Loss: 5.49224
+[TRAIN] Epoch: 46, Iter : 10 / 288, Loss: 5.50233
+[TRAIN] Epoch: 46, Iter : 20 / 288, Loss: 5.38834
+[TRAIN] Epoch: 46, Iter : 30 / 288, Loss: 5.56442
+[TRAIN] Epoch: 46, Iter : 40 / 288, Loss: 5.46084
+[TRAIN] Epoch: 46, Iter : 50 / 288, Loss: 5.45818
+[TRAIN] Epoch: 46, Iter : 60 / 288, Loss: 5.50106
+[TRAIN] Epoch: 46, Iter : 70 / 288, Loss: 5.53381
+[TRAIN] Epoch: 46, Iter : 80 / 288, Loss: 5.45159
+[TRAIN] Epoch: 46, Iter : 90 / 288, Loss: 5.44499
+[TRAIN] Epoch: 46, Iter : 100 / 288, Loss: 5.27443
+[TRAIN] Epoch: 46, Iter : 110 / 288, Loss: 5.43110
+[TRAIN] Epoch: 46, Iter : 120 / 288, Loss: 5.45495
+[TRAIN] Epoch: 46, Iter : 130 / 288, Loss: 5.55585
+[TRAIN] Epoch: 46, Iter : 140 / 288, Loss: 5.44366
+[TRAIN] Epoch: 46, Iter : 150 / 288, Loss: 5.49173
+[TRAIN] Epoch: 46, Iter : 160 / 288, Loss: 5.47770
+[TRAIN] Epoch: 46, Iter : 170 / 288, Loss: 5.50653
+[TRAIN] Epoch: 46, Iter : 180 / 288, Loss: 5.53891
+[TRAIN] Epoch: 46, Iter : 190 / 288, Loss: 5.47907
+[TRAIN] Epoch: 46, Iter : 200 / 288, Loss: 5.49620
+[TRAIN] Epoch: 46, Iter : 210 / 288, Loss: 5.41790
+[TRAIN] Epoch: 46, Iter : 220 / 288, Loss: 5.46162
+[TRAIN] Epoch: 46, Iter : 230 / 288, Loss: 5.53689
+[TRAIN] Epoch: 46, Iter : 240 / 288, Loss: 5.41854
+[TRAIN] Epoch: 46, Iter : 250 / 288, Loss: 5.48088
+[TRAIN] Epoch: 46, Iter : 260 / 288, Loss: 5.40353
+[TRAIN] Epoch: 46, Iter : 270 / 288, Loss: 5.48775
+[TRAIN] Epoch: 46, Iter : 280 / 288, Loss: 5.49512
+== [TRAIN] Epoch: 46, Perplexity: 237.989 ==>
+[VAL] Epoch: 46, Iter: 0, Loss: 5.56198
+[VAL] Epoch: 46, Iter: 10, Loss: 5.70300
+[VAL] Epoch: 46, Iter: 20, Loss: 5.54615
+=== [VAL] Epoch: 46, Iter: 29, Perplexity: 259.025 ===>
+====== Epoch 47 ======>
+[TRAIN] Epoch: 47, Iter : 0 / 288, Loss: 5.43120
+[TRAIN] Epoch: 47, Iter : 10 / 288, Loss: 5.47486
+[TRAIN] Epoch: 47, Iter : 20 / 288, Loss: 5.58701
+[TRAIN] Epoch: 47, Iter : 30 / 288, Loss: 5.43079
+[TRAIN] Epoch: 47, Iter : 40 / 288, Loss: 5.44015
+[TRAIN] Epoch: 47, Iter : 50 / 288, Loss: 5.36308
+[TRAIN] Epoch: 47, Iter : 60 / 288, Loss: 5.56587
+[TRAIN] Epoch: 47, Iter : 70 / 288, Loss: 5.58758
+[TRAIN] Epoch: 47, Iter : 80 / 288, Loss: 5.58811
+[TRAIN] Epoch: 47, Iter : 90 / 288, Loss: 5.41054
+[TRAIN] Epoch: 47, Iter : 100 / 288, Loss: 5.39393
+[TRAIN] Epoch: 47, Iter : 110 / 288, Loss: 5.41722
+[TRAIN] Epoch: 47, Iter : 120 / 288, Loss: 5.39453
+[TRAIN] Epoch: 47, Iter : 130 / 288, Loss: 5.48504
+[TRAIN] Epoch: 47, Iter : 140 / 288, Loss: 5.47192
+[TRAIN] Epoch: 47, Iter : 150 / 288, Loss: 5.36297
+[TRAIN] Epoch: 47, Iter : 160 / 288, Loss: 5.44962
+[TRAIN] Epoch: 47, Iter : 170 / 288, Loss: 5.45227
+[TRAIN] Epoch: 47, Iter : 180 / 288, Loss: 5.34502
+[TRAIN] Epoch: 47, Iter : 190 / 288, Loss: 5.39291
+[TRAIN] Epoch: 47, Iter : 200 / 288, Loss: 5.50998
+[TRAIN] Epoch: 47, Iter : 210 / 288, Loss: 5.36459
+[TRAIN] Epoch: 47, Iter : 220 / 288, Loss: 5.50131
+[TRAIN] Epoch: 47, Iter : 230 / 288, Loss: 5.57252
+[TRAIN] Epoch: 47, Iter : 240 / 288, Loss: 5.42688
+[TRAIN] Epoch: 47, Iter : 250 / 288, Loss: 5.50218
+[TRAIN] Epoch: 47, Iter : 260 / 288, Loss: 5.41371
+[TRAIN] Epoch: 47, Iter : 270 / 288, Loss: 5.39698
+[TRAIN] Epoch: 47, Iter : 280 / 288, Loss: 5.48285
+== [TRAIN] Epoch: 47, Perplexity: 235.491 ==>
+[VAL] Epoch: 47, Iter: 0, Loss: 5.57437
+[VAL] Epoch: 47, Iter: 10, Loss: 5.70658
+[VAL] Epoch: 47, Iter: 20, Loss: 5.54965
+=== [VAL] Epoch: 47, Iter: 29, Perplexity: 261.768 ===>
+====== Epoch 48 ======>
+[TRAIN] Epoch: 48, Iter : 0 / 288, Loss: 5.52422
+[TRAIN] Epoch: 48, Iter : 10 / 288, Loss: 5.47368
+[TRAIN] Epoch: 48, Iter : 20 / 288, Loss: 5.46810
+[TRAIN] Epoch: 48, Iter : 30 / 288, Loss: 5.37236
+[TRAIN] Epoch: 48, Iter : 40 / 288, Loss: 5.45711
+[TRAIN] Epoch: 48, Iter : 50 / 288, Loss: 5.44933
+[TRAIN] Epoch: 48, Iter : 60 / 288, Loss: 5.42106
+[TRAIN] Epoch: 48, Iter : 70 / 288, Loss: 5.49858
+[TRAIN] Epoch: 48, Iter : 80 / 288, Loss: 5.44957
+[TRAIN] Epoch: 48, Iter : 90 / 288, Loss: 5.42301
+[TRAIN] Epoch: 48, Iter : 100 / 288, Loss: 5.48065
+[TRAIN] Epoch: 48, Iter : 110 / 288, Loss: 5.35640
+[TRAIN] Epoch: 48, Iter : 120 / 288, Loss: 5.38275
+[TRAIN] Epoch: 48, Iter : 130 / 288, Loss: 5.43155
+[TRAIN] Epoch: 48, Iter : 140 / 288, Loss: 5.52009
+[TRAIN] Epoch: 48, Iter : 150 / 288, Loss: 5.48803
+[TRAIN] Epoch: 48, Iter : 160 / 288, Loss: 5.51966
+[TRAIN] Epoch: 48, Iter : 170 / 288, Loss: 5.48225
+[TRAIN] Epoch: 48, Iter : 180 / 288, Loss: 5.41110
+[TRAIN] Epoch: 48, Iter : 190 / 288, Loss: 5.42495
+[TRAIN] Epoch: 48, Iter : 200 / 288, Loss: 5.44144
+[TRAIN] Epoch: 48, Iter : 210 / 288, Loss: 5.52653
+[TRAIN] Epoch: 48, Iter : 220 / 288, Loss: 5.36803
+[TRAIN] Epoch: 48, Iter : 230 / 288, Loss: 5.48145
+[TRAIN] Epoch: 48, Iter : 240 / 288, Loss: 5.50807
+[TRAIN] Epoch: 48, Iter : 250 / 288, Loss: 5.50418
+[TRAIN] Epoch: 48, Iter : 260 / 288, Loss: 5.42952
+[TRAIN] Epoch: 48, Iter : 270 / 288, Loss: 5.31783
+[TRAIN] Epoch: 48, Iter : 280 / 288, Loss: 5.62740
+== [TRAIN] Epoch: 48, Perplexity: 233.083 ==>
+[VAL] Epoch: 48, Iter: 0, Loss: 5.54326
+[VAL] Epoch: 48, Iter: 10, Loss: 5.69598
+[VAL] Epoch: 48, Iter: 20, Loss: 5.52915
+=== [VAL] Epoch: 48, Iter: 29, Perplexity: 256.480 ===>
+====== Epoch 49 ======>
+[TRAIN] Epoch: 49, Iter : 0 / 288, Loss: 5.47914
+[TRAIN] Epoch: 49, Iter : 10 / 288, Loss: 5.38337
+[TRAIN] Epoch: 49, Iter : 20 / 288, Loss: 5.42395
+[TRAIN] Epoch: 49, Iter : 30 / 288, Loss: 5.45562
+[TRAIN] Epoch: 49, Iter : 40 / 288, Loss: 5.39684
+[TRAIN] Epoch: 49, Iter : 50 / 288, Loss: 5.44688
+[TRAIN] Epoch: 49, Iter : 60 / 288, Loss: 5.44384
+[TRAIN] Epoch: 49, Iter : 70 / 288, Loss: 5.53928
+[TRAIN] Epoch: 49, Iter : 80 / 288, Loss: 5.30878
+[TRAIN] Epoch: 49, Iter : 90 / 288, Loss: 5.46708
+[TRAIN] Epoch: 49, Iter : 100 / 288, Loss: 5.47108
+[TRAIN] Epoch: 49, Iter : 110 / 288, Loss: 5.37671
+[TRAIN] Epoch: 49, Iter : 120 / 288, Loss: 5.44925
+[TRAIN] Epoch: 49, Iter : 130 / 288, Loss: 5.43098
+[TRAIN] Epoch: 49, Iter : 140 / 288, Loss: 5.54395
+[TRAIN] Epoch: 49, Iter : 150 / 288, Loss: 5.36777
+[TRAIN] Epoch: 49, Iter : 160 / 288, Loss: 5.49136
+[TRAIN] Epoch: 49, Iter : 170 / 288, Loss: 5.47182
+[TRAIN] Epoch: 49, Iter : 180 / 288, Loss: 5.46236
+[TRAIN] Epoch: 49, Iter : 190 / 288, Loss: 5.33494
+[TRAIN] Epoch: 49, Iter : 200 / 288, Loss: 5.57980
+[TRAIN] Epoch: 49, Iter : 210 / 288, Loss: 5.40247
+[TRAIN] Epoch: 49, Iter : 220 / 288, Loss: 5.47156
+[TRAIN] Epoch: 49, Iter : 230 / 288, Loss: 5.54891
+[TRAIN] Epoch: 49, Iter : 240 / 288, Loss: 5.47841
+[TRAIN] Epoch: 49, Iter : 250 / 288, Loss: 5.44329
+[TRAIN] Epoch: 49, Iter : 260 / 288, Loss: 5.44161
+[TRAIN] Epoch: 49, Iter : 270 / 288, Loss: 5.45601
+[TRAIN] Epoch: 49, Iter : 280 / 288, Loss: 5.45503
+== [TRAIN] Epoch: 49, Perplexity: 230.940 ==>
+[VAL] Epoch: 49, Iter: 0, Loss: 5.54411
+[VAL] Epoch: 49, Iter: 10, Loss: 5.70009
+[VAL] Epoch: 49, Iter: 20, Loss: 5.54683
+=== [VAL] Epoch: 49, Iter: 29, Perplexity: 257.201 ===>
+====== Epoch 50 ======>
+[TRAIN] Epoch: 50, Iter : 0 / 288, Loss: 5.43603
+[TRAIN] Epoch: 50, Iter : 10 / 288, Loss: 5.43856
+[TRAIN] Epoch: 50, Iter : 20 / 288, Loss: 5.44937
+[TRAIN] Epoch: 50, Iter : 30 / 288, Loss: 5.41655
+[TRAIN] Epoch: 50, Iter : 40 / 288, Loss: 5.44582
+[TRAIN] Epoch: 50, Iter : 50 / 288, Loss: 5.40786
+[TRAIN] Epoch: 50, Iter : 60 / 288, Loss: 5.39958
+[TRAIN] Epoch: 50, Iter : 70 / 288, Loss: 5.53360
+[TRAIN] Epoch: 50, Iter : 80 / 288, Loss: 5.44020
+[TRAIN] Epoch: 50, Iter : 90 / 288, Loss: 5.46029
+[TRAIN] Epoch: 50, Iter : 100 / 288, Loss: 5.42298
+[TRAIN] Epoch: 50, Iter : 110 / 288, Loss: 5.45804
+[TRAIN] Epoch: 50, Iter : 120 / 288, Loss: 5.41841
+[TRAIN] Epoch: 50, Iter : 130 / 288, Loss: 5.39957
+[TRAIN] Epoch: 50, Iter : 140 / 288, Loss: 5.47706
+[TRAIN] Epoch: 50, Iter : 150 / 288, Loss: 5.46106
+[TRAIN] Epoch: 50, Iter : 160 / 288, Loss: 5.40409
+[TRAIN] Epoch: 50, Iter : 170 / 288, Loss: 5.50976
+[TRAIN] Epoch: 50, Iter : 180 / 288, Loss: 5.40075
+[TRAIN] Epoch: 50, Iter : 190 / 288, Loss: 5.37218
+[TRAIN] Epoch: 50, Iter : 200 / 288, Loss: 5.51218
+[TRAIN] Epoch: 50, Iter : 210 / 288, Loss: 5.43292
+[TRAIN] Epoch: 50, Iter : 220 / 288, Loss: 5.48674
+[TRAIN] Epoch: 50, Iter : 230 / 288, Loss: 5.35680
+[TRAIN] Epoch: 50, Iter : 240 / 288, Loss: 5.41538
+[TRAIN] Epoch: 50, Iter : 250 / 288, Loss: 5.45874
+[TRAIN] Epoch: 50, Iter : 260 / 288, Loss: 5.43067
+[TRAIN] Epoch: 50, Iter : 270 / 288, Loss: 5.36985
+[TRAIN] Epoch: 50, Iter : 280 / 288, Loss: 5.35368
+== [TRAIN] Epoch: 50, Perplexity: 228.979 ==>
+[VAL] Epoch: 50, Iter: 0, Loss: 5.52554
+[VAL] Epoch: 50, Iter: 10, Loss: 5.66987
+[VAL] Epoch: 50, Iter: 20, Loss: 5.51864
+=== [VAL] Epoch: 50, Iter: 29, Perplexity: 251.586 ===>
+====== Epoch 51 ======>
+[TRAIN] Epoch: 51, Iter : 0 / 288, Loss: 5.33972
+[TRAIN] Epoch: 51, Iter : 10 / 288, Loss: 5.39355
+[TRAIN] Epoch: 51, Iter : 20 / 288, Loss: 5.35534
+[TRAIN] Epoch: 51, Iter : 30 / 288, Loss: 5.28297
+[TRAIN] Epoch: 51, Iter : 40 / 288, Loss: 5.46322
+[TRAIN] Epoch: 51, Iter : 50 / 288, Loss: 5.43621
+[TRAIN] Epoch: 51, Iter : 60 / 288, Loss: 5.44476
+[TRAIN] Epoch: 51, Iter : 70 / 288, Loss: 5.42548
+[TRAIN] Epoch: 51, Iter : 80 / 288, Loss: 5.46890
+[TRAIN] Epoch: 51, Iter : 90 / 288, Loss: 5.40812
+[TRAIN] Epoch: 51, Iter : 100 / 288, Loss: 5.50537
+[TRAIN] Epoch: 51, Iter : 110 / 288, Loss: 5.50085
+[TRAIN] Epoch: 51, Iter : 120 / 288, Loss: 5.53485
+[TRAIN] Epoch: 51, Iter : 130 / 288, Loss: 5.47613
+[TRAIN] Epoch: 51, Iter : 140 / 288, Loss: 5.33519
+[TRAIN] Epoch: 51, Iter : 150 / 288, Loss: 5.48876
+[TRAIN] Epoch: 51, Iter : 160 / 288, Loss: 5.40985
+[TRAIN] Epoch: 51, Iter : 170 / 288, Loss: 5.33928
+[TRAIN] Epoch: 51, Iter : 180 / 288, Loss: 5.45153
+[TRAIN] Epoch: 51, Iter : 190 / 288, Loss: 5.38879
+[TRAIN] Epoch: 51, Iter : 200 / 288, Loss: 5.39134
+[TRAIN] Epoch: 51, Iter : 210 / 288, Loss: 5.52373
+[TRAIN] Epoch: 51, Iter : 220 / 288, Loss: 5.46318
+[TRAIN] Epoch: 51, Iter : 230 / 288, Loss: 5.44238
+[TRAIN] Epoch: 51, Iter : 240 / 288, Loss: 5.54607
+[TRAIN] Epoch: 51, Iter : 250 / 288, Loss: 5.49279
+[TRAIN] Epoch: 51, Iter : 260 / 288, Loss: 5.45555
+[TRAIN] Epoch: 51, Iter : 270 / 288, Loss: 5.53331
+[TRAIN] Epoch: 51, Iter : 280 / 288, Loss: 5.52609
+== [TRAIN] Epoch: 51, Perplexity: 226.560 ==>
+[VAL] Epoch: 51, Iter: 0, Loss: 5.52482
+[VAL] Epoch: 51, Iter: 10, Loss: 5.67330
+[VAL] Epoch: 51, Iter: 20, Loss: 5.51100
+=== [VAL] Epoch: 51, Iter: 29, Perplexity: 252.446 ===>
+====== Epoch 52 ======>
+[TRAIN] Epoch: 52, Iter : 0 / 288, Loss: 5.43330
+[TRAIN] Epoch: 52, Iter : 10 / 288, Loss: 5.45489
+[TRAIN] Epoch: 52, Iter : 20 / 288, Loss: 5.34879
+[TRAIN] Epoch: 52, Iter : 30 / 288, Loss: 5.42641
+[TRAIN] Epoch: 52, Iter : 40 / 288, Loss: 5.59300
+[TRAIN] Epoch: 52, Iter : 50 / 288, Loss: 5.40407
+[TRAIN] Epoch: 52, Iter : 60 / 288, Loss: 5.51599
+[TRAIN] Epoch: 52, Iter : 70 / 288, Loss: 5.49605
+[TRAIN] Epoch: 52, Iter : 80 / 288, Loss: 5.50041
+[TRAIN] Epoch: 52, Iter : 90 / 288, Loss: 5.37472
+[TRAIN] Epoch: 52, Iter : 100 / 288, Loss: 5.35317
+[TRAIN] Epoch: 52, Iter : 110 / 288, Loss: 5.45365
+[TRAIN] Epoch: 52, Iter : 120 / 288, Loss: 5.43035
+[TRAIN] Epoch: 52, Iter : 130 / 288, Loss: 5.33893
+[TRAIN] Epoch: 52, Iter : 140 / 288, Loss: 5.48041
+[TRAIN] Epoch: 52, Iter : 150 / 288, Loss: 5.39492
+[TRAIN] Epoch: 52, Iter : 160 / 288, Loss: 5.48491
+[TRAIN] Epoch: 52, Iter : 170 / 288, Loss: 5.31175
+[TRAIN] Epoch: 52, Iter : 180 / 288, Loss: 5.37055
+[TRAIN] Epoch: 52, Iter : 190 / 288, Loss: 5.50859
+[TRAIN] Epoch: 52, Iter : 200 / 288, Loss: 5.40162
+[TRAIN] Epoch: 52, Iter : 210 / 288, Loss: 5.35159
+[TRAIN] Epoch: 52, Iter : 220 / 288, Loss: 5.35505
+[TRAIN] Epoch: 52, Iter : 230 / 288, Loss: 5.32942
+[TRAIN] Epoch: 52, Iter : 240 / 288, Loss: 5.45148
+[TRAIN] Epoch: 52, Iter : 250 / 288, Loss: 5.32814
+[TRAIN] Epoch: 52, Iter : 260 / 288, Loss: 5.51651
+[TRAIN] Epoch: 52, Iter : 270 / 288, Loss: 5.41819
+[TRAIN] Epoch: 52, Iter : 280 / 288, Loss: 5.47222
+== [TRAIN] Epoch: 52, Perplexity: 224.599 ==>
+[VAL] Epoch: 52, Iter: 0, Loss: 5.53783
+[VAL] Epoch: 52, Iter: 10, Loss: 5.68588
+[VAL] Epoch: 52, Iter: 20, Loss: 5.53256
+=== [VAL] Epoch: 52, Iter: 29, Perplexity: 255.476 ===>
+====== Epoch 53 ======>
+[TRAIN] Epoch: 53, Iter : 0 / 288, Loss: 5.32104
+[TRAIN] Epoch: 53, Iter : 10 / 288, Loss: 5.47910
+[TRAIN] Epoch: 53, Iter : 20 / 288, Loss: 5.51392
+[TRAIN] Epoch: 53, Iter : 30 / 288, Loss: 5.36771
+[TRAIN] Epoch: 53, Iter : 40 / 288, Loss: 5.57525
+[TRAIN] Epoch: 53, Iter : 50 / 288, Loss: 5.43065
+[TRAIN] Epoch: 53, Iter : 60 / 288, Loss: 5.45511
+[TRAIN] Epoch: 53, Iter : 70 / 288, Loss: 5.40679
+[TRAIN] Epoch: 53, Iter : 80 / 288, Loss: 5.37435
+[TRAIN] Epoch: 53, Iter : 90 / 288, Loss: 5.33633
+[TRAIN] Epoch: 53, Iter : 100 / 288, Loss: 5.43850
+[TRAIN] Epoch: 53, Iter : 110 / 288, Loss: 5.44155
+[TRAIN] Epoch: 53, Iter : 120 / 288, Loss: 5.34833
+[TRAIN] Epoch: 53, Iter : 130 / 288, Loss: 5.35716
+[TRAIN] Epoch: 53, Iter : 140 / 288, Loss: 5.40546
+[TRAIN] Epoch: 53, Iter : 150 / 288, Loss: 5.28472
+[TRAIN] Epoch: 53, Iter : 160 / 288, Loss: 5.45543
+[TRAIN] Epoch: 53, Iter : 170 / 288, Loss: 5.53360
+[TRAIN] Epoch: 53, Iter : 180 / 288, Loss: 5.42429
+[TRAIN] Epoch: 53, Iter : 190 / 288, Loss: 5.41625
+[TRAIN] Epoch: 53, Iter : 200 / 288, Loss: 5.28730
+[TRAIN] Epoch: 53, Iter : 210 / 288, Loss: 5.41259
+[TRAIN] Epoch: 53, Iter : 220 / 288, Loss: 5.36025
+[TRAIN] Epoch: 53, Iter : 230 / 288, Loss: 5.46510
+[TRAIN] Epoch: 53, Iter : 240 / 288, Loss: 5.38738
+[TRAIN] Epoch: 53, Iter : 250 / 288, Loss: 5.48186
+[TRAIN] Epoch: 53, Iter : 260 / 288, Loss: 5.47071
+[TRAIN] Epoch: 53, Iter : 270 / 288, Loss: 5.49740
+[TRAIN] Epoch: 53, Iter : 280 / 288, Loss: 5.43358
+== [TRAIN] Epoch: 53, Perplexity: 222.400 ==>
+[VAL] Epoch: 53, Iter: 0, Loss: 5.49666
+[VAL] Epoch: 53, Iter: 10, Loss: 5.64871
+[VAL] Epoch: 53, Iter: 20, Loss: 5.51003
+=== [VAL] Epoch: 53, Iter: 29, Perplexity: 248.302 ===>
+====== Epoch 54 ======>
+[TRAIN] Epoch: 54, Iter : 0 / 288, Loss: 5.37363
+[TRAIN] Epoch: 54, Iter : 10 / 288, Loss: 5.38223
+[TRAIN] Epoch: 54, Iter : 20 / 288, Loss: 5.30315
+[TRAIN] Epoch: 54, Iter : 30 / 288, Loss: 5.55727
+[TRAIN] Epoch: 54, Iter : 40 / 288, Loss: 5.35554
+[TRAIN] Epoch: 54, Iter : 50 / 288, Loss: 5.35274
+[TRAIN] Epoch: 54, Iter : 60 / 288, Loss: 5.36833
+[TRAIN] Epoch: 54, Iter : 70 / 288, Loss: 5.39265
+[TRAIN] Epoch: 54, Iter : 80 / 288, Loss: 5.43347
+[TRAIN] Epoch: 54, Iter : 90 / 288, Loss: 5.29236
+[TRAIN] Epoch: 54, Iter : 100 / 288, Loss: 5.37549
+[TRAIN] Epoch: 54, Iter : 110 / 288, Loss: 5.44740
+[TRAIN] Epoch: 54, Iter : 120 / 288, Loss: 5.34198
+[TRAIN] Epoch: 54, Iter : 130 / 288, Loss: 5.47146
+[TRAIN] Epoch: 54, Iter : 140 / 288, Loss: 5.47018
+[TRAIN] Epoch: 54, Iter : 150 / 288, Loss: 5.27451
+[TRAIN] Epoch: 54, Iter : 160 / 288, Loss: 5.44189
+[TRAIN] Epoch: 54, Iter : 170 / 288, Loss: 5.33003
+[TRAIN] Epoch: 54, Iter : 180 / 288, Loss: 5.44093
+[TRAIN] Epoch: 54, Iter : 190 / 288, Loss: 5.31672
+[TRAIN] Epoch: 54, Iter : 200 / 288, Loss: 5.36969
+[TRAIN] Epoch: 54, Iter : 210 / 288, Loss: 5.37009
+[TRAIN] Epoch: 54, Iter : 220 / 288, Loss: 5.53797
+[TRAIN] Epoch: 54, Iter : 230 / 288, Loss: 5.42437
+[TRAIN] Epoch: 54, Iter : 240 / 288, Loss: 5.36855
+[TRAIN] Epoch: 54, Iter : 250 / 288, Loss: 5.23671
+[TRAIN] Epoch: 54, Iter : 260 / 288, Loss: 5.44919
+[TRAIN] Epoch: 54, Iter : 270 / 288, Loss: 5.46331
+[TRAIN] Epoch: 54, Iter : 280 / 288, Loss: 5.53594
+== [TRAIN] Epoch: 54, Perplexity: 220.565 ==>
+[VAL] Epoch: 54, Iter: 0, Loss: 5.50516
+[VAL] Epoch: 54, Iter: 10, Loss: 5.67700
+[VAL] Epoch: 54, Iter: 20, Loss: 5.49466
+=== [VAL] Epoch: 54, Iter: 29, Perplexity: 250.002 ===>
+[TEST] Epoch: 54, Iter: 0, Loss: 5.56731
+[TEST] Epoch: 54, Iter: 10, Loss: 5.72129
+[TEST] Epoch: 54, Iter: 20, Loss: 5.52049
+[TEST] Epoch: 54, Iter: 30, Loss: 5.57332
+=== [TEST] Epoch: 54, Iter: 34, Perplexity: 231.483 ===>
+===== Best validation perplexity: 248.302 at epoch: 53 =====>
