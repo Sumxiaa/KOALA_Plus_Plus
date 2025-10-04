@@ -58,9 +58,8 @@ and does not have any functional relation to the project itself.
 
 **KOALA++** extends the Kalman filtering view of optimization by explicitly propagating structured gradient uncertainty. Its core innovation lies in tracking a **directional covariance surrogate**:  
 
-\[
-v_k := H_k P_{k-1},
-\]
+
+$v_k := H_k P_{k-1},$
 
 instead of the full covariance $P_{k-1} \in \mathbb{R}^{n \times n}$.  
 This surrogate captures anisotropic uncertainty while keeping memory and computational cost comparable to first-order optimizers.
@@ -111,8 +110,7 @@ If we enforce $P_{k-2} = P_{k-2}^\top$, the least-squares solution is:
 
 
 $P_{k-2} =
-\frac{H_{k-1}^\top v_{k-1} + v_{k-1}^\top H_{k-1}}{\|H_{k-1}\|^2}
-- \frac{H_{k-1} v_{k-1}^\top H_{k-1}^\top}{\|H_{k-1}\|^4}.$
+\frac{H_{k-1}^\top v_{k-1} + v_{k-1}^\top H_{k-1}}{\|H_{k-1}\|^2}- \frac{H_{k-1} v_{k-1}^\top H_{k-1}^\top}{\|H_{k-1}\|^4}.$
 
 
 ---
