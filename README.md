@@ -142,7 +142,7 @@ $\theta_k = \theta_{k-1} -
 
 ### Algorithm Summary
 <center>
-    <img src="img/alg.png" alt="Overview of Project" width="150%" height="200"/>
+    <img src="img/alg.png" alt="Algorithm" width="100%" height="100"/>
 </center>
 
 ---
