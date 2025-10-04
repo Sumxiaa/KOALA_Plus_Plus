@@ -83,8 +83,13 @@ $v_{k-1} = H_{k-1} P_{k-2}$
 We seek a surrogate for $P_{k-2}$:
 
 
-$\min_\| P_{k-2} \|_F^2$
-s.t. $H_{k-1} P_{k-2} = v_{k-1}.$
+$$
+\begin{aligned}
+\min_{P_{k-2}} \quad & \| P_{k-2} \|_F^2 \\
+\text{s.t.} \quad & H_{k-1} P_{k-2} = v_{k-1}
+\end{aligned}
+$$
+
 
 This system admits multiple solutions. KOALA++ considers **two variants**:
 
