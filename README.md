@@ -141,9 +141,9 @@ $\theta_k = \theta_{k-1} -
 ---
 
 ### Algorithm Summary
-<center>
-    <img src="img/alg.png" alt="Algorithm" width="100%" height="100"/>
-</center>
+<p align="center">
+  <img src="imgs/algorithm1.png" alt="Algorithm 1 KOALA++" width="70%"/>
+</p>
 
 ---
 
