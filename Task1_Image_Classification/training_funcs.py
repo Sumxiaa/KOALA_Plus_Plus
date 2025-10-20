@@ -3,7 +3,7 @@ import time
 import torch
 
 # from tensorboard_logger import log_value
-from koala import KOALAPlusPlus
+from koalap import KOALAPlusPlus
 
 
 from util import AverageMeter
@@ -83,10 +83,12 @@ def train(train_loader, model, criterion, optimizer, scheduler, epoch, num_epoch
             optimizer.update(loss_mean, loss_var)
         else:
             optimizer.step()
-
+        
+        """
         if isinstance(optimizer, KOALAPlusPlus):
             optimizer.finalize_epoch(epoch)
-
+        """
+        
         # Measure accuracy (Top-1 and Top-5 error) and record loss
         err1, err5 = _accuracy(output.data, target, top_k=(1, 5))
         losses.update(loss_mean.item(), input.size(0))
