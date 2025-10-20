@@ -71,15 +71,16 @@ class VanillaKOALA(KOALABase):
         max_grad_entries = list()
         for group in self.param_groups:
             for p in group["params"]:
-                if p.grad is None or p.grad.norm(p=2) < self.eps:
+                if p.grad is None:
                     continue
 
                 layer_grad = p.grad + self.state["weight_decay"] * p
-                layer_grad_norm = layer_grad.norm(p=2)
+                # layer_grad_norm = layer_grad.norm(p=2)
+                layer_grad_norm = torch.dot(layer_grad.view(-1), layer_grad.view(-1))
 
-                s = self.state["sigma"] * (layer_grad_norm ** 2) + cur_r
+                s = self.state["sigma"] * layer_grad_norm + cur_r
 
-                layer_loss = loss + 0.5 * self.state["weight_decay"] * p.norm(p=2) ** 2
+                layer_loss = loss + 0.5 * self.state["weight_decay"] * torch.dot(p.view(-1), p.view(-1)) ** 2
                 scale = group["lr"] * layer_loss * self.state["sigma"] / s
                 p.data.add_(-scale * p.grad)
 
@@ -226,151 +227,20 @@ class MomentumKOALA(KOALABase):
         self.state["Pt"] = self.state["Pt"] - PHHSP
 
 
-class KOALAPlusPlus(KOALABase):
-    def __init__(
-            self,
-            params,
-            sigma: float = 1,
-            q: float = 1,
-            r: float = None,
-            alpha_r: float = 0.9,
-            weight_decay: float = 0.0,
-            lr: float = 1,
-            **kwargs):
-        super(KOALAPlusPlus, self).__init__(params, **kwargs)
-        self.eps = 1e-9
-        for group in self.param_groups:
-            group["lr"] = lr
-
-        # 初始化状态（常量以数值形式存储）
-        self.state = {}
-        self.state["sigma"] = sigma  # σ_0
-        self.state["q"] = q          # Q
-        if r is not None:
-            self.state["r"] = r
-        else:
-            self.state["r"] = ExpAverage(alpha_r, 1.0)
-        self.state["weight_decay"] = weight_decay
-
-        # 初始化每个参数状态（存储 vk、Hk、Sk、Pk）
-        for group in self.param_groups:
-            for p in group["params"]:
-                self.state[p] = {}
-                self.state[p]["vk"] = None
-                self.state[p]["Hk"] = None
-                self.state[p]["Sk"] = None
-
-    @torch.no_grad()
-    def predict(self):
-        pass
 
 
-    @torch.no_grad()
-    # @torch.cuda.amp.autocast()
-    def update(self, loss: torch.FloatTensor, loss_var: torch.FloatTensor):
-        # 更新 r 状态
-        if isinstance(self.state["r"], ExpAverage):
-            self.state["r"].update(loss_var)
-            cur_r = self.state["r"].get_avg()
-        else:
-            cur_r = self.state["r"]
-
-        for group in self.param_groups:
-            for p in group["params"]:
-                if p.grad is None or p.grad.norm(2) < self.eps:
-                    continue
-
-                p_shape = p.shape
-                # 获取上次状态
-                vk_prev = self.state[p]["vk"]
-                Hk_prev = self.state[p]["Hk"]
-                Sk_prev = self.state[p]["Sk"]
-
-                Q = self.state["q"]
-                sigma = self.state["sigma"]
-
-                # 计算当前梯度 Hk（拉平成向量），使用 in-place 加法
-                Hk = p.grad.view(-1) + self.state["weight_decay"] * p.view(-1)
-                # 初始化 vk_prev、Hk_prev 如不存在
-                if vk_prev is None:
-                    vk_prev = Hk.mul(sigma)
-                if Hk_prev is None:
-                    Hk_prev = Hk
-                # 如果 Sk_prev 未定义，则计算
-                if Sk_prev is None:
-                    # 计算 dot(vk_prev, Hk_prev) 和 dot(Hk_prev, Hk_prev)
-                    Sk_prev = torch.dot(vk_prev.add(Q, alpha=1.0).mul_(Hk_prev), Hk_prev).add_(cur_r)
-
-                # Compute lambda_k
-                lambdak = torch.dot(Hk, vk_prev + Q * Hk_prev) / Sk_prev
-                alpha = torch.dot(Hk, Hk_prev) / torch.dot(Hk_prev, Hk_prev)
-                r_k = torch.dot(Hk, vk_prev) * torch.dot(Hk_prev, Hk_prev) - torch.dot(Hk_prev, vk_prev) * torch.dot(Hk, Hk_prev)
-                r_k /= torch.dot(Hk_prev, Hk_prev) ** 2
-                vk = (alpha - lambdak) * vk_prev + Q * (Hk - lambdak * Hk_prev) + r_k * Hk_prev
-                # vk = (alpha - lambdak) * vk_prev + Q * (Hk - lambdak * Hk_prev)
-                # 计算新的 Sk: Sk = Pk_hat * dot(Hk, Hk) + cur_r
-                Sk_new = torch.dot(vk.add(Hk.mul(Q)), Hk).add_(cur_r)
-
-                # 更新参数：计算 layer_loss
-                layer_loss = loss + 0.5 * self.state["weight_decay"] * (p.norm(2) ** 2)
-                # scale = - lr * layer_loss * Pk_hat * Hk / Sk_new
-                # scale = Hk.clone()  # 创建一个拷贝用于更新
-                # scale.div_(Sk_new).mul_(-group["lr"] * layer_loss)
-                scale = - group["lr"] * layer_loss * (vk + Q * Hk) / Sk_new
-                p.data.add_(scale.view(p_shape))
-                """
-                A = torch.dot(Hk, Hk)
-                B = torch.dot(vk, vk)
-                C = torch.dot(Hk, vk)
-                DET = B * B + 4 * (A * C - B * B)
-                large_eigen = (B + torch.sqrt(DET)) / (2 * A)
-                small_eigen = (B - torch.sqrt(DET)) / (2 * A)
-                """
-                # print(C)
-                # 更新状态
-                self.state[p]["vk"] = vk
-                self.state[p]["Hk"] = Hk
-                self.state[p]["Sk"] = Sk_new
+         
 
 
-    def finalize_epoch(self, epoch: int, save_dir="vk_stats"):
-        import os
-        os.makedirs(save_dir, exist_ok=True)
 
-        large_eigs = []
-        small_eigs = []
 
-        for group in self.param_groups:
-            for p in group["params"]:
-                state = self.state[p]
-                if p.grad is None or state.get("vk") is None or state.get("Hk") is None:
-                    continue
 
-                vk = state["vk"]
-                Hk = state["Hk"]
 
-                A = torch.dot(Hk, Hk)
-                B = torch.dot(vk, vk)
-                C = torch.dot(Hk, vk)
 
-                # DET might be small or negative, clamp to avoid NaN
-                DET = B * B + 4 * (A * C - B * B)
-                # DET = torch.clamp(DET, min=1e-12)
 
-                sqrt_det = torch.sqrt(DET)
-                large_eigen = (B + sqrt_det) / (2 * A)
-                small_eigen = (B - sqrt_det) / (2 * A)
 
-                large_eigs.append(large_eigen)
-                small_eigs.append(small_eigen)
 
-        # 求平均
-        avg_large_eigen = torch.stack(large_eigs).mean().item()
-        avg_small_eigen = torch.stack(small_eigs).mean().item()
 
-        # 写入文件
-        with open(os.path.join(save_dir, "eigen_avg_stats.txt"), "a") as f:
-            f.write(f"{epoch}\t{avg_large_eigen:.6f}\t{avg_small_eigen:.6f}\n")
 
 
 
