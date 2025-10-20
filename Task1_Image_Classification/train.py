@@ -13,6 +13,7 @@ import argparse
 from koala import *
 from adafisher import *
 from adan import *
+from koalap import *
 
 import random
 import numpy as np
@@ -29,7 +30,7 @@ def set_random_seed(seed):
 
 
 
-def Trainer(model, optim_name, dataset_name='cifar10', max_epochs=100, random_seed=0, sigma=0.1, q=0.1, lr=1.0):
+def Trainer(model, optim_name, dataset_name='cifar10', max_epochs=100, random_seed=0, sigma=0.1, q=0.1, lr=1.0, scheduler_name='multi'):
     """
     Train and evaluate the model on CIFAR-10 dataset.
 
@@ -87,9 +88,13 @@ def Trainer(model, optim_name, dataset_name='cifar10', max_epochs=100, random_se
         scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[30, 60, 90], gamma=gamma)
         # scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=100)
     elif max_epochs == 200:
-        # scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=150, gamma=0.1)
-        # scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[60, 120, 160], gamma=gamma)
-        scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200, eta_min=1e-4)
+        if dataset_name == 'cifar10':
+            scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[100, 150], gamma=0.1)
+            # scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200, eta_min=1e-4)
+        elif dataset_name == 'cifar100':
+            scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[60, 120, 160], gamma=0.2)
+            # scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200, eta_min=1e-4)
+        # scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200, eta_min=1e-4)
         # scheduler = get_cosine_schedule_with_warmup(optimizer, warmup_epochs=10, total_epochs=200, eta_min=1e-4)
     else:
         raise ValueError(f"Unknown max_epoch: {max_epochs}")
@@ -249,7 +254,7 @@ def Trainer(model, optim_name, dataset_name='cifar10', max_epochs=100, random_se
     os.makedirs("logs", exist_ok=True)
 
     # 构造日志路径
-    txt_filename = f"training_log_{optim_name}_dataset{dataset_name}_epochs{max_epochs}_seed{random_seed}_sigma{sigma}_q{q}_lr{lr}.txt"
+    txt_filename = f"training_log_{optim_name}_dataset{dataset_name}_epochs{max_epochs}_seed{random_seed}_sigma{sigma}_q{q}_lr{lr}_{scheduler_name}.txt"
     txt_path = os.path.join("logs", txt_filename)
 
     # 写入 txt 文件
@@ -288,6 +293,7 @@ if __name__ == "__main__":
     parser.add_argument('--sigma', type=float, default=0.1)
     parser.add_argument('--q', type=float, default=0.1)
     parser.add_argument('--lr', type=float, default=1.0)
+    parser.add_argument('--scheduler_name', type=str, default="cos", choices=["multi", "cos"])
 
     args = parser.parse_args()
     if args.dataset == 'cifar10':
