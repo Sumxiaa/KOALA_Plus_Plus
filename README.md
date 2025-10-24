@@ -1,4 +1,4 @@
-# 🐨 KOALA++: Efficient Kalman-Based Optimization of Neural Networks with Gradient-Covariance Products
+# 🐨 KOALA++: Efficient Kalman-Based Optimization with Gradient-Covariance Products
 
 Abstract, _We propose KOALA++, a scalable Kalman-based optimization algorithm that explicitly models structured gradient uncertainty in neural network training. Unlike second-order methods, which rely on expensive second order gradient calculation, our method directly estimates the parameter covariance matrix by recursively updating compact gradient covariance products. This design improves upon the original KOALA framework that assumed diagonal covariance by implicitly capturing richer uncertainty structure without storing the full covariance matrix and avoiding large matrix inversions. Across diverse tasks, including image classification and language modeling, KOALA++ achieves accuracy on par or better than state-of-the-art first- and second-order optimizers while maintaining the efficiency of first-order methods._ 
 
