@@ -1,0 +1,8 @@
+AdaFisher
+AdaFisherW
+AdaHessian
+Adam
+AdamW
+kfac
+SGD
+Shampoo
