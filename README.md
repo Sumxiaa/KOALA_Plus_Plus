@@ -174,14 +174,13 @@ This project is licensed under the [GNU General Public License v3.0](https://www
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@misc{xia2025koalaefficientkalmanbasedoptimization,
-      title={KOALA++: Efficient Kalman-Based Optimization of Neural Networks with Gradient-Covariance Products}, 
-      author={Zixuan Xia and Aram Davtyan and Paolo Favaro},
-      year={2025},
-      eprint={2506.04432},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2506.04432}, 
+@article{xia2026koala++,
+  title={KOALA++: Efficient Kalman-Based Optimization with Gradient-Covariance Products},
+  author={Xia, Zixuan and Davtyan, Aram and Favaro, Paolo},
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
+  pages={35088--35120},
+  year={2026}
 }
 
 ```
