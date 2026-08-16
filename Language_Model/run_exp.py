@@ -10,6 +10,7 @@ from tqdm import tqdm
 from GPT1 import MiniGPT1
 import torch.nn as nn
 from utils.wikitext2 import Wikitext2
+# from data.ptb import PTB
 from utils.torch_utils import seed_experiment, to_device
 from utils.data_utils import save_logs, track_memory_gpu
 import os
@@ -19,40 +20,57 @@ from optimizers.AdamW import AdamW
 from optimizers.AdaFisher import AdaFisherW
 from optimizers.AdaHessian import Adahessian
 from optimizers.sgd import SGD
+from optimizers.koala import KOALAPlusPlus
 
-def train(epoch, model, dataloader, optimizer, args, gm = None):
+def get_batch(batch):
+  sentences = batch["input"]
+  target = batch["target"]
+  sentences_length = batch["length"]
+
+  return sentences, target, sentences_length
+
+def train(epoch, model, dataloader, optimizer, args, gm=None):
     model.train()
-    losses = []
-    total_iters = 0
+    total_loss, total_tokens = 0.0, 0
     start_time = time.time()
+
     for idx, batch in enumerate(
-        tqdm(
-            dataloader, desc="Epoch {0}".format(epoch), disable=(not args.progress_bar)
-        )
+        tqdm(dataloader, desc=f"Epoch {epoch}", disable=not args.progress_bar)
     ):
         batch = to_device(batch, args.device)
+
         if args.optimizer in ["Shampoo", "kfac"]:
             dummy_y = gm.setup_model_call(model, batch["source"])
             gm.setup_loss_call(model.loss, dummy_y, batch["target"], batch["mask"])
-            outputs, loss = gm.forward_and_backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(),
-                                       args.clip_norm)
+            _, loss = gm.forward_and_backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip_norm)
+
         else:
             optimizer.zero_grad()
             log_probas = model(batch["source"])
             loss = model.loss(log_probas, batch["target"], batch["mask"])
-            losses.append(loss.item() * batch["mask"].sum().item())
-            if args.optimizer == 'AdaHessian':
-                loss.backward(create_graph=True)
-            else:
-                loss.backward()
-        optimizer.step()
-        total_iters += 1
-        if idx % args.print_every == 0:
-            tqdm.write(f"[TRAIN] Epoch: {epoch}, Iter : {idx} / {len(dataloader)}, Loss: {loss.item():.5f}")
 
-    mean_loss = np.mean(losses)
-    mean_loss /= args.batch_size * dataloader.dataset.max_length
+            if args.optimizer == "KOALAPlusPlus":
+                loss_mean = loss.mean()
+                loss_mean.backward()
+                loss_var = torch.mean(loss ** 2) - loss_mean ** 2
+                optimizer.update(loss_mean.detach(), loss_var.detach())
+                loss_value = loss_mean.item()
+            else:
+                if args.optimizer == "AdaHessian":
+                    loss.backward(create_graph=True)
+                else:
+                    loss.backward()
+                optimizer.step()
+                loss_value = loss.item()
+
+        total_loss += loss_value * batch["mask"].sum().item()
+        total_tokens += batch["mask"].sum().item()
+
+        if idx % args.print_every == 0:
+            tqdm.write(f"[TRAIN] Epoch: {epoch}, Iter: {idx}, Loss: {loss_value:.5f}")
+
+    mean_loss = total_loss / total_tokens
     perplexity = math.exp(mean_loss)
     tqdm.write(f"== [TRAIN] Epoch: {epoch}, Perplexity: {perplexity:.3f} ==>")
     return mean_loss, perplexity, time.time() - start_time
@@ -60,35 +78,27 @@ def train(epoch, model, dataloader, optimizer, args, gm = None):
 
 def evaluate(epoch, model, dataloader, args, mode="val"):
     model.eval()
-    losses = []
-    total_loss = 0.0
-    total_iters = 0
+    total_loss, total_tokens = 0.0, 0
     start_time = time.time()
+
     with torch.no_grad():
         for idx, batch in enumerate(
-            tqdm(dataloader, desc="Evaluation", disable=(not args.progress_bar))
+            tqdm(dataloader, desc=f"Evaluation ({mode})", disable=not args.progress_bar)
         ):
             batch = to_device(batch, args.device)
             log_probas = model(batch["source"])
-
             loss = model.loss(log_probas, batch["target"], batch["mask"])
-            losses.append(loss.item() * batch["mask"].sum().item())
+            loss_value = loss.mean().item()
 
-            total_loss += loss.item()
-            total_iters += batch["source"].shape[1]
+            total_loss += loss_value * batch["mask"].sum().item()
+            total_tokens += batch["mask"].sum().item()
 
             if idx % args.print_every == 0:
-                tqdm.write(
-                    f"[{mode.upper()}] Epoch: {epoch}, Iter: {idx}, Loss: {loss.item():.5f}"
-                )
+                tqdm.write(f"[{mode.upper()}] Epoch: {epoch}, Iter: {idx}, Loss: {loss_value:.5f}")
 
-        mean_loss = np.mean(losses)
-        mean_loss /= args.batch_size * dataloader.dataset.max_length
-        perplexity = math.exp(mean_loss)
-        tqdm.write(
-            f"=== [{mode.upper()}] Epoch: {epoch}, Iter: {idx}, Perplexity: {perplexity:.3f} ===>"
-        )
-
+    mean_loss = total_loss / total_tokens
+    perplexity = math.exp(mean_loss)
+    tqdm.write(f"=== [{mode.upper()}] Epoch: {epoch}, Perplexity: {perplexity:.3f} ===>")
     return mean_loss, perplexity, time.time() - start_time
 
 
@@ -96,6 +106,12 @@ def main(args):
     # Seed the experiment, for repeatability
     seed_experiment(args.seed)
     # Dataloaders
+
+    # train_dataset = PTB(data_dir="./data", split="train", create_data= False)
+    # test_dataset = PTB(data_dir="./data", split="test", create_data= False)
+    # valid_dataset = PTB(data_dir="./data", split="valid", create_data= False)
+
+    # Batchify the data
     train_dataset = Wikitext2(args.data_folder, split="train")
     train_dataloader = DataLoader(
         train_dataset,
@@ -136,7 +152,7 @@ def main(args):
             model.parameters(), lr=args.lr, weight_decay=args.weight_decay
         )
     elif args.optimizer == "AdaFisherW":
-        optimizer = AdaFisherW(model, lr=args.lr, gammas=[args.gamma1, args.gamma2], TCov=args.curvature_update_interval,
+        optimizer = AdaFisherW(model, lr=args.lr, gamma=0.8, TCov=args.curvature_update_interval,
                                weight_decay=args.weight_decay, Lambda=args.damping
                                )
     elif args.optimizer == "AdaHessian":
@@ -152,6 +168,14 @@ def main(args):
             weight_decay=args.weight_decay,
             momentum=args.momentum
         )
+    elif args.optimizer == "KOALAPlusPlus":
+        optimizer = KOALAPlusPlus(
+            model.parameters(),
+            sigma=args.sigma,
+            q=args.q, r=None, alpha_r=0.9,
+            weight_decay=args.weight_decay, lr=args.lr
+        )
+
 
     print(
         f"Initialized GPT1 model with {sum(p.numel() for p in model.parameters())} "
@@ -255,11 +279,23 @@ if __name__ == "__main__":
         "--optimizer",
         type=str,
         default="adamw",
-        choices=["AdaFisherW", "AdaFisher", "adam", "adamw", 'kfac', 'Shampoo', "AdaHessian"],
+        choices=["AdaFisherW", "AdaFisher", "adam", "adamw", 'kfac', 'Shampoo', "AdaHessian", "KOALAPlusPlus"],
         help="choice of optimizer (default: %(default)s).",
     )
     optimization.add_argument(
         "--lr",
+        type=float,
+        default=1e-3,
+        help="learning rate for Adam optimizer (default: %(default)s).",
+    )
+    optimization.add_argument(
+        "--sigma",
+        type=float,
+        default=1e-3,
+        help="learning rate for Adam optimizer (default: %(default)s).",
+    ) 
+    optimization.add_argument(
+        "--q",
         type=float,
         default=1e-3,
         help="learning rate for Adam optimizer (default: %(default)s).",

@@ -6,3 +6,6 @@ AdamW
 kfac
 SGD
 Shampoo
+KOALA-V
+KOALA-M
+KOALA-P

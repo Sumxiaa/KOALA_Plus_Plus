@@ -369,10 +369,8 @@ class AdaFisherBackBone(Optimizer):
             raise ValueError(f"Invalid learning rate: {lr}")
         if not 0.0 <= beta < 1.0:
             raise ValueError(f"Invalid beta parameter: {beta}")
-        """
         if not 0.0 <= gamma < 1.0:
             raise ValueError(f"Invalid gamma parameter: {gamma}")
-        """
         if not TCov > 0:
             raise ValueError(f"Invalid TCov parameter: {TCov}")
         defaults = dict(lr=lr, beta=beta,

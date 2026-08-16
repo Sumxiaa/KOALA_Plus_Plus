@@ -1,0 +1,24 @@
+dataset: CIFAR10
+network: focalnet
+optimizer: KOALA-P
+scheduler: CosineAnnealingLR
+init_lr: 0.0003
+early_stop_threshold: -1
+optimizer_kwargs:
+  weight_decay: 0.01
+  sigma: 0.1
+  q: 0.1
+  alpha_r: 0.9
+scheduler_kwargs:
+  T_max: 200
+aug: true
+cutout: true
+n_holes: 1
+cutout_length: 16
+n_trials: 1
+precision: fp32
+num_workers: 5
+max_epochs: 200
+mini_batch_size: 256
+loss: cross_entropy
+early_stop_patience: 10

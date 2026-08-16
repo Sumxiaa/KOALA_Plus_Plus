@@ -42,7 +42,7 @@ from torchvision.models import (resnet50, ResNet50_Weights, mobilenet_v3_large, 
 def args(sub_parser: _SubParsersAction):
     sub_parser.add_argument(
         '--seed', dest='seed',
-        default=42, type=int,
+        default=7, type=int,
         help="Set the random seed: Default = 42")
     sub_parser.add_argument(
         '--config', dest='config',
@@ -402,7 +402,9 @@ class TrainingAgent:
             inputs = inputs.to(self.gpu)
             if isinstance(self.scheduler, CosineAnnealingWarmRestarts):
                 self.scheduler.step(epoch + i / len(self.train_loader))
-            self.optimizer.zero_grad()
+            self.optimizer.zero_grad(set_to_none=True)
+            if self.config['optimizer'] in ["KOALA-V", "KOALA-M", "KOALA-P"]:
+                self.optimizer.predict()
             if self.config['optimizer'] in ["Shampoo", "kfac"]:
                 dummy_y = self.gm.setup_model_call(self.network, inputs)
                 self.gm.setup_loss_call(self.criterion, dummy_y, targets)
@@ -410,6 +412,14 @@ class TrainingAgent:
                 torch.nn.utils.clip_grad_norm_(self.network.parameters(),
                                                self.config['optimizer_kwargs']['clipping_norm'])
                 self.optimizer.step()
+            elif self.config['optimizer'] in ["KOALA-V", "KOALA-M", "KOALA-P"]:
+                outputs = self.network(inputs)
+                loss = self.criterion(outputs, targets)
+                loss_mean = loss.mean()
+                loss_mean.backward()
+                loss_var = torch.mean(torch.pow(loss, 2))
+                self.optimizer.update(loss_mean, loss_var)
+
             else:
                 if self.autocast:
                     with torch.autocast(device_type=self.gpu, dtype=precision, enabled=True):

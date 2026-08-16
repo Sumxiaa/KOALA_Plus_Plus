@@ -4,7 +4,7 @@ from optimizers.AdamW import AdamW
 from optimizers.AdaHessian import Adahessian
 from optimizers.AdaFisher import AdaFisher, AdaFisherW
 from optimizers.sgd import SGD
-from optimizers.koala import VanillaKOALA, MomentumKOALA, KOALAPlusPlus
+from optimizers.koala import MomentumKOALA, KOALAPlusPlus
 from optimizers.lr_scheduler import (StepLR, CosineAnnealingWarmRestarts, CosineAnnealingLR, OneCycleLR, MultiStepLR,
                                      LinearLR)
         
@@ -64,19 +64,11 @@ def get_optimizer_scheduler(
             qw=0.01, qv=0.01, r=None, alpha_r=0.9,
             weight_decay=0.0005, lr=1.0
         )
-    elif optim_method == 'KOALA-V':
-        optimizer = VanillaKOALA(
-            params=net.parameters(),
-            lr=init_lr,
-            **optim_processed_kwargs,
-            r=None
-        )
     elif optim_method == 'KOALA-P':
         optimizer = KOALAPlusPlus(
             params=net.parameters(),
-            lr=init_lr,
-            **optim_processed_kwargs, 
-            r = None
+            sigma=0.2, q=0.2, r=None, alpha_r=0.9,
+            weight_decay=0.0005, lr=2.0
         )
     else:
         raise ValueError(f"Warning: Unknown optimizer {optim_method}")
